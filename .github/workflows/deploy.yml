@@ -3,25 +3,35 @@ name: Deploy MkDocs site to GitHub Pages
 on:
   push:
     branches:
-      - main  # Adjust this to your default branch if necessary
+      - main  # Adjust to your default branch if necessary
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
+      # Checkout the code from your repository
       - uses: actions/checkout@v3
+
+      # Set up Node.js 20 to avoid Node.js deprecation warning
       - name: Set up Node.js 20
         uses: actions/setup-node@v3
         with:
           node-version: '20'
+
+      # Set up Python for MkDocs
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
+
+      # Install MkDocs Material and git-revision-date-localized plugin
       - name: Install dependencies
         run: |
           pip install mkdocs-material
+          pip install mkdocs-git-revision-date-localized-plugin
+
+      # Deploy the site to GitHub Pages (gh-pages branch)
       - name: Deploy to GitHub Pages
         run: |
           mkdocs gh-deploy --force --verbose
