@@ -90,8 +90,32 @@ The contributor **shall** clone (i.e., copy an instance of) the forked repositor
 
 Before starting on any changes to the project, a contributor **shall** claim an associated issue.
 
+A new contributor to a project **may** claim an issue tagged as [good first issue](https://github.com/open-sauced/intro/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22), or [beginners only](https://github.com/open-sauced/intro/issues?q=is%3Aissue+is%3Aopen+label%3A%22beginners+only%22). 
+
+Experienced contributors **shall not** claim issues tagged with the label "beginners only".
+
+Experienced contributors **should** avoid issues tagged with the label "good first issue".
+
 !!! note
-    To properly manage an open-source project, it is important that the project maintainer is aware of who is working on the project and what they are doing. By claiming an issue before begining on the work, the contributor allows the maintainer to be aware of the work being performed.
+    Taking ownership of an issue:
+
+    - Notifies maintainers that work is starting to address the issue,
+    - Allows efficient communication by allowing the maintainers and contributor to discuss the issue and proposed changes early in the update cycle,
+    - Provides a historical record of the steps taken to address the issue,
+    - Helps to block inappropriate pull requests as any pull request without an associated issue can be easily rejected. 
+
+    When you're new to a project, it's a good idea to start with small, manageable tasks, fixing bugs, adding tests, or updating documentation. These will often be tagged with the text "good first issue" or "beginners-only". This will help you become familiar with the material and development workflow without getting overwhelmed.  The goal is to reserve at least some of these issues for new contributors or until the end of the project; if everyone solves these problems first, it makes it more challenging for contributors to gain experience.
+
+!!! tip "GitHub Guidance"
+    If an issue is not assigned, it is generally assumed to be available for anyone to work on. Take control of the issue by submitting a comment of `.take` on the selected issue). When an issue is assigned, it will be indicated under the "Assignees" section of the issue.
+
+    ![Issue assignees section on GitHub](_assets/images/issue-assign.png)
+
+    > **NOTE:** Projects can implement additional rules regarding the assignment of issues. Always review the project's contributing guidelines to ensure you are aware of any variations from this standard process.
+
+!!! tip
+    If you get stuck while working on your changes or need other clarification, you can always ask for help using the discussions tab of the project. For example, you can get help for the ITS Open-Source Process project at the [Discussion Tab](https://github.com/ite-org/intro/discussions).
+
 
 
 ### Create a Branch {.body}
@@ -164,34 +188,6 @@ The contributor **shall** accept the direction of the review process, including 
 ## Process Details {.body}
 
 ### Claim an Issue
-Prior to starting any work, ensure that there is an appropriate unassigned issue and take control of the issue (e.g., submit a comment of `.take` on the selected issue).
-
-> **NOTE:** Projects can implement additional rules regarding the assignment of issues. Always review the project's contributing guidelines to ensure you are aware of any variations from this standard process.
-
-If an issue is not assigned, it is assumed to be available for anyone to work on. When an issue is assigned, it will be indicated under the "Assignees" section of the issue.
-
-![Issue assignees section on GitHub](_assets/images/issue-assign.png)
-
-Taking ownership of a formally defined issue associated with the project is important for several reasons:
-
-- Context and Discussion: By taking control of the issue, you notify the maintainers that work is starting to address the issue. It also demonstrates that you are aware of what has previously been proposed and allows a more in-depth discussion about the issue to occur to ensure that your work is aligned with the project's goals, architecture, and roadmap. This discussion helps set clear expectations and increases the chance of your work being accepted.
-
-- Documentation and Tracking: Issues act as a form of documentation, providing a historical record of the identified problem, proposed solution, and decision-making process behind the change. They help maintainers track the project's progress and prioritize tasks. At the same time, they also allow other contributors to understand the context and reasons behind the changes introduced in your work product.
-
-- Reducing Back-and-Forth Communication: Discussing and agreeing upon the proposed changes in advance through the issue can reduce the back-and-forth communication during the review process of your work product. This can save both your time and the maintainers' time.
-
-Avoiding Unnecessary Work: Creating an issue allows maintainers to provide early feedback on the proposed change. They can advise if a similar issue exists, if the proposed change aligns with the project's goals, or if alternative approaches are preferable. This helps you avoid wasting time and effort working on something that may not be accepted because it conflicts with existing plans.
-
-Avoiding Spam Submittals: Submittals of work are likely to be marked as spam if they are are not associated with an issue because they are likely to be seen as introducing irrelevant, low-quality, or harmful changes to the project. Having your pull request marked as spam can lead to rejection, lost contribution opportunities, and potentially damage your reputation.
-
-**OPT-5:** Start with an issue tagged as [good first issue](https://github.com/open-sauced/intro/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22), or [beginners only](https://github.com/open-sauced/intro/issues?q=is%3Aissue+is%3Aopen+label%3A%22beginners+only%22). 
-
-**OPT-6:**: Reserve issues tagged with the label "beginners only" for those who have not previously submitted work to the project.
-
-When you're new to a project, it's a good idea to start with small, manageable tasks, fixing bugs, adding tests, or updating documentation. These will often be tagged with the text "good first issue" or "beginners-only". This will help you become familiar with the material and development workflow without getting overwhelmed.  The goal is to reserve at least some of these issues for new contributors; if everyone solves these problems first, it makes it more challenging for contributors to gain experience.
-
-If you get stuck while working on your changes or need other clarification, you can always ask for help using the discussions tab of the project. For example, you can get help for the ITS Open-Source Process project at the [Discussion Tab](https://github.com/ite-org/intro/discussions).
-
 ## Contribution Workflow {.body}
 
 Once a maintainer has assigned you an issue, the next step is to work on the changes. Here's a general workflow of the process:
