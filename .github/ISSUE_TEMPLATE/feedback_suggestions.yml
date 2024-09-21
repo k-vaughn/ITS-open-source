@@ -1,0 +1,26 @@
+name: "Feedback and Suggestions"
+description: "Provide feedback or suggest improvements to the documentation."
+title: "[Feedback] Provide your feedback or suggestion"
+labels: [feedback, documentation]
+body:
+  - type: markdown
+    attributes:
+      value: "## Feedback and Suggestions\nProvide your feedback or suggestions for improving the documentation."
+
+  - type: textarea
+    id: strengths
+    attributes:
+      label: Strengths
+      description: "What is working well in the documentation?"
+
+  - type: textarea
+    id: improvements
+    attributes:
+      label: Areas for Improvement
+      description: "What areas of the documentation need improvement?"
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes
+      description: "Include any additional thoughts or suggestions for improving the documentation."

@@ -172,10 +172,25 @@ Once the contributor has completed the proposed revisions and has created a loca
 
 Once the contributor has completed the above steps, the contributor **shall** complete a pull request.
 
-The contributor's pull request **shall** comply with the selected pull request template for the project.
+The contributor's pull request **shall** comply with the selected pull request template for the project, completing each field.
+
+The contributor **shall** verify that GitHub does not report any action bot or other failures upon submitting the PR. 
 
 !!! note
     In order to ensure that changes made to the shared repository fit with the project plan, follow subittal guidelines, and are free of bugs, it is important that they are reviewed before being incorporated. As such, rather than allowing each contributor to push changes to the shared repository without any review, they **request** the maintainer to **pull** the proposed changes. The request initiates the review process, and if successful, the changes will be pulled. The request for the maintainers to pull the updates is called a "[pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)" (PR). In order to ensure that these requests are valid and useful, they must comply with the pull request template (e.g., identify the issue that the change claims to address).
+    
+    It is especially important that the PR identifies the issue that the PR claims to address and must prefix the issue number with "Fixes #" to ensure that the issue is closed once the change is accepted.
+    
+    The contributor will need to correct any errors that occur during the submittal process to ensure that the PR is received by the maintainers.
+
+!!! warning  
+    A PR may be marked as invalid and closed if:
+
+    - the issue is not assigned to the contributor who opened the PR,
+    - no issue is linked to the PR,
+    - the PR template is incomplete, or any section in the template is deleted, or
+    - changes are made directly in the default (`main`) branch.
+
 
 ### Cooperate with Reviewers {.body}
 
@@ -187,48 +202,6 @@ The contributor **shall** accept the direction of the review process, including 
 
 !!! note
     After a pull request has been submitted, reviewers can have questions or concerns (e.g., failure to comply with style guidelines). In addition, if multiple proposals are received in a short period, last minute changes can cause merge errors that need to be resolved. The contributor is typically the person most qualified to make revisions to the proposed changes without introducing errors. Although expected to be rare, there can be instances where the contributor and reviewers have different opinions about how a change should be implemented. The shared project is managed by the entire team and the contributor needs to respect the decisions made by the full team.
-
-## Contribution Workflow {.body}
-  So, when you create a pull request, you want to include the related issue number. Add the keyword "Closes," "Fixes," or "Resolves" in front of the issue number, for example, "Closes #123".
-
-  [Linking a pull request](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue) to an issue will automatically close the issue once the pull request gets merged.
-
-  You can find the issue number right after the title, as shown below.
-
-  ![issue number](_assets/images/issue-number.png)
-
-  :::info
-
-  Only add the [supported keyword](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword) and the issue number here. Adding more words will prevent the issue from being closed automatically.
-
-  :::
-
-- **Screenshots or screen recordings**
-
-  If your changes relate to UI improvement, consider adding screenshots or screen recordings to show the before-and-after changes.
-  
-#### Ensure that all checks passed {.body}
-If you see any GitHub action bots or checks that failed after you submit your PR template, you need to read each one and understand why it failed. Then, you must address and fix it until all of them pass.
-
-#### Do Not Message Maintainers or Tag Them in Comments {.body}
-Maintainers are always notified whenever there is an incoming PR; there is no need to send them a direct message (DM). If you haven't received a review after one week, you may tag them in the PR comments to ask for an estimated review time.
-
-#### Keep your branch up to date {.body}
-Keep your branch up to date while waiting for review and resolve any merge conflicts in your terminal.
-
-### 10. REQ-16 Respond to Any Feedback {.body}
-
-After submitting your pull request, the project maintainers may provide feedback or request changes. Be sure to respond promptly and address any concerns or suggestions they may have.
-
-By following these steps, you'll be able to submit your contributions to open source projects and collaborate with other developers to improve the codebase.
-
-
->⚠️ NOTE: A PR may be marked as invalid and closed if:
->
-> - the issue is not assigned to the contributor who opened the PR.
-> - no issue is linked to the PR.
-> - PR template is incomplete, or any section in the template is deleted.
-> - changes are made directly in the default (`main`) branch.
 
 ## What Happens Next? {.body}
 
@@ -248,30 +221,6 @@ It is highly recommended that you update your remote and local branches habitual
 The best times to update your branches are before you push your changes to the remote repository and while you're waiting for your pull request to be reviewed.
 
 In general, it is preferrable to make small incremental changes to the project and to provide the updated materials as soon as possible after taking control of an issue. The longer the duration between checking out the project and submitting a pull request the higher the chance that another contributor will make competing changes in one of your files, which may need to be manually inspected to properly merge the changes.
-
-### Updating Branches {.body}
-
-#### Update your fork {.body}
-To update your copy of the project, you first need to update your forked (`origin`) repository:
-
-1. Go to your forked repository on GitHub.
-2. Click the "Sync fork" button.
-3. Click the green "Update branch" button.
-
-#### Update your local copy {.body}
-Then, pull the latest changes in the `main` branch in the `origin` repository to update your local working branch by following these steps in your terminal:
-
-1. Go to your working branch.
-
-   ```bash
-   git checkout YOUR-BRANCH-NAME
-   ```
-
-2. Pull the latest changes with this command:
-
-   ```bash
-   git pull origin main
-   ```
 
 ## Merge Conflicts {.body}
 

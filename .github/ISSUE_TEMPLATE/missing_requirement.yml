@@ -1,0 +1,26 @@
+name: "Missing Requirement Documentation"
+description: "Report missing documentation for existing project requirements."
+title: "[Missing] Briefly describe the missing documentation"
+labels: [bug, documentation]
+body:
+  - type: markdown
+    attributes:
+      value: "## Description\nDescribe the requirement(s) you believe are missing from the documentation."
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "Describe the missing documentation."
+
+  - type: input
+    id: location
+    attributes:
+      label: Related Systems or Components
+      description: "Does the missing documentation relate to a specific system or component?"
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes
+      description: "Any other information that might help in documenting the missing requirement."

@@ -1,0 +1,38 @@
+name: "Requirement Modification Request"
+description: "Suggest a modification to an existing requirement."
+title: "[Modification] Briefly describe the modification"
+labels: [enhancement, documentation]
+body:
+  - type: markdown
+    attributes:
+      value: "## Description\nProvide a description of the existing requirement that needs to be modified."
+
+  - type: textarea
+    id: current-requirement
+    attributes:
+      label: Current Requirement
+      description: "Provide the current wording of the requirement."
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason for Modification
+      description: "Why should this requirement be updated? Is it outdated, incorrect, or incomplete?"
+
+  - type: textarea
+    id: suggested-modification
+    attributes:
+      label: Suggested Modification
+      description: "Provide the proposed wording or modification to the requirement."
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies or Related Requirements
+      description: "Does this modification affect other requirements or documents? List them here."
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes
+      description: "Provide any additional information or context related to the modification."
