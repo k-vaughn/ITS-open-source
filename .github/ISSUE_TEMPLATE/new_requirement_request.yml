@@ -1,0 +1,38 @@
+name: "New Requirement Request"
+description: "Propose a new requirement to be added to the documentation."
+title: "[Requirement] Provide a brief description"
+labels: [enhancement, documentation]
+body:
+  - type: markdown
+    attributes:
+      value: "## Description\nProvide a clear and concise description of the new requirement."
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "Describe the new requirement to be added."
+
+  - type: textarea
+    id: justification
+    attributes:
+      label: Justification
+      description: "Why is this new requirement necessary? Describe the need and the problem it addresses."
+
+  - type: textarea
+    id: suggested-language
+    attributes:
+      label: Suggested Language
+      description: "Provide a suggestion for how the new requirement should be worded."
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies or Impacts
+      description: "Does this new requirement affect any existing requirements, systems, or documents? List them here."
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes
+      description: "Include any additional information or context about the new requirement."
