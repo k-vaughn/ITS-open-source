@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block toc %}
+  <div class="md-sidebar__title">
+    <h2 class="md-sidebar__title-content">{{ page.meta.title or page.title }}</h2>
+  </div>
+  {{ super() }}  <!-- This ensures the rest of the Table of Contents list is displayed -->
+{% endblock %}
+
+
+{% block announce %}
+  <p style="text-align: center;">
+    <span style="background-color: #FFD700; color: black; padding: 10px; font-weight: bold; border-radius: 5px; display: inline-block; margin: 0 auto;">
+      Proposal: This is a newly proposed project that does not yet reflect broad community input
+    </span>
+  </p>
+{% endblock %}
