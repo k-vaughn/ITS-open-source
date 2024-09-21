@@ -71,7 +71,7 @@ Those wishing to contribute **shall** fork the repository to their own account.
 Those wishing to contribute **shall** fork the repository to their own account.
 
 !!! note
-    The main repository is shared by the entire open-source community on GitHub. Individual contributors are not allowed to directly edit this file as that would create a chaotic environment. Forking a repository creates a copy of the repository on the repository hosting platform within the contributor's account. The contributor can then edit the copied repository (as described below). The contributor's repository will inherit the visibility of the project being forked (i.e., for open-source projects, it will be public). This allows the open-source community to review the proposed changes prior to accepting their incorporation into the community repository.
+    The main repository is shared by the entire open-source community on GitHub. Individual contributors are not allowed to directly edit this file as that would create a chaotic environment. [Forking a repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) creates a copy of the repository on the repository hosting platform within the contributor's account. The contributor can then edit the copied repository (as described below). The contributor's repository will inherit the visibility of the project being forked (i.e., for open-source projects, it will be public). This allows the open-source community to review the proposed changes prior to accepting their incorporation into the community repository.
 
 !!! tip "Github Guidance"
    Press the "Fork" button in the upper-right portion of the shared repository's home page (e.g., https://github.com/<account>/<project>). For complate details, see the [Fork a Repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) article on GitHub help.
@@ -81,7 +81,7 @@ Those wishing to contribute **shall** fork the repository to their own account.
 The contributor **shall** clone (i.e., copy an instance of) the forked repository to the local machine where edits are to be made.
 
 !!! note
-    While a fork creates a copy on the host platform (which can be viewed by others), a clone creates a copy on a local machine. This allows the contributor to edit files on a local machine rather than directly in the online environment. 
+    While a fork creates a copy on the host platform (which can be viewed by others), [cloning your forked repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository) creates a copy of your forked repository on a local machine. This allows the contributor to edit files on a local machine rather than directly in the online environment. 
 
 !!! tip "GitKraken Guidance"
 	- [GitKraken Guidance](https://help.gitkraken.com/gitkraken-desktop/open-clone-init/#cloning-an-existing-project)
@@ -116,8 +116,6 @@ Experienced contributors **should** avoid issues tagged with the label "good fir
 !!! tip
     If you get stuck while working on your changes or need other clarification, you can always ask for help using the discussions tab of the project. For example, you can get help for the ITS Open-Source Process project at the [Discussion Tab](https://github.com/ite-org/intro/discussions).
 
-
-
 ### Create a Branch {.body}
 
 Prior to starting work on a claimed issue, the contributor **shall** create a separate branch for all edits related to that singlular issue.
@@ -134,6 +132,9 @@ Once the contributor has claimed an issue and has a branch devoted to the develo
 
     If you have questions or concerns during the process (especially between meetings of the corresponding WG), you can use the Discussions tab associated with the project. These forums can be very useful in knowledge sharing and forming consensus, however, users should be aware that the discussions tab does not represent official decisions of the WG.
 
+!!! tip
+    Avoid addressing any other issues as this (1) makes the change larger and delays completion of your primary task, (2) can overlap with changes being made by others, and (3) complicates version control by not clearly documenting when specific changes were made.
+    However, in some cases, it may be appropriate to address multiple small and similar issues at once. For example, multiple grammar issues in documentation can be grouped into a single pull request.
 
 ### Pull and Merge Updates {.body}
 
@@ -144,10 +145,12 @@ Prior to submitting a PR, the contributor **shall** pull the latest updates inco
 
 ### Test the Updates {.body}
 
-After pulling and merging the latest updates but prior to submitting the PR, the contributor **shall** test the changes to ensure intended intended operation without any new bugs.
+After pulling and merging the latest updates but prior to submitting the PR, the contributor **shall** install any necessary dependencies and test the changes to ensure that the changes provide the intended operation without any new bugs.
 
 !!! note
     It is critical that updates are tested prior to being incorporated into the final code (this includes ensuring that documentation files render correctly). Specific projects can define their own testing process and procedures.
+    You can find the instructions on how to run a project locally in the README file or in the contributing guidelines.
+
 
 ### Commit the Update {.body}
 
@@ -172,7 +175,7 @@ Once the contributor has completed the above steps, the contributor **shall** co
 The contributor's pull request **shall** comply with the selected pull request template for the project.
 
 !!! note
-    In order to ensure that changes made to the shared repository fit with the project plan, follow subittal guidelines, and are free of bugs, it is important that they are reviewed before being incorporated. As such, rather than allowing each contributor to push changes to the shared repository without any review, they **request** the maintainer to **pull** the proposed changes. The request initiates the review process, and if successful, the changes will be pulled. The request for the maintainers to pull the updates is called a "pull request" (PR). In order to ensure that these requests are valid and useful, they must comply with the pull request template (e.g., identify the issue that the change claims to address).
+    In order to ensure that changes made to the shared repository fit with the project plan, follow subittal guidelines, and are free of bugs, it is important that they are reviewed before being incorporated. As such, rather than allowing each contributor to push changes to the shared repository without any review, they **request** the maintainer to **pull** the proposed changes. The request initiates the review process, and if successful, the changes will be pulled. The request for the maintainers to pull the updates is called a "[pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)" (PR). In order to ensure that these requests are valid and useful, they must comply with the pull request template (e.g., identify the issue that the change claims to address).
 
 ### Cooperate with Reviewers {.body}
 
@@ -185,243 +188,7 @@ The contributor **shall** accept the direction of the review process, including 
 !!! note
     After a pull request has been submitted, reviewers can have questions or concerns (e.g., failure to comply with style guidelines). In addition, if multiple proposals are received in a short period, last minute changes can cause merge errors that need to be resolved. The contributor is typically the person most qualified to make revisions to the proposed changes without introducing errors. Although expected to be rare, there can be instances where the contributor and reviewers have different opinions about how a change should be implemented. The shared project is managed by the entire team and the contributor needs to respect the decisions made by the full team.
 
-## Process Details {.body}
-
-### Claim an Issue
 ## Contribution Workflow {.body}
-
-Once a maintainer has assigned you an issue, the next step is to work on the changes. Here's a general workflow of the process:
-
-### 1. REQ-7: Fork the Repository {.body}
-
-**REQ-7:** Start by forking the project repository
-
-[Forking a repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) means creating a copy of the repository under your GitHub account. It allows you to push changes to the remote codebase without affecting the original project.
-
-> **NOTE:** Steps 2-7 are defined as optional because there is no verification to ensure that they are performed in this manner; but in practice, they should always be performed as described.
- 
-### 2. OPT-8: Clone the Forked Repository {.body}
-
-[Cloning your forked repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository) means making a copy of your forked repository to your local machine. Although GitHub allows editiing files through the web interface, it is generally easier to work on your local machine and you may be required to have the codebase on your local machine to verify its operation. 
-
-Run the following command in your terminal:
-
-```bash
-git clone https://github.com/YOUR-USERNAME/REPOSITORY-NAME.git
-```
-
-Replace "YOUR-USERNAME" with your GitHub username and "REPOSITORY-NAME" with the repository's name.
-
-**TODO:** Add explanation of how to do this with SourceTree
-
-### 3. OPT-9: Create a New Branch {.body}
-
-Before making any changes, create a new branch in your local repository to work on your contribution. Creating a new branch is the best practice in open source because it keeps your changes separate from the `main` branch.
-
-You can create a new branch using the following command:
-
-```bash
-git checkout -b YOUR-BRANCH-NAME
-```
-
-Replace "YOUR-BRANCH-NAME" with a descriptive name for your branch, such as "fix-bug-123" or "add-new-feature".
-
-**TODO:** Add explanation of how to do this with SourceTree
-
-
-### 4. OPT-10: Run the Project {.body}
-Install the dependencies and run the project. You need to be able to verify that the project performs properly after changes are made. It is a best practice to verify that your local environment is working properly at the start of your edits so that you can have confidence that any problem identified later was due to a change you made rather than due to some other environmental problem. 
-
-### 5. OPT-11: Make Changes on a Single Issue {.body}
-
-Now that you have a new branch, you can make changes to the codebase. Always follow the project's coding guidelines and conventions.
-
-Ensure that you only address a single issue within this branch. 
-
-If you work on multiple issues, work on them in separate branches and submit them separately to the project.
-
-### 6. OPT-12: Run the Changes Locally {.body}
-
-You should always run and check your changes in your local environment, regardless of how small they are. This is important to ensure they work as expected and won't break production.
-
-You can find the instructions on how to run a project locally in the README file or in the contributing guidelines.
-
-### 7. OPT-13: Commit the Changes {.body}
-
-Once you've made your changes, add your changes to the staging area and commit them to your local repository with these commands:
-
-```bash
-git add .
-git commit -m "Your commit message"
-```
-
-Replace `"Your commit message"` with a brief description of your changes.
-
-**TODO:** Add explanation of how to do this with SourceTree
-
-### 8. OPT-14: Push the Changes to Your Fork {.body}
-
-Push your changes to your forked repository on GitHub by running the following command:
-
-```bash
-git push origin YOUR-BRANCH-NAME
-```
-
-Replace "YOUR-BRANCH-NAME" with the name of your branch.
-
-**TODO:** Add explanation of how to do this with SourceTree
-
-### 9. REQ-15: Submit a Pull Request {.body}
-
-> **NOTE:** Within the Git environment, changes can be "pushed" (e.g., a command on my local machine to copy the changes on my local repository to my GitHub repository) or "pulled" (e.g., a command on my local machine to copy changes that were made on my Github respository to my local repository). However, if every contributor pushed their changes onto the shared respository, there would be chaos. Instead, when their code is ready, contributors submit a **request** to the maintainers of the shared repository to initiate a **pull**. This type of request is called a "pull request" or "PR". 
-
-#### Create a Pull Request {.body}
-
-Once you've pushed your changes to your GitHub account, you can now [create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork). To create a pull request:
-
-1. Navigate to the original project's repository on GitHub.
-2. Click the "Compare & pull request" button.
-3. Fill in all required information in the template.
-4. Click the "Create pull request" button.
-
-#### Fill In a Pull Request Template {.body}
-
-Most projects provided a pull request template that is shown and needs to be filled in Markdown. This template guides you in providing all the information maintainers need to review your pull request.
-
-##### Tips to Fill In a Pull Request Template {.body}
-
-It can be challenging to read and fill in a pull request template. Here is some tips on how to fill one:
-
-1. **Preview Mode**
-
-   Click the "Preview" tab to see the sections you must fill in before you do so. It will be easier for you to notice them in this mode, but note that you cannot edit them in preview mode.
-
-   Here is an example of a pull request template in preview mode:
-
-   ![PR template in preview mode](_assets/images/pr-template-preview.png)
-
-2. **Headings**
-
-   Get back to the writing mode by clicking the "Write" tab. Pay attention to the headings with `#` symbols. You need to provide information right under these headings.
-
-3. **Comments**
-
-   The instructions on what information you must provide are usually written in the comments under each heading. You need to read and follow all instructions thoroughly.
-
-   :::tip
-
-   When filling in the information, write it below the comment so you can still see and follow the instructions.
-
-   :::
-
-   Here is the template in Markdown. Now, pay attention to the headings and the comments as we discussed:
-
-   ```markdown
-   ## Description
-
-   <!--
-   Please do not leave this blank
-   This PR [adds/removes/fixes/replaces] the [feature/bug/etc].
-   -->
-
-   ## Related Tickets & Documents
-
-   <!--
-   Please use this format to link issue numbers: Fixes #123
-   Specific keywords are defined at:
-   https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword
-   -->
-
-   ## Mobile & Desktop Screenshots/Recordings
-
-   <!-- Visual changes require screenshots -->
-
-   ## Steps to QA
-
-   <!--
-   Please provide some steps for the reviewer to test your change. If   you have wrote tests, you can mention that here instead.
-
-   1. Click a link
-   2. Do this thing
-   3. Validate you see the thing working
-   -->
-
-   ## Tier (staff will fill in)
-
-   - [ ] Tier 1
-   - [ ] Tier 2
-   - [ ] Tier 3
-   - [ ] Tier 4
-
-   ## [optional] What gif best describes this PR or how it makes you feel?
-
-   <!-- note: PRs with deleted sections will be marked invalid -->
-
-   <!--
-   For Work In Progress Pull Requests, please use the Draft PR feature,
-   see https://github.blog/2019-02-14-introducing-draft-pull-requests/ for further details.
-
-     For a timely review/response, please avoid force-pushing additional
-     commits if your PR already received reviews or comments.
-
-     Before submitting a Pull Request, please ensure you've done the following:
-     - 📖 Read the project's CONTRIBUTING file
-     - 📖 Read the project's CODE_OF_CONDUCT file
-     - 👷‍♀️ Create small PRs. In most cases, this will be possible.
-     - ✅ Provide tests for your changes.
-     - 📝 Use descriptive commit messages.
-     - 📗 Update any related documentation and include any relevant screenshots.
-   -->
-   ```
-
-4. **Don't skip and delete anything in the template**
-
-   What's important is that you must fill in every section in the template that doesn't say "optional" or doesn't mean for the core team or staff to fill in. Also, you must never delete or modify the template, even if you think a section doesn't apply to your contribution.
-
-   If a section is irrelevant to your changes, leave a comment explaining why it's irrelevant or provide a brief "N/A" response. If you still need help with what to fill in, look at the previous pull requests and see how other contributors have done that.
-
-##### Required Information to Provide in Most Pull Request Templates {.body}
-
-Every project is unique. Each has its own pull request template structure and requires specific information to be provided. However, all projects typically require the following:
-
-- **Title**
-
-  Add a short and clear title that describes the change that you make. For example, "Fix: Color contrast in the landing page".
-
-- **Description**
-
-  Explain your changes in as much detail as possible. What did you fix? How did you fix it? Did you add a new function or modify a function? If there are several changes, consider using bullet points and providing links to the resources you use to back up your changes.
-
-  Here is an example:
-
-  ```markdown
-  ## Description
-
-  <!--
-   Please do not leave this blank
-   This PR [adds/removes/fixes/replaces] the [feature/bug/etc].
-   -->
-
-  This PR fixes the long repos' names that are partially stacked at the back of another name in the search input of the Explore tab.
-
-  The changes made here:
-
-  - Add Tailwind className:
-
-    - [`truncate`](https://tailwindcss.com/docs/text-overflow#truncate) to truncate overflowing text.
-    - [`tracking-tighter`](https://tailwindcss.com/docs/letter-spacing) to reduce letter spacing for better space.
-    - `inline-block` to the `<span>` .
-
-  - Remove Tailwind classNames:
-
-    - `overflow-hidden` as it's [included in the `truncate`](https://tailwindcss.com/docs/text-overflow).
-    - `break-all` as we don't want to add line breaks.
-  ```
-
-- **Related issue(s)**
-
-  Most projects don't receive unsolicited pull requests (pull requests that are not accompanied by an issue). One reason is to avoid spam pull requests that might introduce irrelevant, low-quality, or harmful changes to the project's codebase.
-
   So, when you create a pull request, you want to include the related issue number. Add the keyword "Closes," "Fixes," or "Resolves" in front of the issue number, for example, "Closes #123".
 
   [Linking a pull request](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue) to an issue will automatically close the issue once the pull request gets merged.
