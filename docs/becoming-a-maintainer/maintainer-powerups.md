@@ -1,13 +1,4 @@
----
-id: maintainer-powerups
-title: "Maintainer Power Ups"
-sidebar_label: "Maintainer Powerups"
-keywords: ["maintainer powerups", "GitHub tools for open source maintainers", "open source maintainers productivity", "GitHub Actions", "GitHub Actions for open source projects", "types of GitHub Actions for open source projects", "automating open source maintainers tasks", "GitHub", "GitHub tools", "open source maintainers", "Open Source", "Open Source Community"]
----
-
-Maintainers have a variety of daily tasks. You often juggle triaging new issues, reviewing pull requests, testing changes, and managing and moderating the community, such as welcoming new contributors and thanking contributors for their contributions. Most of the time, you are expected to respond to these tasks promptly. Sometimes, these never-ending tasks take too much time and are overwhelming. It would help if you were efficient in what you do.
-
-The good news is that some tools and features on GitHub allow you to automate tasks, which can help you save time and make your work lighter. In this chapter, we will talk about these maintainer power ups from GitHub.
+# Maintainer Automation
 
 ## GitHub Actions
 
@@ -94,11 +85,7 @@ Visit the [GitHub CLI repository](https://github.com/cli/cli#installation) for i
 
 ## Issues and Pull Request Templates
 
-Have you ever found yourself in a situation where you're reviewing pull requests or triaging issues, but you can't understand what's happening because contributors didn't provide sufficient information? Or, have you had to close an issue or pull request because the description, screenshot, or other crucial information was missing?
 
-The good news is that you can address these problems by creating issue and pull request templates. These templates allow you to customize and standardize it to include necessary information. You can see them as guides for contributors to follow when writing an issue or pull request for your project. Creating templates saves time on triaging issues, reviewing pull requests, and ensuring you get all the information you need from your contributors. Additionally, future contributors can benefit from these templates by understanding the history of changes made, which can help them debug or understand the code involved.
-
-You can learn more about [configuring issue templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository) and [creating a pull request template](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository) on the official GitHub documentation.
 
 ## Saved Replies
 

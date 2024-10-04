@@ -22,7 +22,7 @@ The overall process for contributing to an ITS open-source project is shown in F
 
 ![ITS Open-Source Process Overview](_assets/images/process-overview.png)
 
-## Requirements {.body}
+## Prerequisites {.body}
 
 ### Join the relevant working group {.body}
 
@@ -38,10 +38,16 @@ Those wishing to contribute **should** join the relevant working group.
     Within the NTCIP, any interested party can send an email to ntcip@nema.org. The email should indicate (1) the working group of interest, (2) the stakeholder sector (e.g., infrastructure owner operator, other government, consultant, device manufacturer, management station developer, etc.), (3) contact information, and (4) a short biography.
 
 
-### Install Git
+### Install Software
+
+#### Git
 Those wishing to contribute **shall** install Git on their local computer.
 
+#### Graphical User Interface
 Those wishing to contribute **may** install a graphical user interface (GUI) for Git on their local computer.
+
+#### Development Environment
+Those wishing to contribute **shall** install the development environment on their local computer.
 
 !!! note
     Git is available for all major development platforms, including Windows, Mac OS, and Linux. Git allows proper version control among multiple contributors. Git can be downloaded from [https://git-scm.com/downloads](https://git-scm.com/downloads).
@@ -90,6 +96,8 @@ The contributor **shall** clone (i.e., copy an instance of) the forked repositor
 
 Before starting on any changes to the project, a contributor **shall** claim an associated issue.
 
+A contributor **shall** not claim an issue that has the label "triage".
+
 A new contributor to a project **may** claim an issue tagged as [good first issue](https://github.com/open-sauced/intro/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22), or [beginners only](https://github.com/open-sauced/intro/issues?q=is%3Aissue+is%3Aopen+label%3A%22beginners+only%22). 
 
 Experienced contributors **shall not** claim issues tagged with the label "beginners only".
@@ -107,7 +115,7 @@ Experienced contributors **should** avoid issues tagged with the label "good fir
     When you're new to a project, it's a good idea to start with small, manageable tasks, fixing bugs, adding tests, or updating documentation. These will often be tagged with the text "good first issue" or "beginners-only". This will help you become familiar with the material and development workflow without getting overwhelmed.  The goal is to reserve at least some of these issues for new contributors or until the end of the project; if everyone solves these problems first, it makes it more challenging for contributors to gain experience.
 
 !!! tip "GitHub Guidance"
-    If an issue is not assigned, it is generally assumed to be available for anyone to work on. Take control of the issue by submitting a comment of `.take` on the selected issue). When an issue is assigned, it will be indicated under the "Assignees" section of the issue.
+    If an issue is not assigned and it is not labeled with "triage", it is generally assumed to be available for anyone to work on. Take control of the issue by submitting a comment of `.take` on the selected issue). When an issue is assigned, it will be indicated under the "Assignees" section of the issue.
 
     ![Issue assignees section on GitHub](_assets/images/issue-assign.png)
 
@@ -288,3 +296,23 @@ Before resolving merge conflicts, you must first [update your branches](#updatin
 <hr/>
 
 As you continue to contribute to open source projects, you'll gain valuable experience, develop new skills, and build a strong portfolio of work. 
+
+## Setup
+### Install Git
+Go to https://git-scm.com
+
+Download and install the git program appropriate for your platform. Using default options should be fine unless you have a particular preference (e.g., for text editor)
+
+### Create a GitHub account
+Go to github.com, create an account and sign in
+
+### Fork the Desired Repository
+
+### Install GitKraken
+Recommended: Download and install GitKraken. Link GitKraken to your GitHub Account
+
+### Clone Repository
+Make sure to select a directory where you want to store the local copy of the repository. This directory needs to be empty
+
+
+

@@ -1,13 +1,25 @@
 <style>
 body {
-  counter-set: section 2; 
+  counter-set: section 3; 
 }
 </style>
 
 # Documentation Conventions {.annex}
 
-The preferred mechanism for developing documentation for projects using the ITS Open Source Process is to use MarkDown files that are compiled with [MkDocs](https://www.mkdocs.org). While there are multiple tools available to transform markdown into websites, MkDocs was selected because it:
+## Exceptions Allowed
+Unless otherwise stated in the project-specific CONTRIBUTIONS.md file, each project based on this specification **shall** develop documentation as defined by this annex.
 
+## Development Environment
+
+### Overview
+
+In addition to the development tools needed to manage and submit any contribution within the Git environment, developing project documentation requires the following tools
+
+- **A text editor,** which is used to create and edit markdwon and yaml files. Markdown is a format used to define webpage content in a manner that is compatible with differencing tools used with version control systems
+- **MkDocs,** which is an open source tool for translating a set of markdown files into a static website 
+- **Materials for MkDocs,** which is an open-source tool that extends the markdown language to support additional features that are useful for developing the look and feel of the documentation.
+
+This combination of tools has been selected because it:
 - is designed to be easy to install and use, 
 - requires minimal setup,
 - works well with Git and GitHub,
@@ -16,7 +28,14 @@ The preferred mechanism for developing documentation for projects using the ITS 
 - when coupled with add-ons, can produce PDFs
 - has an active development community
 
-## MkDocs Development {.annex}
+It is recommended to establish this development environment prior to making any edits. Generating the documentation website locally from a known baseline allows the contributor to verify that the development environment is working correctly prior to introducing edits to the files. Contributors are required to generating the documentation locally to verify that their proposed changes do not introduce any errors to the project. In fact, the MkDocs development environemnt allows users to see their changes in real time so that any errors can be addressed quickly.
+
+### Text Editor
+Any text editor can be used to produce markdown and yaml files. These files are to have the extensions of ".md" and ".yml", respectively.
+
+Suggested tools include: [^identify tools]
+
+### MkDocs {.annex}
 It is recommended that the MkDocs development environment is established prior to developing the content. 
  
 Running the project locally allows the contributor to see proposed changes in real-time and test them thoroughly prior to submitting pull requests. The process to install Docusaurus is described below.
@@ -235,3 +254,5 @@ git pull
 - There can only be one `heading 1` in each chapter.
 - Use code blocks to highlight code snippets or configuration examples.
 - Check out the official [Markdown Guide](https://www.markdownguide.org/basic-syntax/) website for more information about using Markdown.
+
+[^identify tools]: Identify suggested development tools
