@@ -9,6 +9,8 @@
 
 <br>
 
+[Main Site](https://k-vaughn.github.io/ITS-open-source/)
+
 This specification defines the process to be used to maintain open-source resources of the NTCIP Joint Committee. This specification is itself an open-source resource, which is maintained by the process defined by this specification. Anyone who wishes to contribute to or maintain an NTCIP open-source resource project should start by familiarizing themselves with the processes defined by this specification.
 
 This specification is adapted from the [OpenSauced Introduction](https://github.com/open-sauced/intro) and tailored to meet the needs of the ITS community. While a product of NTCIP, it is envisioned to be used in open-source efforts beyond the NTCIP community and it can be further tailored to meet the needs of each ITS open-source resource project.
