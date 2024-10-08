@@ -6,7 +6,10 @@ Contributions to this project are always welcome, no matter how large or small. 
 ## General Rules
 This project follows the [ITS Open-Source Process](https://k-vaughn.github.io/ITS-open-source/) with no exceptions or extensions other than for the approval of pull requests.
 
-> This project (the project to define the ITS Open Source Process) is reflexive: i.e., the goal of the project is to define the process by which open-source projects are developed, with the ITS Open-Source Process project being one such project.
+By providing a contribution to this project, contributors agree to submit their materials according to project's [license](LICENSE.md).
+
+!!! note
+    This project (the project to define the ITS Open Source Process) is reflexive: i.e., the goal of the project is to define the process by which open-source projects are developed, with the ITS Open-Source Process project being one such project.
 
 ## Documentation-Only Project
 This project only consists of documentation. No project setup beyond what is required for the documentation is required.

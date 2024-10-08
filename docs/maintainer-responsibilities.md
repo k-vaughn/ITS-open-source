@@ -86,8 +86,8 @@ The README.md file **shall** contain the following information:
 - project title
 - information on how to access the current documentation for the project
 - information on how to access prior releases of the project
-- project summary, including its status, overview, and sponsors
-- Acknowledgements of funding sources, sponsors, and other open-source projects that assisted in the development of this project
+- project summary, including its status and overview
+- Acknowledgements of relevant funding sources, sponsors, and other open-source projects 
 - installation guidance 
 - tech and tools used in the project
 - link to the code of conduct
