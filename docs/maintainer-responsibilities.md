@@ -53,6 +53,7 @@ If the project includes code, the maintainer **may** configure Dependabot to rep
 The maintainer **shall** ensure the following files are provided in the repository when starting the project and maintained throughout the project:
 
 - README.md
+- INSTALLATION.md (**may** be located elsewhere)
 - CODE_OF_CONDUCT.md
 - CONTRIBUTING.md
 - LICENSE
@@ -67,6 +68,8 @@ Additionally, if the site includes documentation, the maintainer **shall** ensur
 - .gitignore
 - mkdocs.yml
 - .github/workflows/deploy.yml (generates the documentation)
+- docs/index.md
+- docs/stylesheets/extra.css
 - overrides/main.html (adds a status badge to the page)
 - overrides/partials/nav.html (changes the naviation heading to be "Contents")
 - overrides/partials/toc.html (changes TOC heading to be the document name)
@@ -85,6 +88,8 @@ The README.md file **shall** contain the following information:
 - information on how to access prior releases of the project
 - project summary, including its status, overview, and sponsors
 - Acknowledgements of funding sources, sponsors, and other open-source projects that assisted in the development of this project
+- installation guidance 
+- tech and tools used in the project
 - link to the code of conduct
 - link to discussion forum for the project
 - link to the issues page for the project and the types of issues accepted for the project
@@ -100,6 +105,24 @@ The README.md file **shall** contain the following information:
 - [Astro documentation](https://github.com/withastro/astro/blob/main/README.md)
 - [freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp/blob/main/README.md)
 - [ITS Open-Source Process]() [^add its os link]
+
+### Installation Guidance
+
+The installation guidance **may** be contained within the README.md file (e.g., if it is simple), be a separate file, or reference a section within the project documentation.
+
+This guide identifies the tools and technology used by the project and includes instructions for the following:
+
+- forking the repository
+- cloning the repository
+- installing the dependencies
+- setting up the environment variables
+- setting up the database, if applicable
+- running the project locally
+
+The best way to test your guide is by setting up the project locally using your guide. If you encounter issues getting your project to work, you will discover it quickly and can update the documentation to add or clarify the missing piece.
+
+!!! example
+    [OpenSauced Contributing Guidelines](https://opensauced.pizza/docs/contributing/introduction-to-contributing/)
 
 ### Code of Conduct File
 
@@ -125,8 +148,10 @@ The CONTRIBUTING.md file **should** identify specific types of conventions that 
     Areas where exceptions and extensions are expected to occur include:
 
     - documentation conventions (e.g., extensions for consistency in presenting project-specific information),
-    - coding conventions (e.g., for languages not discussed in the ITE Open Source Process documentation, special naming conventions, special tests that are to be performed),
+    - coding conventions (e.g., for languages not discussed in the ITE Open Source Process documentation, special naming conventions),
+    - testing and linting requirements
     - the process to claim ownership pf issues (e.g., WG approvals),
+    - guidelines for commit conventions
     - requirements for creating pull requests (e.g., fields that need to be included), and
     - requirements for pull requests to be approved (e.g., WG approvals)
 
