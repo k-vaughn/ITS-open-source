@@ -9,9 +9,11 @@
 
 
 {% block announce %}
-  <p style="text-align: center;">
-    <span style="background-color: #FFD700; color: black; padding: 10px; font-weight: bold; border-radius: 5px; display: inline-block; margin: 0 auto;">
-      Proposal: This is a newly proposed project that does not yet reflect broad community input
-    </span>
-  </p>
+  <p class="status-badge proposal">Proposal: This is a newly proposed project that does not yet reflect broad community input</p>
+<!--
+  <p class="status-badge draft">Draft: This is a draft document that is subject to significant changes at any time</p>
+  <p class="status-badge preliminary">Preliminary: This is a preliminary document and may experience changes prior to finalization</p>
+  <p class="status-badge recommended">Recommended: This document has been recommended for balloting but is not yet approved</p>
+  <p class="status-badge approved">Recommended: This is an approved document</p>
+-->
 {% endblock %}
