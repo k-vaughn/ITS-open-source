@@ -53,10 +53,9 @@ If the project includes code, the maintainer **may** configure Dependabot to rep
 The maintainer **shall** ensure the following files are provided in the repository when starting the project and maintained throughout the project:
 
 - README.md
-- INSTALLATION.md (**may** be located elsewhere)
 - CODE_OF_CONDUCT.md
 - CONTRIBUTING.md
-- LICENSE
+- LICENSE.md
 - .github/CODEOWNERS
 - .github/SECURITY.md
 - appropriate issue templates in .github/ISSUE_TEMPLATE/
@@ -73,6 +72,9 @@ Additionally, if the site includes documentation, the maintainer **shall** ensur
 - overrides/main.html (adds a status badge to the page)
 - overrides/partials/nav.html (changes the naviation heading to be "Contents")
 - overrides/partials/toc.html (changes TOC heading to be the document name)
+
+Finally, the site **shall** include installation guidance, which **may** be contained in the README.md file, a separate INSTALLATION.md file, or in project documentation. 
+
 
 !!! note "GitHub Help"
     A template repository containing all of these files, which can be used to initialize new projects, is stored on the [ITE GitHub Site](https://github.com/ite-org/open-source-template).
