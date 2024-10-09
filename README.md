@@ -5,8 +5,6 @@
   <strong>An open-source specification proposed for the NTCIP Joint Committee</strong>
 </div>
 
-
----
 ## Important Links
 
 - [Website for most recent version](https://k-vaughn.github.io/ITS-open-source/)
@@ -26,6 +24,7 @@
 The project is currently a proposal and has not been reviewed by the broader NTCIP community. As such it is hosted on the proposer's GitHub account at https://github.com/k-vaughn/ITS-open-source.
 
 ### Overview
+
 The ITS Openb-Source Process defines the process to be used to maintain open-source resources of the NTCIP Joint Committee. This specification itself is proposed to be an open-source resource, which is maintained by the process defined by the specification. Anyone who wishes to contribute to or maintain an NTCIP open-source resource project should start by familiarizing themselves with [this process](https://k-vaughn.github.io/ITS-open-source/).
 
 This specification is adapted from the [OpenSauced Introduction](https://github.com/open-sauced/intro) and tailored to meet the needs of the ITS community. While a product of NTCIP, it is envisioned to be used in open-source efforts beyond the NTCIP community and it can be further tailored to meet the needs of each ITS open-source resource project.
