@@ -99,46 +99,35 @@ p.opt::before {
   font-weight: bold !important;
   margin-bottom: 1em !important;
   font-size: 0.9em !important;
+  text-align: center;
 }
 
-/* Proposal - Yellow */
+/* Proposal - Gray */
 .status-badge.proposal {
-  background-color: #FFD700 !important;  /* Gold */
+  background-color: #B0B0B0 !important;  /* Gray */
   color: black !important;
 }
 
-/* Draft - Blue */
+/* Draft - Yellow */
 .status-badge.draft {
-  background-color: #1E90FF !important;  /* DodgerBlue */
-  color: white !important;
+  background-color: #FFD700 !important;  /* Yellow */
+  color: black !important;
 }
 
-/* Pre-Review - Orange */
-.status-badge.pre-review {
-  background-color: #FF8C00;  /* DarkOrange */
+/* Preliminary - Orange */
+.status-badge.preliminary {
+  background-color: #FFA500;  /* Orange */
+  color: black;
+}
+
+/* Recommended */
+.status-badge.recommended {
+  background-color: #1E90FF;  /* Blue */
   color: white;
 }
 
-/* Review - Purple */
-.status-badge.review {
-  background-color: #8A2BE2;  /* BlueViolet */
-  color: white;
-}
-
-/* Pre-Stable - Light Green */
-.status-badge.pre-stable {
-  background-color: #32CD32;  /* LimeGreen */
-  color: white;
-}
-
-/* Stable - Dark Green */
-.status-badge.stable {
-  background-color: #228B22;  /* ForestGreen */
-  color: white;
-}
-
-/* Approved - Dark Green */
+/* Approved - Green */
 .status-badge.approved {
-  background-color: #006400;  /* DarkGreen */
+  background-color: #0AA00A;  /* Green */
   color: white;
 }
