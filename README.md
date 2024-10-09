@@ -15,7 +15,9 @@
 - [Report a security issue](SECURITY.md)
 - [Requirements for making contributions](CONTRIBUTING.md)
 - [Code of Conduct](CODE_OF_CONDUCT.md)
-- [License](LICENSE.md), which references the [![Creative Commons CC BY 4.0 License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/). 
+- [License](LICENSE.md), which references the [Creative Commons CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+
+![Creative Commons CC BY 4.0 License](https://i.creativecommons.org/l/by/4.0/88x31.png)
 
 ## Project Summary
 
