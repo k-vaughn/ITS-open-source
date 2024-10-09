@@ -1,4 +1,4 @@
-name: "Bug Report (Documentation Issue)"
+name: "Documentation Bug"
 description: "Report an issue or inaccuracy in the documentation."
 title: "[BUG] Describe the issue briefly"
 labels: [bug, documentation]

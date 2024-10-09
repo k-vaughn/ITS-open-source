@@ -1,21 +1,4 @@
 
-# Contributor Covenant Code of Conduct
+# Code of Conduct
 
-Each entity that participates in the development of this repository as a commenter, contributor, maintainer, or manager agrees to encourage a harassment-free environment and to act and interact in ways that contribute to an open, welcoming, and healthy community.
-
-## Scope
-
-This Code of Conduct applies within the scope of GitHub, and also applies when an individual is officially representing the community in public forums.
-
-## Enforcement
-
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the community leaders responsible for enforcement at ntcip@nema.org.
-
-## Details
-For additional guidelines on the application of this code, see the [Contributor Covenant](https://www.contributor-covenant.org).
-
-## Attribution
-
-This Code of Conduct is adapted from the [Contributor Covenant, version 2.1]
-(https://www.contributor-covenant.org/version/2/1/code_of_conduct.html).
+This project adopts the [Code of Conduct](https://k-vaughn.github.io/ITS-open-source/code-of-conduct/) as defined in the [ITS Open-Source Process](https://k-vaughn.github.io/ITS-open-source/) without any exceptions or extensions.
