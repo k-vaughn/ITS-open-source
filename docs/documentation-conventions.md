@@ -1,23 +1,24 @@
 <style>
 body {
-  counter-set: section 3; 
+  counter-set: section 2; 
 }
 </style>
 
-# Documentation Conventions
+# Documentation Conventions {.annex}
 
-## Exceptions Allowed
+## Exceptions Allowed {.annex}
 
 Unless otherwise stated in the project-specific CONTRIBUTIONS.md file, each project based on this specification **shall** develop documentation as defined by this annex.
 
-## Development Environment
+## Development Environment {.annex}
 
-### Overview
+### Overview {.annex}
 
 In addition to the development tools needed to manage and submit any contribution within the Git environment (e.g., Git, GitHub), developing project documentation requires the following tools:
 
 - **A text editor,** which is used to create and edit markdwon and yaml files,
-- **MkDocs,** which is an open source tool for translating a set of markdown files into a static website, and
+- **Python,** which is required to run MkDocs,
+- **MkDocs,** which is an open-source tool for translating a set of markdown files into a static website, and
 - **Materials for MkDocs,** which is an open-source tool that extends the markdown language to support additional features that are useful for developing the look and feel of the project's documentation.
 
 This combination of tools has been selected because it:
@@ -32,227 +33,326 @@ This combination of tools has been selected because it:
 
 It is recommended to establish this development environment prior to making any edits. Generating the documentation website locally from a known baseline allows the contributor to verify that the development environment is working correctly prior to introducing edits to the files. Contributors are required to generate the documentation locally to verify that their proposed changes do not introduce any errors to the project. The MkDocs development environemnt allows users to see their changes in real time so that any errors can be addressed quickly.
 
-### Text Editor
+### Text Editor {.annex}
 
 Any text editor can be used to produce markdown and yaml files. These files are to have the extensions of ".md" and ".yml", respectively.
 
-Contributors **should** use [Visual Studio Code]() with 
-Suggested tools include: [^identify tools]
+Contributors are encouraged to use [Visual Studio Code](https://code.visualstudio.com), which is an open-source editor, with the following extensions enabled as it provides a reasonably close rendering of the final display format:
 
-### MkDocs
+- Markdown Preview Enhanced by Yiyi Wang, this extension provides a markdown previewer with support for diagrams, math (LaTeX), mermaid, charts, and more;
+- markdownlint by David Anson, this extension assists in ensuring markdown files follow consistent formatting rules; and
+- YAML by Red Hat, this extension provides syntax highlighting, validation, and autocomplete for YAML files.
 
-It is recommended that the MkDocs development environment is established prior to developing the content.
+While any text editor can be used, this suite of tools offers a free solution that is designed to render the markdown in real-time while assisting the user in producing high quality code. However, users should be aware that the toolset still does not attempt to render some of the more advanced features of Materials for MkDocs. The final look and feel can be obtained using the MkDocs server.
 
-Running the project locally allows the contributor to see proposed changes in real-time and test them thoroughly prior to submitting pull requests. The process to install Docusaurus is described below.
+### Python {.annex}
 
-1. **Install the dependencies and run the project locally**.
+MkDocs requires Python 3.8 or higher. You can check to see if Python is already installed and its version with the following command:
 
-The environment requires Node.js. You can check to see if you have Node.js already installed by running the following from the command line.
+`python --version`
 
-```bash
-   node -v
+The most recent version of Python can be installed from [official Python website](https://www.python.org/downloads/).
+
+Once installed, you should verify by running both the `python --version` and `pip --version` commands. PIP should be installed as a part of the Python package.
+
+### MkDocs {.annex}
+
+Running the MkDocs server locally allows the contributor to see proposed changes in real-time and test them thoroughly prior to submitting pull requests. To install MkDocs, run
+
+`pip install mkdocs`
+
+Once installed, verify its installation with:
+
+`mkdocs --version`
+
+Once you have verified the installation, start the MkDocs server by changing to the directory containing your cloned copy of the project repository and running
+
+`mkdocs serve`
+
+Once the server is running, you can direct a web browser to **http://127.0.0.1:8000** to see the development version of the website. This site will be updated in realtime as you update files in the repository. If you want to create a static site, However, to render all elements within the project correctly, you will need to install Materials for MkDocs.
+
+### Materials for MkDocs {.annex}
+
+To install Materials for MkDocs and the commonly used extensions for ITS projects, run the following command:
+
+```
+pip install mkdocs-material pymdown-extensions
 ```
 
-If Node.js is not already on your machine, you can obtain it from their [website](https://nodejs.org/).
+## Working with the Content {.annex}
 
-Once Node.js is installed, you can follow the directions on the [Introduction page of the Docusaurus site](https://docusaurus.io/docs)
-
-```bash
-   npm ci
-   npm start
-```
-
-   After the local development server is ready, it will automatically open the project at `http://localhost:3000/learn` on your browser.
-
-2. **Make and test changes**.
-
-   With the local server running, you can make changes to the files and immediately see the results in your browser. Test your changes thoroughly.
-3. **Stop the server**.
-
-   After completing and testing the changes, you can stop the local server by pressing `Ctrl + C` in the terminal.
-
-## Working with the Content
-
-The contents of our courses are written in [Markdown](https://www.markdownguide.org/), a lightweight and easy-to-use markup language that allows you to format text in a readable and visually appealing way.
+The content of ITS open-source documentation is generally written in [Markdown](https://www.markdownguide.org/), a lightweight and easy-to-use markup language that allows you to format text in a readable and visually appealing way.
 
 Please read the "[Using Markdown for This Project](#using-markdown-for-this-project)" section for details about how to use it in this project.
 
-### Adding Definitions to the Glossary
+### Default Document Structure {.annex}
 
-If you add definitions to [glossary](glossary.md), ensure the definitions are added **alphabetically**.
+ITS open-source projects can cover a range of projects that have wildly different documentation needs. Each project is allowed to define its own structure, but unless otherwise specified **shall** use the structure defined in this document, which is intended for projects that result in a product that can be conceptualized as a single traditional document (e.g., a traditional standard).
 
-### Adding a New Section to a Chapter
+Each major portion of the document **shall** be defined in a separate markdown file. Major portions are defined as:
 
-If your content can fall under the category of one of the course chapters, consider adding it as a new section to the chapter. Create a `heading 2` title and write your content.
+- the title page, which shall be `index.md`;
+- each top-level section of the front matter (e.g., Foreword, Introduction);
+- each section in the body of the docuemnt; and
+- each annex.
 
-You can add a new chapter if it's more suitable for a standalone section.
+The document structure **shall** be reflected in the project's `mkdocs.yml` file under the `nav` section with all front matter located under a `Front Matter` heading.
 
-### Adding a New Chapter and Adding it to the Sidebar
-
-In this section, we will walk you through adding a new chapter to any of our courses and adding it to the sidebar.
-
-#### Adding a New Chapter
-
-Follow these steps to add a new chapter to our course:
-
-1. **Create a new Markdown file**.
-
-   Create a new Markdown (`.md`) file in the course directory and name the file to reflect the chapter's content — for example, `how-to-contribute-to-open-source.md` for a chapter about how to contribute to open source.
-
-   > **NOTE**: Be sure to follow naming conventions. Notice that file names are not capitalized, and there are hyphens in place of spaces between words.
-   >
-2. **Add front matter**.
-
-   At the beginning of the file, add front matter that is enclosed by three dashes `---` with below variables:
-
-   - `id`: The ID is used to refer to a document when hand-writing sidebars. You can use the file name as an ID.
-   - `title`: The chapter's title (`h1`).
-   - `sidebar_label`: The title on the sidebar.
-   - `keywords`: Keywords for the topics in the chapter.
-
-   Here is an example:
-
-   ```yml
-   ---
-   id: what-is-open-source
-   title: "What is Open Source?"
-   sidebar_label: "What is Open Source"
-   keywords:
-     [
-       "what is open source",
-       "open source definition",
-       "open source licenses explained",
-       "open source history",
-       "open source evolution",
-       "Open Source",
-       "Open Source Community",
-     ]
-   ---
-   ```
-3. **Write content**.
-
-   Open the newly created Markdown file in a text editor and write the content for your chapter using the Markdown syntax. You can include headings, text, images, links, lists, and other elements to present your information effectively.
-
-   > **NOTE**: There should only be **one** `heading 1` in each file.
-   >
-4. **Test your changes**.
-
-   Before finalizing your new chapter, you should test your changes locally. You can build or render the project to ensure your new chapter appears as expected within the course structure.
-5. **Update the sidebar**.
-
-   After you add a new chapter, you must also add it to the sidebar for the users to discover the content.
-
-#### Adding New Chapters to the Sidebar
-
-The sidebar serves as a navigation menu. So, when you add a new chapter to a course, it's important to update the sidebar by including the link to the chapter. That way, users can navigate to the content seamlessly.
-
-Follow these steps to add new chapters to the sidebar:
-
-1. Open the `sidebars.js` file located on the root.
-2. **Add the new chapter link**.
-
-   - Insert your new chapter in the `items` array of the related course. If you're unsure where best to put it, you can comment on the issue and tag the `@open-sauced/docs` maintainers to ask for help.
-   - Use the below format to add the link to the new chapter:
-
-     ```text
-     'FOLDER-NAME/ID',
-     ```
-
-     Replace `FOLDER-NAME` with the course's folder name and `ID` with the `id` in the file's front matter. For example:
-
-     ```javascript
-     'intro-to-oss/what-is-open-source',
-     ```
-3. **Create a pull request**.
-
-   Once you have created the new chapter and verified that it meets our project's requirements, you can submit your contribution by creating a pull request.
-4. **Review and feedback**.
-
-   Wait for maintainers to review your pull request, and be prepared to receive feedback from them or collaborators. Make changes if necessary to refine your contribution.
-
-After your contribution is accepted, your new chapter will become part of our course, enhancing its content for users and contributors.
-
-## Using Markdown for This Project
-
-When contributing to this project, you must follow our Markdown convention below:
-
-### 1. Headings
-
-Use the hash (`#`) symbol to create headings (titles and subtitles). There are six levels of section headings, and the number of symbols indicates the heading level.
-
-```markdown
-# Heading 1
-
-## Heading 2
+```yml
+    - Front Matter:
+      - Title Page: index.md
+      - Notices: notices.md
+      - Acknowledgements: acknowledgements.md
+      - Foreword: foreword.md
+      - Introduction: introduction.md
+    - 1 General: general.md
+    - 2 Overview: overview.md
+    - 3 Commenter Responsibilities: commenter-responsibilities.md
+    - 4 Contributor Responsibilities: contributor-responsibilities.md
+    - 5 Maintainer Responsibilities: maintainer-responsibilities.md
+    - 6 WG Responsibilities: wg-responsibilities.md
+    - A Glossary: glossary.md
+    - B Code of Conduct: code-of-conduct.md
+    - C Documentation Conventions: documentation-conventions.md
+    - D Coding Conventions: code-quality.md
+    - E Requirements Management: requirement-management.md
 ```
 
-### 2. Text Formatting
+!!! note
+    When using the default configuration for ITS projects, this results in a left-hand left-hand navigation bar that shows the major portions of the document while the right-hand navigation shows the content of the currently opened section.
+
+!!! note
+    Be sure to follow naming conventions. Notice that file names are not capitalized, and there are hyphens in place of spaces between words.
+
+### Structure of the Title Page File {.annex}
+
+The `index.md` file **shall** represent the title page of the document and **shall**:
+
+- Start with a line containing a hashtag and nothing else
+- Include code that suppresses unwanted markdownlint warnings
+- Identify the status of the document
+- Define the Document Identifier (e.g., NTCIP X8008)
+- Define the Document Title (e.g., ITS Open-Source Process)
+- Any other information required by the Standards Development Organization (SDO)
+
+!!! example "Example of a Title Page File"
+    ```markdown
+    #
+    <!-- markdownlint-disable MD033 -->
+    **<div style="text-align: center; font-style: italic;">A proposal to the NTCIP Joint Committee</div>**
+    **<div style="text-align: center; font-size: 1.5em;">NTCIP X8008</div>**
+    ---
+    **<div style="text-align: center; font-size: 1.5em;">National Transportation Communications ITS Protocol</div>**
+    **<div style="text-align: center; font-size: 2em;">ITS Open-Source Process</div>**
+    <!-- markdownlint-enable MD033 -->
+    ```
+
+### Structure of All Other Front Matter Files {.annex}
+
+Each file representing a major portion of the front matter, other than the title page, **shall** include a single level 1 heading that has the same title as defined in the `nav` section of the `mkdocs.yml` file and is the first line of the document
+
+!!! example "Example of Start of a Front Matter File"
+    ```markdown
+    # Foreword
+    ```
+
+### Structure of a Section File {.annex}
+
+Each file representing a section of the main body of the document **shall**:
+
+- Start with code that sets the section counter for the body to the section number while suppressing unwanted markdownlint warnings
+- Include a single level 1 heading that has the same title as defined in the `nav` section of the `mkdocs.yml` file and occurs immediately after the code defining the section number
+- End each heading with `{.body}`
+
+!!! example "Example of Start of a Section File"
+    ```markdown
+    <!-- markdownlint-disable MD033 -->
+    <!-- markdownlint-disable MD041 -->
+    <style>
+      body { counter-set: section 3; }
+    </style>
+    <!-- markdownlint-enable MD033 -->
+    # Documentation Conventions {.body}
+    ```
+
+!!! note
+    Rule MD033 of markdownlint does issues a warning about the use of HTML within markdown, but it is is necessary in this case to allow automated numbering to work properly.
+
+    Rule MD041 of markdownlint indicates that the first line in a file should be a top-level heading, but our convention requires defining the section number first.
+
+### Structure of an Annex File {.annex}
+
+Each file representing an annex of the document **shall**:
+
+- Start with code that sets the section counter for the annex to the numberical order of the annex (the script will transofmr this into an alphabetic letter)
+- Include a single level 1 heading that has the same title as defined in the `nav` section of the `mkdocs.yml` file and occurs immediately after the code defining the section number
+- End each heading with `{.annex}`
+
+!!! example "Example of Start of an Annex File"
+    ```markdown
+    <!-- markdownlint-disable MD033 -->
+    <!-- markdownlint-disable MD041 -->
+    <style>
+      body { counter-set: section 1; }
+    </style>
+    <!-- markdownlint-enable MD033 -->
+    # Example Annex {.annex}
+    ```
+
+### Adding Definitions to the Glossary {.annex}
+
+If you add definitions to the project's [glossary](glossary.md), ensure the definitions are added **alphabetically**.
+
+### Frequently Used Markdown {.annex}
+
+#### Headings {.annex}
+
+The hash (`#`) symbol at the start of a line denotes a heading (e.g., section, clause, subclause). There are six levels of headings, and the number of hash symbols indicates the heading level. The title of the heading should appear after the hash symbols and a space.
+
+!!! example
+    ```markdown
+    # Heading 1
+
+    ## Heading 2
+    ```
+    # Heading 1
+
+    ## Heading 2
+
+#### Text Formatting {.annex}
 
 - Make text bold by enclosing it with double asterisks (`**`).
 - Make text italic by enclosing it with single underscores (`_`).
 - Create inline code by wrapping text with backticks (`` ` ``).
 
-```markdown
-**This is a bold text.**
+!!! example
+    ```markdown
+    **This is a bold text.**
 
-_This is an italic text._
+    _This is an italic text._
 
-This is an `inline code`.
-```
+    This is an`inline code`.
+    ```
+    **This is a bold text.**
 
-### 3. Lists
+    _This is an italic text._
+
+    This is an`inline code`.
+
+#### Lists {.annex}
 
 - Create ordered lists using numbers followed by a period (`1.`, `2.`, etc.).
 - Create unordered lists using hyphens (`-`).
+- The line before a list must be blank and a list cannot be immediately precedded by a different list
+- The style for the list is defined by the first list item
 
-```markdown
-1.  Item 1
-2.  Item 2
+!!! example
+    ```markdown
+    1.  Item 1
+    2.  Item 2
 
-- Unordered Item 1
-- Unordered Item 2
-```
+    New List
 
-### 4. Links
+    - Unordered Item 1
+    - Unordered Item 2
+    ```
+
+    1.  Item 1
+    2.  Item 2
+
+    New List
+
+    - Unordered Item 1
+    - Unordered Item 2
+
+!!! note
+    The numbering of numbered lists is automatic within markdown (i.e., when rendered, the list items are numbered sequentially from 1 regardless of what numbers are contained within the markdown file); however, it is good coding practice to maintain the correct numbering within the markdown file to prevent any confusion among contributors.
+
+#### Links {.annex}
 
 Create links using square brackets (`[]`) for the link text and parentheses (`()`) for the URL.
 
-```markdown
-[Open Source Education Path with OpenSauced](https://opensauced.pizza/learn/)
-```
+!!! example
+    ```markdown     
+    [NTCIP](https://ntcip.org)     
+    ```
+    [NTCIP](https://ntcip.org)
 
-### 5. Images
+#### Images {.annex}
 
-Embed images using an exclamation mark (`!`), followed by square brackets (`[]`) for the alt text, and parentheses (`()`) for the image URL.
+Embed images using an exclamation mark (`!`), followed by square brackets (`[]`) for the alt text, and parentheses (`()`) for the image URL. AN optional attribute field can be added to the end to specify the size.
 
-```markdown
-![Create new repository on GitHub](../_assets/images/new-repo.png)
-```
+!!! example
+    ```markdown     
+    ![NTCIP](_assets/images/NTCIP.jpg){ width=200px }     
+    ```
+    ![NTCIP](_assets/images/NTCIP.jpg){ width=200px }
 
-### 6. Blockquotes
+#### Blockquotes {.annex}
 
-Create blockquotes using the greater-than symbol (`>`).
+Create blockquotes using the greater-than symbol (`>`) or through Materials for MkDocs' admonition quote (`!!! quote`).
 
-```markdown
-> This is a blockquote.
-```
+!!! example
+    ```markdown
+    > This is a blockquote.
 
-### 7. Code Blocks
+    !!! quote
+        This is a Materials for MkDocs admonition quote.
+    ```
+    > This is a blockquote.
+
+    !!! quote
+        This is a Materials for MkDocs admonition quote.
+
+#### Code Blocks {.annex}
 
 Create code blocks using triple backticks (` ``` `) for fenced code blocks and specify a language next to the backticks before the fenced code block to highlight the syntax.
 
-````
-```bash
-git pull
-```
-````
+!!! example
+    ````   
+    ```
+    bash git pull
+    ```   
+    ````
+
+#### Admonitions
+
+Create callout out blocks for different purposes using the Materials for MkDocs [admonistions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/?h=adm#supported-types) feature by including three explanation points and the admonition type with the contained text indented by four spaces (`!!! note`)
+
+!!! example
+    ```markdown
+    !!! note
+        This is a note.
+
+    !!! tip
+        This is a tip.
+    ```
+    !!! note
+        This is a note.
+
+    !!! tip
+        This is a tip.
+
+Materials for MkDocs supports the following standard admonitions:
+
+- abstract
+- bug
+- danger
+- example
+- failure
+- info
+- note
+- question
+- quote
+- success
+- tip
+- warning
 
 ### Markdown Tips
 
 - Preview your Markdown locally to ensure proper formatting before submitting your contribution.
 - Keep your Markdown content organized, and use headings to structure your sections.
-- There can only be one `heading 1` in each chapter.
+- There should be exactly one `heading 1` within each file.
 - Use code blocks to highlight code snippets or configuration examples.
-- Check out the official [Markdown Guide](https://www.markdownguide.org/basic-syntax/) website for more information about using Markdown.
-
-[^identify tools]: Identify suggested development tools
+- See the official [Markdown Guide](https://www.markdownguide.org/basic-syntax/) for more information about Markdown.
+- See the [Materials for MkDocs Guide](https://squidfunk.github.io/mkdocs-material/) for more information about Materials for MkDocs.

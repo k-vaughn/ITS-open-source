@@ -4,7 +4,7 @@ body {
 }
 </style>
 
-#Overview {.body}
+# Overview {.body}
 
 Managing an open-source project involves four major activities as described in the following clauses:
 

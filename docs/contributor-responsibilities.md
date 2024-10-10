@@ -326,6 +326,3 @@ Recommended: Download and install GitKraken. Link GitKraken to your GitHub Accou
 
 ### Clone Repository
 Make sure to select a directory where you want to store the local copy of the repository. This directory needs to be empty
-
-
-
