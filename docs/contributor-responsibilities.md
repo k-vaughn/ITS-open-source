@@ -151,6 +151,19 @@ Prior to submitting a PR, the contributor **shall** pull the latest updates inco
 !!! note
     Because multiple contributors can be working on the same project simultaneously, care must be taken to ensure that each contributor has the latest version of files prior to proposing their changes to be incorporated into the shared repository. This is done by first pulling any changes from the shared repository into the contributor's forked version and then pulling those changes down into the contributor's local branch. During this process, the Git environment will highlight any conflicts (e.g., if the contributor and someone else changed the same line of the same file). When this occurs, the contributor will need to resolve each conflict prior to finalizing the merge.
 
+!!! note "GitHub Help"
+    To update your local copy, first update your forked (origin) repository:
+    
+    Go to your forked repository on GitHub.
+    Click the "Sync fork" button.
+    Click the green "Update branch" button.
+
+    Next, pull the latest changes in the main branch in the origin repository to update your local working branch by following these steps in your terminal:
+
+    `git checkout YOUR-BRANCH-NAME`
+
+    `git pull origin main`
+
 ### Test the Updates {.body}
 
 After pulling and merging the latest updates but prior to submitting the PR, the contributor **shall** install any necessary dependencies and test the changes to ensure that the changes provide the intended operation without any new bugs.
@@ -266,7 +279,7 @@ The conflicts happen when maintainers have merged pull requests before yours whi
 
 #### Resolving Merge Conflicts {.body}
 
-Before resolving merge conflicts, you must first [update your branches](#updating-branches). Then, follow these steps:
+Before resolving merge conflicts, you must first [update your branches](#pull-and-merge-updates). Then, follow these steps:
 
 1. In the `.all-contributorsrc` file:
 

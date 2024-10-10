@@ -211,7 +211,7 @@ The maintainer **shall** develop the forms using YAML per the GitHub instruction
     You can create various issue forms, such as bug reports, feature requests, documentation updates, etc. Each form can specify which fields are required, such as the steps for reproducing the bug or a details section for a feature request. The form can also be designed to automatically attach specific labels like`feature`, `needs triage`, or `bug` to quickly identify the type of issue.
 
 !!! example
-    [`.github/ISSUE_TEMPLATE/bug_report.yml`](.github/ISSUE_TEMPLATE/documentation_bug.yml) or [`.github/ISSUE_TEMPLATE/documentation_enhancement.yml`](.github/ISSUE_TEMPLATE/documentation_enhancement.yml)
+    [`.github/ISSUE_TEMPLATE/documentation_bug.yml`](https://github.com/k-vaughn/ITS-open-source/tree/main/.github/ISSUE_TEMPLATE/documentation_bug.yml) or [`.github/ISSUE_TEMPLATE/documentation_enhancement.yml`](https://github.com/k-vaughn/ITS-open-source/tree/main/.github/ISSUE_TEMPLATE/documentation_enhancement.yml)
 
 ### Pull Request Templates
 
@@ -221,7 +221,7 @@ The maintainer **shall** define appropriate pull request templates.
     GitHub currently only supports markdown templates for pull requests rather than YAML forms. Nonetheless, the templates serve a similar purpose in that they guide contributors in providing specific and structured information when opening pull requests in your project.
 
 !!! example
-    [.github/PULL_REQUEST_TEMPLATE/PULL_REQUEST_TEMPLATE.md](.github/PULL_REQUEST_TEMPLATE/PULL_REQUEST_TEMPLATE.md)
+    [.github/PULL_REQUEST_TEMPLATE/PULL_REQUEST_TEMPLATE.md](https://github.com/k-vaughn/ITS-open-source/tree/main/.github/PULL_REQUEST_TEMPLATE/PULL_REQUEST_TEMPLATE.md)
 
 !!! tip
     You can learn more about [creating a pull request template](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository) on the official GitHub documentation.
@@ -551,6 +551,90 @@ Significant contributions of code **should** be accompanied with tests to help e
 !!! note
     If the contribution does not include such tests, reach out to them to determine how they tested their contribution and let them know what parts need to be tested.
 
+## Creating a Release
+
+The maintainer **shall** create a formal release for each version of the document approved for release by the responsible WG or committee.
+
+!!! note "GitHub Help"
+
+    Within GitHub, this can be achieved through the**Releases** tab.
+
+The maintainer **shall** assign a tag to the release that indicates the version number per [Semantic Versioning 2.0.0](https://semver.org).
+
+!!! note
+    This produces a version number in the format of `<major>.<minor>.<patch>[-<pre-release>]` format, where
+
+    - the `major` number increments (and the other values reset to 0) when non-backwards compatible changes are made,
+    - the `minor` version increments (and patch resets) when features are added in a backwards compatible manner,
+    - the `patch` increments when backward compatible fixes are made without any new features, and
+    - an optional `pre-release` code (preceded by a hyphen) indicates versions under development and must have a sequential alphanumeric identifier
+
+The maintainer **shall** attach a PDF and zip archive of the website in versioned directories in the gh-pages branch.
+
+!!! note "GitHub Help"
+    This can be automated with GitHub actions.
+
+```
+gh-pages/  
+├── index.html (latest version)  
+├── v1.0.0/  
+├── v1.0.1/  
+├── v1.1.0/  
+└── v2.0.0/
+```
+
+!!! note
+    When deploying a new version, ensure the previous version is moved into its own directory before overwriting the index.html and other files for the new release.
+
+!!! example "Example GitHub Action"
+
+    ``` yml
+    name: Deploy MkDocs Site and Generate PDF
+    on:
+      push:
+        tags:
+          - 'v*'
+
+    jobs:
+      build:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout code
+            uses: actions/checkout@v3
+
+    - name: Set up Python
+            uses: actions/setup-python@v4
+            with:
+              python-version: '3.x'
+
+    - name: Install dependencies
+            run: |
+              pip install mkdocs-material
+              pip install weasyprint
+
+    - name: Build MkDocs site
+            run: mkdocs build
+
+    - name: Generate PDF
+            run: |
+              weasyprint site/index.html site/docs.pdf
+            env:
+              WEASYPRINT_BASEURL: 'https://yourusername.github.io/repository-name/'
+
+    - name: Deploy to GitHub Pages
+            uses: peaceiris/actions-gh-pages@v4
+            with:
+              github_token: ${{ secrets.GITHUB_TOKEN }}
+              publish_dir: ./site
+
+    - name: Upload PDF to release
+            if: github.ref_type == 'tag'
+            uses: actions/upload-artifact@v3
+            with:
+              name: docs-${{ github.ref_name }}.pdf
+              path: site/docs.pdf
+    ```
+
 ## Building a Community
 
 ### Overview
@@ -630,7 +714,6 @@ Please read the [GitHub documentation](https://docs.github.com/en/issues/plannin
 
 ![GitHub Project Boards GIF](_assets/gifs/create-github-project.gif)
 
-Learning how to start an open source project involves understanding the importance of clear goals, community, comprehensive documentation, and ensuring quality contributions get merged into your project. The [next chapter](issues-and-pull-requests.md) will discuss handling open issues and pull requests.
 
 [^investigate bug program]: Investigate the bug bounty program to see if we qualify
 [^finish security]: Finish the security requirement
