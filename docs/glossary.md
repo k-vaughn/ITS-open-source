@@ -1,12 +1,3 @@
-<style>
-body {
-  counter-set: section 1;
-}
-</style>
-
-# Glossary {.annex}
-For terms not defined here, English words are used in accordance with their definitions by the [merriam-webster online dictionary](https://www.merriam-webster.com). Electrical and electronic terms not defined in this section or in Webster's New Collegiate Dictionary are used in accordance with their definitions in ISO/IEC/IEEE 24765:2017.
-
 *[backlog]: A backlog is a list of tasks that need to be completed within a project. Typically, these are tasks that are not yet assigned to a developer and are waiting to be worked on. Sometimes, these could be tasks that were open weeks or months ago and are still waiting to be worked on.
 
 *[branch]: A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.
@@ -27,7 +18,7 @@ For terms not defined here, English words are used in accordance with their defi
 
 *[contributor]: A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.
 
-*[core Member]: A core member is a contributor who has been granted additional privileges or responsibilities within an open source project. Core members are typically trusted contributors who have demonstrated a deep understanding of the project and have made significant contributions to its development.
+*[core member]: A core member is a contributor who has been granted additional privileges or responsibilities within an open source project. Core members are typically trusted contributors who have demonstrated a deep understanding of the project and have made significant contributions to its development.
 
 *[docs]: Docs is an abbreviation for "documentation". It primarily explains how to implement and use a product or an open source project. It also provides information on how to contribute to the project and expectations for contributors. Documentation is often written using [Markdown](https://www.markdownguide.org/), a lightweight markup language.
 

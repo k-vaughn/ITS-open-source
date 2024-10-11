@@ -2,22 +2,19 @@
 
 <!-- markdownlint-disable MD041 -->
 
-`<style>`
-
-body {
-  counter-set: section 5;
-}
-`</style>`
+<style>
+  body { counter-set: section 5; }
+</style>
 
 <!-- markdownlint-enable MD033 -->
 
-# Maintainer Responsibilities
+# Maintainer Responsibilities {.body}
 
-## Overview
+## Overview {.body}
 
 The maintainer for an open-source project fulfills many responsibilities, including setting up the project, managing issues, reviewing submittals, and leading the development community. In addition, the maintainer is often a prime contributor.
 
-## Establish Repository
+## Establish Repository {.body}
 
 The maintainer **shall** work with the sponsoring SDO to establish the open-source repository for the project.
 
@@ -25,32 +22,32 @@ The maintainer **shall** work with the sponsoring SDO to establish the open-sour
 
     NTCIP repositories are hosted at[https://github.com/ite-org/](https://github.com/ite-org/).
 
-## Configure Project Settings
+## Configure Project Settings {.body}
 
-### Issues and Discussions
+### Issues and Discussions {.body}
 
 The maintainer **shall** ensure that the issues and discussion pages are enabled for the ITS open-source project.
 
 !!! note
     Within GitHub, issues are enabled by default but the discussions tab is disabled. To enable, go to the settings tab and select discussions in the general section.
 
-### Pages
+### Pages {.body}
 
 If the project includes documentation, the maintainer **shall** ensure that GitHub pages is enabled for the project.
 
 !!! note "GitHub Process"
     To activate GitHub Pages using MkDocs, create a gh-pages branch. The go to the settings tab and select pages from the left-hand menu. Set Source to "deploy from a branch" and then select the "gh-pages" branch and the /root directory.
 
-### Dependabot
+### Dependabot {.body}
 
 If the project includes code, the maintainer **may** configure Dependabot to report issues or create pull requests to update dependencies with security vulnerabilities.
 
 !!! note
     Dependabot is a GitHub feature that monitors the project's dependencies and reports any possible security vulnerabilities. To learn more about this feature, please read through the [GitHub documentation](https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide).
 
-## Set Up Project Files
+## Set Up Project Files {.body}
 
-### Overview
+### Overview {.body}
 
 The maintainer **shall** ensure the following files are provided in the repository when starting the project and maintained throughout the project:
 
@@ -80,7 +77,7 @@ Finally, the site **shall** include installation guidance, which **may** be cont
 !!! note "GitHub Help"
     A template repository containing all of these files, which can be used to initialize new projects, is stored on the [ITE GitHub Site](https://github.com/ite-org/open-source-template).
 
-### Readme.md File
+### Readme.md File {.body}
 
 The README.md file **shall** contain an introduction to the open-source project. A good readme file should be clear, concise, up-to-date, and detailed. This file is located in your root directory and is displayed as the homepage of the repository within GitHub.
 
@@ -109,7 +106,7 @@ The README.md file **shall** contain the following information:
 - [freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp/blob/main/README.md)
 - [ITS Open-Source Process]() [^add its os link]
 
-### Installation Guidance
+### Installation Guidance {.body}
 
 The installation guidance **may** be contained within the README.md file (e.g., if it is simple), be a separate file, or reference a section within the project documentation.
 
@@ -127,7 +124,7 @@ The best way to test your guide is by setting up the project locally using your 
 !!! example
     [OpenSauced Contributing Guidelines](https://opensauced.pizza/docs/contributing/introduction-to-contributing/)
 
-### Code of Conduct File
+### Code of Conduct File {.body}
 
 The CODE_OF_CONDUCT.md file **shall** define the rules and behaviors that are to be followed for the project.
 
@@ -136,7 +133,7 @@ The CODE_OF_CONDUCT.md file **should** consist of a reference to the [ITS Open-S
 !!! note
     It is expected that exceptions and extensions to the code of conduct will be rare.
 
-### Contributing File
+### Contributing File {.body}
 
 The CONTRIBUTING.md file **shall** define the rules for contributing to the project.
 
@@ -158,7 +155,7 @@ The CONTRIBUTING.md file **should** identify specific types of conventions that 
     - requirements for creating pull requests (e.g., fields that need to be included), and
     - requirements for pull requests to be approved (e.g., WG approvals)
 
-### License File
+### License File {.body}
 
 !!! quote "Per [The Legal Side of Open Source](https://opensource.guide/legal/)"
     Making your GitHub project public is not the same as licensing your project. Public projects are covered by [GitHub’s Terms of Service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#3-ownership-of-content-right-to-post-and-license-grants), which allows others to view and fork your project, but your work otherwise comes with no permissions.
@@ -177,7 +174,7 @@ For NTCIP projects involving code for a computer program, the license **should**
 !!! note
     The LGPL v3 license is designed for compilable software that runs on a machine. Like the CC BY license, it allows uers to use, distribute, modify, and contribute material as long as they give attribution to the original source and does not provide any rights to the names, trademarks, or logos of the original source.
 
-### Security file
+### Security file {.body}
 
 The SECURITY.md file **shall** [^finish security]
 
@@ -189,7 +186,7 @@ A lot of maintainers will choose to go with this security policy template:
 >
 > For repositories not covered by the Bug Bounty program, please open an issue. [^investigate bug program]
 
-### Code Owners File
+### Code Owners File {.body}
 
 The .github/CODEOWNERS file **shall** conform to the rules defined in the [official GitHub documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners).
 
@@ -199,7 +196,7 @@ The .github/CODEOWNERS file **shall** conform to the rules defined in the [offic
 !!! example
     By opting-in to "require approval" and "require review from code owners", a WG can require a majority of voting members of the WG to approve any pull request before it can be merged into the protected branch. This can reduce the chance of merging pull requests that can break production.
 
-### Issue Templates
+### Issue Templates {.body}
 
 The maintainer **shall** define appropriate issue forms.
 
@@ -213,7 +210,7 @@ The maintainer **shall** develop the forms using YAML per the GitHub instruction
 !!! example
     [`.github/ISSUE_TEMPLATE/documentation_bug.yml`](https://github.com/k-vaughn/ITS-open-source/tree/main/.github/ISSUE_TEMPLATE/documentation_bug.yml) or [`.github/ISSUE_TEMPLATE/documentation_enhancement.yml`](https://github.com/k-vaughn/ITS-open-source/tree/main/.github/ISSUE_TEMPLATE/documentation_enhancement.yml)
 
-### Pull Request Templates
+### Pull Request Templates {.body}
 
 The maintainer **shall** define appropriate pull request templates.
 
@@ -228,7 +225,7 @@ The maintainer **shall** define appropriate pull request templates.
 
 ![PR template example](_assets/images/pr-template.png)
 
-### Saved Replies
+### Saved Replies {.body}
 
 Sometimes, you repeatedly write the same reply to issues or pull requests. Clear communication between maintainers and contributors is crucial. So, when you write all comments manually, your messages will no longer be consistent and may be unclear. You can create saved replies when you frequently respond to issues and pull requests with the same comments.
 
@@ -238,14 +235,14 @@ Read the GitHub documentation for complete instructions about how to [create sav
 
 ![Saved replies gif](_assets/gifs/saved-replies.gif)
 
-### Gitignore File
+### Gitignore File {.body}
 
 If there are any files that are likely to exist within the project directory that should not become a part of the repository, the maintainer **shall** include a `.gitignore` file.
 
 !!! example
     Projects that include documentation that is based on MkDocs typically have a `site` directory generated by MkDocs as a part of the process to generate a static website for review. This directory is not intended to be part of the registry as GitHub will produce its own generated site. In this case, the project is to include a `.gitignore` file that contains the line "site/", as for this [project]().
 
-### Mkdocs.yml File
+### Mkdocs.yml File {.body}
 
 If the project includes documentation using MkDocs, the maintainer **shall** define a `mkdocs.yml` file.
 
@@ -262,7 +259,7 @@ If the project includes documentation using MkDocs, the maintainer **shall** def
 !!! example
     [Mkdocs file for ITS Open-Source Process]()
 
-### Deploy.yml File
+### Deploy.yml File {.body}
 
 If the project includes documentation using MkDocs, the maintainer **shall** define a `.github/workflows/deploy.yml` file that deploys the MkDocs site to GitHub Pages.
 
@@ -272,17 +269,17 @@ If the project includes documentation using MkDocs, the maintainer **shall** def
 !!! example
     [Deploy file for ITS Open-Source Process]()
 
-### Index File
+### Index File {.body}
 
 If the project includes documentation using MkDocs, the maintainer **shall** define a `docs/index.md` file that provides a cover page for the document.
 
-### Extra.css File
+### Extra.css File {.body}
 
 If the project includes documentation using MkDocs, the maintainer **shall** define a `docs/stylesheets/extra.css` file that defines the heading styles to be used for the body and the annexes (i.e., adding setion numbers in front of headings).
 
 The maintainer **shall** ensure that this badge only changes per the approval process defined for the project.
 
-### Main.html File
+### Main.html File {.body}
 
 If the project includes documentation using MkDocs, the maintainer **shall** define a `overrides/main.html` file that provides a badge that identifies the status of the project files.
 
@@ -294,7 +291,7 @@ The maintainer **shall** ensure that this badge only changes per the approval pr
 !!! example
     [Main.html file for ITS Open-Source Process]()
 
-### Nav.html File
+### Nav.html File {.body}
 
 If the project includes documentation using MkDocs, the maintainer **shall** define a `overrides/partials/nav.html` file that overrides the title assigned to the left-hand navigation menu to be "Contents".
 
@@ -304,7 +301,7 @@ If the project includes documentation using MkDocs, the maintainer **shall** def
 !!! example
     [Nav.html file for ITS Open-Source Process]()
 
-### Toc.html File
+### Toc.html File {.body}
 
 If the project includes documentation using MkDocs, the maintainer **shall** define a `overrides/partials/toc.html` file that overrides the title assigned to the navigation menu on the right side of the screen.
 
@@ -314,35 +311,35 @@ If the project includes documentation using MkDocs, the maintainer **shall** def
 !!! example
     [Toc.html file for ITS Open-Source Process]()
 
-## Define Project Structure
+## Define Project Structure {.body}
 
 Once the project is established, configured, and the loaded with the initial project files, the maintainer **shall** establish the plan for the project by defining issues along with any appropriate stub files that can provide further guidance.
 
 !!! note
     This includes defining the plan for all aspects of the project (e.g., documentation and code).
 
-## Issue Triage
+## Issue Triage {.body}
 
-### Overview
+### Overview {.body}
 
 Once issues are being created for the project, the maintainer will need to triage these issues to ensure that they contribute to the project plan and so that they can be claimed by contributors.
 
 Learning to triage issues is essential for any open-source maintainer. This involves going through the existing list of open issues and prioritizing them in order of importance. Some open issues will be critical bug fixes, while others might be nice to have feature requests. Sometimes, you might have issues opened for things that are not a right fit for the project.
 
-### Pre-Assessment
+### Pre-Assessment {.body}
 
-#### Overview
+#### Overview {.body}
 
 Prior to performing any detailed triage, it is important to screen reported issues that are not appropriate for further investigation.
 
-#### Dealing with Spam
+#### Dealing with Spam {.body}
 
 When a comment is spam, clearly combative, or unhelpful, the maintainer **should** avoid direct engagement, label the issue as `spam`, close the issue, and move on.
 
 !!! example
     This project is terrible! Nothing works, and your code is garbage. I can't believe anyone would use this. Fix it ASAP!!!
 
-#### Insufficient Information Issues
+#### Insufficient Information Issues {.body}
 
 When a comment does not provide concrete details about the issue, the maintainer **should** respond by requesting more information.
 
@@ -353,7 +350,7 @@ If the commenter does not respond within a week, the maintainer **should** messa
 
 If a few weeks pass and the issue is not considered critical, the maintainer **may** close the issue.
 
-#### Stale Issues
+#### Stale Issues {.body}
 
 The maintainer **may** may label issues that have not been worked on for months as `stale`.
 
@@ -364,7 +361,7 @@ If the maintainer wishes to resurrect a `stale` issue, the maintainer **shall** 
 
 If the maintainer believes a `stale` issue no longer applies, the maintainer **should** close the issue. This process **may** be automated (e.g., using an action like [Close Stale Issues and PRs](https://github.com/actions/stale).
 
-#### Ensuring Proper categorization
+#### Ensuring Proper categorization {.body}
 
 For issues that have sufficient information and are not `spam` or `stale`, the maintainer **shall** add and/or remove labels as appropriate for proper management.
 
@@ -414,14 +411,14 @@ The following labels **should** be considered for most specification projects:
    - **next release:** Indicates that the issue is planned for inclusion in the upcoming release.
    - **future:** Refers to issues or features planned for future releases beyond the current roadmap.
 
-### Triaging Bugs
+### Triaging Bugs {.body}
 
 The maintainer **should** verify the existance of any reported bug.
 
 !!! note
     If the maintainer expects to assign the issue to himself, the verification step can be postponed until the action is undertaken to correct the bug. If the bug cannot be verified, reply to the issue's original poster to gain more information and context.
 
-### Triaging Feature Requests
+### Triaging Feature Requests {.body}
 
 The maintainer **shall** ensure that any new feature request fits into the vision for the project.
 
@@ -435,29 +432,29 @@ The maintainer **shall** communicate with the original poster of the issue to de
 !!! note
     Complex issues are best assigned to core team members.
 
-### Triaging Duplicate Issues
+### Triaging Duplicate Issues {.body}
 
 When assigning a `duplicate` label, the maintainer **should** respond  to the originator of the issue.
 
 !!! example
     Thank you for taking the time to open this issue. Another team member is working on this feature, which will be added soon. As a result, we are going to close this issue.
 
-### Triaging Rejected Issues
+### Triaging Rejected Issues {.body}
 
 When assigning a `wontfix` label, the maintainer **should** respond  to the originator of the issue.
 
 !!! example
     Thank you for being so interested in our project. The feature you have proposed would not be a good fit for this project's current scope and direction. At this time, we will not be moving forward with this feature.
 
-## Reviewing Pull Requests
+## Reviewing Pull Requests {.body}
 
-### Overview
+### Overview {.body}
 
 It is the maintainer's responsibility to ensure that the suggested code or documentation update meets the standards of the project and doesn't introduce any new issues for the project. You will also need to work with the contributor to help solve issues they encounter.
 
-### Pre-Assessment
+### Pre-Assessment {.body}
 
-#### Spam Pull Requests
+#### Spam Pull Requests {.body}
 
 For any pull request deemed to be spam, the maintainer **should** label the request as `spam`, close the pull request, and not respond to the contributor.
 
@@ -468,7 +465,7 @@ For any pull request deemed to be spam, the maintainer **should** label the requ
 - numerous links to unrelated websites or promotes products/services
 - plagiarized content from other sources without permission or proper attribution
 
-#### Low-Quality Pull Requests
+#### Low-Quality Pull Requests {.body}
 
 For a pull request deemed to be of low quality, the maintainer **should** reach out to the author, explaining what needs to be added and what changes need to be made.
 
@@ -483,24 +480,24 @@ For a pull request deemed to be of low quality, the maintainer **should** reach 
 
     Most of the time, low-quality pull requests are due to contributors not being aware of the rules to follow and need extra explanation and time to improve their pull requests.
 
-#### Stale Pull Requests
+#### Stale Pull Requests {.body}
 
 If the maintainer is unable to get a response from a contributor regarding an issue after a repeated attempts over several weeks, the maintainer **may** reassign the associated issue; if there is an associated pending pull request, the maintainer **shall** either close the pull request or take it over (i.e., by using the code in the pull request as the starting point for additional modifications).
 
-### Testing
+### Testing {.body}
 
-#### Overview
+#### Overview {.body}
 
 The maintainer **shall** review each contribution to ensure that all tests pass, the contribution works as expected without introducing errors.
 
-#### Automated Testing
+#### Automated Testing {.body}
 
 The maintainer **should** maintain automated tests to protext against errors.
 
 !!! note "GitHub Help"
     GitHub allows maintainers to set up an automated test suite that runs on every pull request and merges into the main branch. Good automated test suites can help catch bugs from going into production and breaking the application.
 
-#### Failing Automated Tests
+#### Failing Automated Tests {.body}
 
 If a maintainer receives a pull request that fails automated testing, the maintainer **should** wait a few days to allow the contributor to resolve the issue independently.
 
@@ -515,21 +512,21 @@ If the contributor fails to respond after repeated attempts over several weeks o
 
 ![Failed automated tests](_assets/images/failed-automated-tests.png)
 
-#### Code Reviews
+#### Code Reviews {.body}
 
 Prior to accepting any pull request, the maintainer **shall** review all proposed changes to ensure that they are designed to address the reported issue as claimed and that they conform to the projects coding and documentation guidelines.
 
 !!! note
     Performing this test before manual testing is useful as it will provide insights into the types of manual tests that are most appropriate.
 
-#### Manual Testing
+#### Manual Testing {.body}
 
 Prior to accepting a significant pull request, the maintainer **should** manually test the project using his local machine.
 
 !!! note
     If a pull request involves a small change to documentation or code, manual testing is less important, but the maintainer is the last line of defense before a pull request is merged in, which can potentially introduce new issues.
 
-### Effective Feedback
+### Effective Feedback {.body}
 
 If the maintainer discovers a problem with the pull request, the maintainer **shall** respond to the contributor with a detailed account of the problem.
 
@@ -544,14 +541,14 @@ The maintainer **shall** indicate the importance of each problem identified in t
 !!! example
     High: Please use more descriptive variable names for better readability. For example, revise the code to replace variable `d` with `duration`.
 
-#### Missing Tests
+#### Missing Tests {.body}
 
 Significant contributions of code **should** be accompanied with tests to help ensure that everything is working as expected.
 
 !!! note
     If the contribution does not include such tests, reach out to them to determine how they tested their contribution and let them know what parts need to be tested.
 
-## Creating a Release
+## Creating a Release {.body}
 
 The maintainer **shall** create a formal release for each version of the document approved for release by the responsible WG or committee.
 
@@ -635,15 +632,15 @@ gh-pages/
               path: site/docs.pdf
     ```
 
-## Building a Community
+## Building a Community {.body}
 
-### Overview
+### Overview {.body}
 
 A vital component of any open source project is its community. Building a strong community can help accelerate the growth of your open source project. As new contributors discover and start to contribute to your project, you will want to create spaces for communication and collaboration.
 
 If your project is on GitHub, you can use [GitHub Discussions](https://docs.github.com/en/discussions) as a way for contributors to post questions and facilitate conversations. WG meetings should be advertised on the discussion board to encourage participation.
 
-### Promptly Respond and Address Concerns
+### Promptly Respond and Address Concerns {.body}
 
 Maintainers **should** establish a schedule to review incoming issues and pull requests and post this schedule within the discussion forum.
 
@@ -658,11 +655,9 @@ The maintainer **should** set up [GitHub Actions](https://docs.github.com/en/act
 
 ![Create GitHub Action](_assets/images/gh-actions.png)
 
-## Advanced Features
+## Advanced Features {.body}
 
-### GitHub Actions
-
-#### Overview
+### Overview {.body}
 
 Leveraging GitHub Actions to bring Continuous Integration / Continuous Delivery or Deployment (CI/CD) into your workflow directly in your repository will let you run code, test, build, and deliver or deploy software with simple and secure workflows. Automating these tasks will speed up your deployment process.
 
@@ -675,19 +670,19 @@ Below are some helpful resources to help you build a CI/CD pipeline with GitHub 
 
 There are many types of actions that you can set up for your project, depending on what you need. Below are some GitHub Actions that you usually find across repositories:
 
-#### Linter
+### Linter {.body}
 
 Most open source repositories have linters that run on each pull request. Linter is a tool for detecting potential errors and maintaining a consistent code style in a project. [Super-Linter](https://github.com/marketplace/actions/super-linter) is one of the most used actions. This action can help you maintain code quality and achieve a more readable and consistent style.
 
-#### Code Scanning Tools
+### Code Scanning Tools {.body}
 
 Code scanning is a tool for detecting security vulnerabilities, possible bugs, and errors in code. You can use GitHub's [code scanning](https://docs.github.com/en/code-security/code-scanning) feature and configure tools like [CodeQL](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql), which GitHub maintains, or third-party scanning tools such as [SonarQube](https://github.com/marketplace/actions/official-sonarqube-scan).
 
-#### Testing
+### Testing {.body}
 
 Setting up actions to run tests is helpful to ensure your app functions and performs as it should and that no regressions occur with new changes. [Cypress GitHub Action](https://docs.cypress.io/guides/continuous-integration/github-actions) is one of the examples of actions for E2E testing. You can also check out [Is Website Vulnerable](https://github.com/marketplace/actions/is-website-vulnerable) to find publicly known security vulnerabilities in JavaScript libraries' websites or [Step CI Action](https://github.com/marketplace/actions/step-ci-action) for API quality assurance.
 
-#### Creating and Customizing Actions
+### Creating and Customizing Actions {.body}
 
 Actions of note:
 
@@ -697,7 +692,7 @@ Actions of note:
 
 You can read more about GitHub Actions and how to create one in [the official documentation](https://github.com/features/actions).
 
-### Projects
+### Projects {.body}
 
 Keeping track of your issues is getting more challenging as your project progresses. A great tool that can help you organize and track your issues is [Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) on GitHub. With projects, you can efficiently manage your project's features, roadmaps, or releases as they're built from and integrated with issues and pull requests that you add.
 

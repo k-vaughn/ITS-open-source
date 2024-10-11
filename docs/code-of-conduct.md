@@ -1,6 +1,6 @@
 <style>
 body {
-  counter-set: section 2; 
+  counter-set: section 1; 
 }
 </style>
 

@@ -13,11 +13,10 @@ nav:
   - 4 Contributor Responsibilities: contributor-responsibilities.md
   - 5 Maintainer Responsibilities: maintainer-responsibilities.md
   - 6 WG Responsibilities: wg-responsibilities.md
-  - A Glossary: glossary.md
-  - B Code of Conduct: code-of-conduct.md
-  - C Documentation Conventions: documentation-conventions.md
-  - D Coding Conventions: code-quality.md
-  - E Requirements Management: requirement-management.md
+  - A Code of Conduct: code-of-conduct.md
+  - B Documentation Conventions: documentation-conventions.md
+  - C Coding Conventions: code-quality.md
+  - D Requirements Management: requirement-management.md
 site_url: https://github.com/k-vaughn/ITS-open-source
 copyright: <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/k-vaughn/ITS-open-source">ITS Open-Source Process</a> by <span property="cc:attributionName">NTCIP</span> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
 theme:
@@ -25,6 +24,7 @@ theme:
   features:
     - content.code.copy
     - content.status
+    - content.tooltips
     - icons
     - navigation.path
     - navigation.top
@@ -38,6 +38,7 @@ plugins:
   - git-revision-date-localized:
       type: date
 markdown_extensions:
+  - abbr
   - admonition
   - attr_list
   - md_in_html
@@ -53,7 +54,7 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets:
       auto_append:
-        - glossary.md
+        - docs/glossary.md
   - pymdownx.superfences
   - toc:
       permalink: true

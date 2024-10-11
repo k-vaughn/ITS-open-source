@@ -1,7 +1,5 @@
 <style>
-body {
-  counter-set: section 3;
-}
+  body { counter-set: section 3; }
 </style>
 
 # Coding Conventions {.annex}
