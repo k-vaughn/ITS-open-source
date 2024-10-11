@@ -10,28 +10,34 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the code from your repository
-      - uses: actions/checkout@v3
+      # Step 1: Check out the code
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      # Set up Node.js 20 to avoid Node.js deprecation warning
+      # Step 2: Set up Node.js 20 to avoid Node.js deprecation warning
       - name: Set up Node.js 20
         uses: actions/setup-node@v3
         with:
           node-version: '20'
 
-      # Set up Python for MkDocs
+      # Step 3: Set up Python
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      # Install MkDocs Material and git-revision-date-localized plugin
+      # Step 4: Install dependencies
       - name: Install dependencies
         run: |
-          pip install mkdocs-material
+          pip install mkdocs-material pymdown-extensions
           pip install mkdocs-git-revision-date-localized-plugin
 
-      # Deploy the site to GitHub Pages (gh-pages branch)
+      # Step 5: Run the glossary processing script
+      - name: Generate glossary annex
+        run: |
+          python process_glossary.py
+
+      # Step 6: Deploy the site to GitHub Pages (gh-pages branch)
       - name: Deploy to GitHub Pages
         run: |
           mkdocs gh-deploy --force --verbose
