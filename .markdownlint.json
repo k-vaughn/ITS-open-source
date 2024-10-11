@@ -1,0 +1,11 @@
+{
+  "MD033": {
+    "allowed_elements": ["style"]
+  },
+  "MD041": false,
+  "customRules": [
+        "./markdownlint-custom.js"
+   ],
+   "require-heading-body": false,
+   "require-heading-annex": false
+}

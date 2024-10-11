@@ -175,9 +175,25 @@ After pulling and merging the latest updates but prior to submitting the PR, the
 
 ### Commit the Update {.body}
 
-Prior to pushing the proposed changes to online repository, the contributor **shall** commit the changes in the working directory.
+Prior to pushing the proposed changes to online repository, the contributor
+**shall** commit the changes in the working directory.
 
-The contributor **may** perform interim commits during the development of the proposed changes. 
+The contributor **may** perform interim commits during the development of the
+proposed changes.
+
+The contributor **shall** use the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+specification for structuring commit messages.
+
+Here are some examples of Conventional Commit messages:
+
+```text
+feat: add password reset functionality
+docs: update installation instructions
+chore(build): update dependencies
+fix(login): resolve issue with incorrect password validation
+refactor(api): streamline error handling in user service
+```
+
 
 !!! note
     Committing changes ensures that the changes are logged in the contributor's local git account and is required prior to pushing the material to the contributor's online copy.
