@@ -83,7 +83,7 @@ pip install mkdocs-material pymdown-extensions
 
 The content of ITS open-source documentation is generally written in [Markdown](https://www.markdownguide.org/), a lightweight and easy-to-use markup language that allows you to format text in a readable and visually appealing way.
 
-Please read the "[Using Markdown for This Project](#using-markdown-for-this-project)" section for details about how to use it in this project.
+Please read the "[Frequently Used Markdown](#frequently-used-markdown)" section for details about how to use it in this project.
 
 ### Default Document Structure {.annex}
 
@@ -111,11 +111,9 @@ The document structure **shall** be reflected in the project's `mkdocs.yml` file
     - 4 Contributor Responsibilities: contributor-responsibilities.md
     - 5 Maintainer Responsibilities: maintainer-responsibilities.md
     - 6 WG Responsibilities: wg-responsibilities.md
-    - A Glossary: glossary.md
-    - B Code of Conduct: code-of-conduct.md
-    - C Documentation Conventions: documentation-conventions.md
-    - D Coding Conventions: code-quality.md
-    - E Requirements Management: requirement-management.md
+    - A Code of Conduct: code-of-conduct.md
+    - B Documentation Conventions: documentation-conventions.md
+    - C Coding Conventions: code-quality.md
 ```
 
 !!! note
@@ -201,7 +199,7 @@ Each file representing an annex of the document **shall**:
 
 ### Adding Definitions to the Glossary {.annex}
 
-If you add definitions to the project's [glossary](glossary.md), ensure the definitions are added **alphabetically**.
+If you add definitions to the project's [glossary](https://github.com/k-vaughn/ITS-open-source/resources/glossary.md), ensure the definitions are added **alphabetically**.
 
 ### Frequently Used Markdown {.annex}
 

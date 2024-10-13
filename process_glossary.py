@@ -1,8 +1,8 @@
 import re
 
 # Define file paths
-glossary_file = 'docs/glossary.md'
-scope_file = 'docs/scope.md'
+glossary_file = 'resources/glossary.md'
+scope_file = 'resources/scope.md'
 general_file = 'docs/general.md'
 
 # Read the scope content
