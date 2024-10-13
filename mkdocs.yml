@@ -1,4 +1,5 @@
 site_name: ITS Open Source Process
+site_description: ITS Open Source Process {{ release-number }}
 repo_url: https://github.com/k-vaughn/ITS-open-source
 nav:
   - Front Matter:
@@ -32,6 +33,7 @@ theme:
     repo: fontawesome/brands/github
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/pdf.css
 plugins:
   - search
   - git-revision-date-localized:
@@ -62,3 +64,4 @@ extra:
     highlight: true
   hide:
     - title
+  document_identifier: NTCIP X8008
