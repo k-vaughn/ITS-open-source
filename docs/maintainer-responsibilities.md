@@ -1,3 +1,4 @@
+<!-- markdownlint-enable require-heading-body -->
 <style>
   body { counter-set: section 5; }
 </style>

@@ -1,3 +1,4 @@
+<!-- markdownlint-enable require-heading-annex -->
 <style>
   body { counter-set: section 3; }
 </style>

@@ -38,7 +38,10 @@ plugins:
   - search
   - git-revision-date-localized:
       type: date
-  - pdf-export
+  - pdf-export:
+      enabled_if_env: 'EXPORT_PDF'
+      combined: true
+      combined_output_path: pdf/NTCIPx8008.pdf
 markdown_extensions:
   - abbr
   - admonition
@@ -65,4 +68,4 @@ extra:
     highlight: true
   hide:
     - title
-  document_identifier: NTCIP X8008
+    
