@@ -25,7 +25,7 @@ jobs:
       - name: Check for "triage needed" label
         id: triage_check
         run: |
-          if echo "${{ steps.issue.outputs.result }}" | grep -q "triage needed"; then
+          if echo '${{ steps.issue.outputs.result }}' | jq '.[].name' | grep -q "triage needed"; then
             echo "Issue is still in triage, cannot assign.";
             exit 1;
           fi
