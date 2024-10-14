@@ -47,7 +47,6 @@ jobs:
       # Step 6: Replace placeholders in mkdocs.yml, docs, and css
       - name: Replace placeholders in files
         run: |
-#          DOC_IDENTIFIER=$(yq e '.extra.document_identifier' mkdocs.yml)
           COPYRIGHT=$(yq e '.copyright' mkdocs.yml)
           RELEASE_TAG=${{ env.RELEASE_TAG }}
 
@@ -58,7 +57,6 @@ jobs:
           sed -i "s/{{ release_number }}/$RELEASE_TAG/g" docs/index.md
 
           # Replace in CSS for PDF
-#          sed -i "s/{{ document_identifier }}/$DOC_IDENTIFIER/g" docs/stylesheets/pdf.css
           sed -i "s/{{ release_number }}/$RELEASE_TAG/g" docs/stylesheets/pdf.css
           sed -i "s/{{ copyright }}/$COPYRIGHT/g" docs/stylesheets/pdf.css
 
