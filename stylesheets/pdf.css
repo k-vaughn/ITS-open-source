@@ -7,7 +7,7 @@
 	font-size: 10pt;
     color: grey;
     @top-left {
-        content: 'NTCIP X8008 2024-10-14_00-56-03';
+        content: 'NTCIP X8008 v00.0.0-alpha2';
     }
     @top-right {
         content: 'Page ' counter(page);
