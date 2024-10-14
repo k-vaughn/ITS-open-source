@@ -1069,7 +1069,7 @@
           
           
             <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset"><a class="md-content__button md-icon" download href="documentation-conventions.pdf" title="PDF Export"><svg style="height: 1.2rem; width: 1.2rem;" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm76.45 211.36l-96.42 95.7c-6.65 6.61-17.39 6.61-24.04 0l-96.42-95.7C73.42 337.29 80.54 320 94.82 320H160v-80c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v80h65.18c14.28 0 21.4 17.29 11.27 27.36zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"></path></svg></a>
+              <article class="md-content__inner md-typeset">
                 
                   
 
@@ -1077,23 +1077,29 @@
   
 
 
+<!-- markdownlint-enable require-heading-annex -->
 <style>
-body {
-  counter-set: section 2; 
-}
+body { counter-set: section 2; }
 </style>
 
 <h1 class="annex" id="documentation-conventions">Documentation Conventions<a class="headerlink" href="#documentation-conventions" title="Permanent link">&para;</a></h1>
 <h2 class="annex" id="exceptions-allowed">Exceptions Allowed<a class="headerlink" href="#exceptions-allowed" title="Permanent link">&para;</a></h2>
-<p>Unless otherwise stated in the project-specific CONTRIBUTIONS.md file, each project based on this specification <strong>shall</strong> develop documentation as defined by this annex.</p>
+<p>Unless otherwise stated in the project-specific CONTRIBUTIONS.md file, each
+project based on this specification <strong>shall</strong> develop documentation as defined
+by this annex.</p>
 <h2 class="annex" id="development-environment">Development Environment<a class="headerlink" href="#development-environment" title="Permanent link">&para;</a></h2>
 <h3 class="annex" id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h3>
-<p>In addition to the development tools needed to manage and submit any contribution within the Git environment (e.g., Git, GitHub), developing project documentation requires the following tools:</p>
+<p>In addition to the development tools needed to manage and submit any
+contribution within the Git environment (e.g., Git, GitHub), developing project
+documentation requires the following tools:</p>
 <ul>
 <li><strong>A text editor,</strong> which is used to create and edit markdwon and yaml files,</li>
 <li><strong>Python,</strong> which is required to run MkDocs,</li>
-<li><strong>MkDocs,</strong> which is an open-source tool for translating a set of markdown files into a static website, and</li>
-<li><strong>Materials for MkDocs,</strong> which is an open-source tool that extends the markdown language to support additional features that are useful for developing the look and feel of the project's documentation.</li>
+<li><strong>MkDocs,</strong> which is an open-source tool for translating a set of markdown
+  files into a static website, and</li>
+<li><strong>Materials for MkDocs,</strong> which is an open-source tool that extends the
+  markdown language to support additional features that are useful for
+  developing the look and feel of the project's documentation.</li>
 </ul>
 <p>This combination of tools has been selected because it:</p>
 <ul>
@@ -1105,46 +1111,88 @@ body {
 <li>when coupled with add-ons, can produce PDFs</li>
 <li>has an active development community</li>
 </ul>
-<p>It is recommended to establish this development environment prior to making any edits. Generating the documentation website locally from a known baseline allows the contributor to verify that the development environment is working correctly prior to introducing edits to the files. Contributors are required to generate the documentation locally to verify that their proposed changes do not introduce any errors to the project. The MkDocs development environemnt allows users to see their changes in real time so that any errors can be addressed quickly.</p>
+<p>It is recommended to establish this development environment prior to making any
+edits. Generating the documentation website locally from a known baseline allows
+the contributor to verify that the development environment is working correctly
+prior to introducing edits to the files. Contributors are required to generate
+the documentation locally to verify that their proposed changes do not introduce
+any errors to the project. The MkDocs development environemnt allows users to
+see their changes in real time so that any errors can be addressed quickly.</p>
 <h3 class="annex" id="text-editor">Text Editor<a class="headerlink" href="#text-editor" title="Permanent link">&para;</a></h3>
-<p>Any text editor can be used to produce markdown and yaml files. These files are to have the extensions of ".md" and ".yml", respectively.</p>
-<p>Contributors are encouraged to use <a href="https://code.visualstudio.com">Visual Studio Code</a>, which is an open-source editor, with the following extensions enabled as it provides a reasonably close rendering of the final display format:</p>
+<p>Any text editor can be used to produce markdown and yaml files. These files are
+to have the extensions of ".md" and ".yml", respectively.</p>
+<p>Contributors are encouraged to use <a href="https://code.visualstudio.com">Visual Studio
+Code</a>, which is an open-source editor, with the
+following extensions enabled as it provides a reasonably close rendering of the
+final display format:</p>
 <ul>
-<li>Markdown Preview Enhanced by Yiyi Wang, this extension provides a markdown previewer with support for diagrams, math (LaTeX), mermaid, charts, and more;</li>
-<li>markdownlint by David Anson, this extension assists in ensuring markdown files follow consistent formatting rules; and</li>
-<li>YAML by Red Hat, this extension provides syntax highlighting, validation, and autocomplete for YAML files.</li>
+<li>Markdown Preview Enhanced by Yiyi Wang, this extension provides a markdown
+  previewer with support for diagrams, math (LaTeX), mermaid, charts, and more;</li>
+<li>markdownlint by David Anson, this extension assists in ensuring markdown files
+  follow consistent formatting rules; and</li>
+<li>YAML by Red Hat, this extension provides syntax highlighting, validation, and
+  autocomplete for YAML files.</li>
 </ul>
-<p>While any text editor can be used, this suite of tools offers a free solution that is designed to render the markdown in real-time while assisting the user in producing high quality code. However, users should be aware that the toolset still does not attempt to render some of the more advanced features of Materials for MkDocs. The final look and feel can be obtained using the MkDocs server.</p>
+<p>While any text editor can be used, this suite of tools offers a free solution
+that is designed to render the markdown in real-time while assisting the user in
+producing high quality code. However, users should be aware that the toolset
+still does not attempt to render some of the more advanced features of Materials
+for MkDocs. The final look and feel can be obtained using the MkDocs server.</p>
 <h3 class="annex" id="python">Python<a class="headerlink" href="#python" title="Permanent link">&para;</a></h3>
-<p>MkDocs requires Python 3.8 or higher. You can check to see if Python is already installed and its version with the following command:</p>
+<p>MkDocs requires Python 3.8 or higher. You can check to see if Python is already
+installed and its version with the following command:</p>
 <p><code>python --version</code></p>
-<p>The most recent version of Python can be installed from <a href="https://www.python.org/downloads/">official Python website</a>.</p>
-<p>Once installed, you should verify by running both the <code>python --version</code> and <code>pip --version</code> commands. PIP should be installed as a part of the Python package.</p>
+<p>The most recent version of Python can be installed from <a href="https://www.python.org/downloads/">official Python
+website</a>.</p>
+<p>Once installed, you should verify by running both the <code>python --version</code> and
+<code>pip --version</code> commands. PIP should be installed as a part of the Python
+package.</p>
 <h3 class="annex" id="mkdocs">MkDocs<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h3>
-<p>Running the MkDocs server locally allows the contributor to see proposed changes in real-time and test them thoroughly prior to submitting pull requests. To install MkDocs, run</p>
+<p>Running the MkDocs server locally allows the contributor to see proposed changes
+in real-time and test them thoroughly prior to submitting pull requests. To
+install MkDocs, run</p>
 <p><code>pip install mkdocs</code></p>
 <p>Once installed, verify its installation with:</p>
 <p><code>mkdocs --version</code></p>
-<p>Once you have verified the installation, start the MkDocs server by changing to the directory containing your cloned copy of the project repository and running</p>
+<p>Once you have verified the installation, start the MkDocs server by changing to
+the directory containing your cloned copy of the project repository and running</p>
 <p><code>mkdocs serve</code></p>
-<p>Once the server is running, you can direct a web browser to <strong>http://127.0.0.1:8000</strong> to see the development version of the website. This site will be updated in realtime as you update files in the repository. If you want to create a static site, However, to render all elements within the project correctly, you will need to install Materials for MkDocs.</p>
+<p>Once the server is running, you can direct a web browser to <a href="http://127.0.0.1:8000">localhost port
+8000</a> to see the development version of the website. This
+site will be updated in realtime as you update files in the repository. If you
+want to create a static site, However, to render all elements within the project
+correctly, you will need to install Materials for MkDocs.</p>
 <h3 class="annex" id="materials-for-mkdocs">Materials for MkDocs<a class="headerlink" href="#materials-for-mkdocs" title="Permanent link">&para;</a></h3>
-<p>To install Materials for MkDocs and the commonly used extensions for ITS projects, run the following command:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip install mkdocs-material pymdown-extensions
+<p>To install Materials for MkDocs and the commonly used extensions for ITS
+projects, run the following command:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-material<span class="w"> </span>pymdown-extensions
 </span></code></pre></div>
 <h2 class="annex" id="working-with-the-content">Working with the Content<a class="headerlink" href="#working-with-the-content" title="Permanent link">&para;</a></h2>
-<p>The content of ITS open-source documentation is generally written in <a href="https://www.markdownguide.org/">Markdown</a>, a lightweight and easy-to-use markup language that allows you to format text in a readable and visually appealing way.</p>
-<p>Please read the "<a href="#frequently-used-markdown">Frequently Used Markdown</a>" section for details about how to use it in this project.</p>
+<p>The content of ITS open-source documentation is generally written in
+<a href="https://www.markdownguide.org/">Markdown</a>, a lightweight and easy-to-use markup
+language that allows you to format text in a readable and visually appealing
+way.</p>
+<!-- markdownlint-disable-next-line MD051 -->
+<p>Please read the "<a href="#frequently-used-markdown">Frequently Used Markdown</a>" section
+for details about how to use it in this project.</p>
 <h3 class="annex" id="default-document-structure">Default Document Structure<a class="headerlink" href="#default-document-structure" title="Permanent link">&para;</a></h3>
-<p>ITS open-source projects can cover a range of projects that have wildly different documentation needs. Each project is allowed to define its own structure, but unless otherwise specified <strong>shall</strong> use the structure defined in this document, which is intended for projects that result in a product that can be conceptualized as a single traditional document (e.g., a traditional standard).</p>
-<p>Each major portion of the document <strong>shall</strong> be defined in a separate markdown file. Major portions are defined as:</p>
+<p>ITS open-source projects can cover a range of projects that have wildly
+different documentation needs. Each project is allowed to define its own
+structure, but unless otherwise specified <strong>shall</strong> use the structure defined in
+this document, which is intended for projects that result in a product that can
+be conceptualized as a single traditional document (e.g., a traditional
+standard).</p>
+<p>Each major portion of the document <strong>shall</strong> be defined in a separate markdown
+file. Major portions are defined as:</p>
 <ul>
 <li>the title page, which shall be <code>index.md</code>;</li>
 <li>each top-level section of the front matter (e.g., Foreword, Introduction);</li>
 <li>each section in the body of the docuemnt; and</li>
 <li>each annex.</li>
 </ul>
-<p>The document structure <strong>shall</strong> be reflected in the project's <code>mkdocs.yml</code> file under the <code>nav</code> section with all front matter located under a <code>Front Matter</code> heading.</p>
+<p>The document structure <strong>shall</strong> be reflected in the project's <code>mkdocs.yml</code> file
+under the <code>nav</code> section with all front matter located under a <code>Front Matter</code>
+heading.</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>    - Front Matter:
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>      - Title Page: index.md
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>      - Notices: notices.md
@@ -1163,11 +1211,15 @@ body {
 </span></code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>When using the default configuration for ITS projects, this results in a left-hand left-hand navigation bar that shows the major portions of the document while the right-hand navigation shows the content of the currently opened section.</p>
+<p>When using the default configuration for ITS projects, this results in
+a left-hand left-hand navigation bar that shows the major portions of the
+document while the right-hand navigation shows the content of the currently
+opened section.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Be sure to follow naming conventions. Notice that file names are not capitalized, and there are hyphens in place of spaces between words.</p>
+<p>Be sure to follow naming conventions. Notice that file names are not
+capitalized, and there are hyphens in place of spaces between words.</p>
 </div>
 <h3 class="annex" id="structure-of-the-title-page-file">Structure of the Title Page File<a class="headerlink" href="#structure-of-the-title-page-file" title="Permanent link">&para;</a></h3>
 <p>The <code>index.md</code> file <strong>shall</strong> represent the title page of the document and <strong>shall</strong>:</p>
@@ -1183,16 +1235,26 @@ body {
 <p class="admonition-title">Example of a Title Page File</p>
 <div class="language-markdown highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="gh">#</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="gh">&lt;!-- markdownlint-disable MD033 --&gt;</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="gs">**&lt;div style=&quot;text-align: center; font-style: italic;&quot;&gt;A proposal to the NTCIP Joint Committee&lt;/div&gt;**</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="gs">**&lt;div style=&quot;text-align: center; font-size: 1.5em;&quot;&gt;NTCIP X8008&lt;/div&gt;**</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>---
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="gs">**&lt;div style=&quot;text-align: center; font-size: 1.5em;&quot;&gt;National Transportation Communications ITS Protocol&lt;/div&gt;**</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="gs">**&lt;div style=&quot;text-align: center; font-size: 2em;&quot;&gt;ITS Open-Source Process&lt;/div&gt;**</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>&lt;!-- markdownlint-enable MD033 --&gt;
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>&lt;div style=&quot;text-align: center; font-style: italic; font-weight: bold;&quot;&gt;
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>  A proposal to the NTCIP Joint Committee&lt;/div&gt;
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>&lt;div style=&quot;text-align: center; font-size: 1.5em; font-weight: bold;&quot;&gt;
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>  NTCIP X8008
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="gu">&lt;/div&gt;</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="gu">---</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>&lt;div style=&quot;text-align: center; font-size: 1.5em; font-weight: bold;&quot;&gt;
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>  National Transportation Communications ITS Protocol
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>&lt;/div&gt;
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>&lt;div style=&quot;text-align: center; font-size: 2em; font-weight: bold;&quot;&gt;
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>  ITS Open-Source Process
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>&lt;/div&gt;
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>&lt;!-- markdownlint-enable MD033 --&gt;
 </span></code></pre></div>
 </div>
 <h3 class="annex" id="structure-of-all-other-front-matter-files">Structure of All Other Front Matter Files<a class="headerlink" href="#structure-of-all-other-front-matter-files" title="Permanent link">&para;</a></h3>
-<p>Each file representing a major portion of the front matter, other than the title page, <strong>shall</strong> include a single level 1 heading that has the same title as defined in the <code>nav</code> section of the <code>mkdocs.yml</code> file and is the first line of the document</p>
+<p>Each file representing a major portion of the front matter, other than the title
+page, <strong>shall</strong> include a single level 1 heading that has the same title as
+defined in the <code>nav</code> section of the <code>mkdocs.yml</code> file and is the first line of
+the document</p>
 <div class="admonition example">
 <p class="admonition-title">Example of Start of a Front Matter File</p>
 <div class="language-markdown highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="gh"># Foreword</span>
@@ -1201,8 +1263,11 @@ body {
 <h3 class="annex" id="structure-of-a-section-file">Structure of a Section File<a class="headerlink" href="#structure-of-a-section-file" title="Permanent link">&para;</a></h3>
 <p>Each file representing a section of the main body of the document <strong>shall</strong>:</p>
 <ul>
-<li>Start with code that sets the section counter for the body to the section number while suppressing unwanted markdownlint warnings</li>
-<li>Include a single level 1 heading that has the same title as defined in the <code>nav</code> section of the <code>mkdocs.yml</code> file and occurs immediately after the code defining the section number</li>
+<li>Start with code that sets the section counter for the body to the section
+  number while suppressing unwanted markdownlint warnings</li>
+<li>Include a single level 1 heading that has the same title as defined in the
+  <code>nav</code> section of the <code>mkdocs.yml</code> file and occurs immediately after the code
+  defining the section number</li>
 <li>End each heading with <code>{.body}</code></li>
 </ul>
 <div class="admonition example">
@@ -1218,14 +1283,21 @@ body {
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Rule MD033 of markdownlint does issues a warning about the use of HTML within markdown, but it is is necessary in this case to allow automated numbering to work properly.</p>
-<p>Rule MD041 of markdownlint indicates that the first line in a file should be a top-level heading, but our convention requires defining the section number first.</p>
+<p>Rule MD033 of markdownlint does issues a warning about the use of HTML
+within markdown, but it is is necessary in this case to allow automated
+numbering to work properly.</p>
+<p>Rule MD041 of markdownlint indicates that the first line in a file should be
+a top-level heading, but our convention requires defining the section number
+first.</p>
 </div>
 <h3 class="annex" id="structure-of-an-annex-file">Structure of an Annex File<a class="headerlink" href="#structure-of-an-annex-file" title="Permanent link">&para;</a></h3>
 <p>Each file representing an annex of the document <strong>shall</strong>:</p>
 <ul>
-<li>Start with code that sets the section counter for the annex to the numberical order of the annex (the script will transofmr this into an alphabetic letter)</li>
-<li>Include a single level 1 heading that has the same title as defined in the <code>nav</code> section of the <code>mkdocs.yml</code> file and occurs immediately after the code defining the section number</li>
+<li>Start with code that sets the section counter for the annex to the numberical
+  order of the annex (the script will transofmr this into an alphabetic letter)</li>
+<li>Include a single level 1 heading that has the same title as defined in the
+  <code>nav</code> section of the <code>mkdocs.yml</code> file and occurs immediately after the code
+  defining the section number</li>
 <li>End each heading with <code>{.annex}</code></li>
 </ul>
 <div class="admonition example">
@@ -1240,10 +1312,15 @@ body {
 </span></code></pre></div>
 </div>
 <h3 class="annex" id="adding-definitions-to-the-glossary">Adding Definitions to the Glossary<a class="headerlink" href="#adding-definitions-to-the-glossary" title="Permanent link">&para;</a></h3>
-<p>If you add definitions to the project's <a href="https://github.com/k-vaughn/ITS-open-source/resources/glossary.md">glossary</a>, ensure the definitions are added <strong>alphabetically</strong>.</p>
+<p>If you add definitions to the project's
+<a href="https://github.com/k-vaughn/ITS-open-source/resources/glossary.md">glossary</a>,
+ensure the definitions are added <strong>alphabetically</strong>.</p>
 <h3 class="annex" id="frequently-used-markdown">Frequently Used Markdown<a class="headerlink" href="#frequently-used-markdown" title="Permanent link">&para;</a></h3>
 <h4 class="annex" id="headings">Headings<a class="headerlink" href="#headings" title="Permanent link">&para;</a></h4>
-<p>The hash (<code>#</code>) symbol at the start of a line denotes a heading (e.g., section, clause, subclause). There are six levels of headings, and the number of hash symbols indicates the heading level. The title of the heading should appear after the hash symbols and a space.</p>
+<p>The hash (<code>#</code>) symbol at the start of a line denotes a heading (e.g., section,
+clause, subclause). There are six levels of headings, and the number of hash
+symbols indicates the heading level. The title of the heading should appear
+after the hash symbols and a space.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="language-markdown highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="gh"># Heading 1</span>
@@ -1275,7 +1352,8 @@ body {
 <ul>
 <li>Create ordered lists using numbers followed by a period (<code>1.</code>, <code>2.</code>, etc.).</li>
 <li>Create unordered lists using hyphens (<code>-</code>).</li>
-<li>The line before a list must be blank and a list cannot be immediately precedded by a different list</li>
+<li>The line before a list must be blank and a list cannot be immediately
+  precedded by a different list</li>
 <li>The style for the list is defined by the first list item</li>
 </ul>
 <div class="admonition example">
@@ -1300,26 +1378,34 @@ body {
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The numbering of numbered lists is automatic within markdown (i.e., when rendered, the list items are numbered sequentially from 1 regardless of what numbers are contained within the markdown file); however, it is good coding practice to maintain the correct numbering within the markdown file to prevent any confusion among contributors.</p>
+<p>The numbering of numbered lists is automatic within markdown (i.e.,
+when rendered, the list items are numbered sequentially from 1 regardless of
+what numbers are contained within the markdown file); however, it is good
+coding practice to maintain the correct numbering within the markdown file
+to prevent any confusion among contributors.</p>
 </div>
 <h4 class="annex" id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h4>
-<p>Create links using square brackets (<code>[]</code>) for the link text and parentheses (<code>()</code>) for the URL.</p>
+<p>Create links using square brackets (<code>[]</code>) for the link text and parentheses
+(<code>()</code>) for the URL.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<p><div class="language-markdown highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>[<span class="nt">NTCIP</span>](<span class="na">https://ntcip.org</span>)     
+<p><div class="language-markdown highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>[<span class="nt">NTCIP</span>](<span class="na">https://ntcip.org</span>)
 </span></code></pre></div>
 <a href="https://ntcip.org">NTCIP</a></p>
 </div>
 <h4 class="annex" id="images">Images<a class="headerlink" href="#images" title="Permanent link">&para;</a></h4>
-<p>Embed images using an exclamation mark (<code>!</code>), followed by square brackets (<code>[]</code>) for the alt text, and parentheses (<code>()</code>) for the image URL. AN optional attribute field can be added to the end to specify the size.</p>
+<p>Embed images using an exclamation mark (<code>!</code>), followed by square brackets (<code>[]</code>)
+for the alt text, and parentheses (<code>()</code>) for the image URL. AN optional
+attribute field can be added to the end to specify the size.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<p><div class="language-markdown highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>![<span class="nt">NTCIP</span>](<span class="na">_assets/images/NTCIP.jpg</span>){ width=200px }     
+<p><div class="language-markdown highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>![<span class="nt">NTCIP</span>](<span class="na">_assets/images/NTCIP.jpg</span>){ width=200px }
 </span></code></pre></div>
 <img alt="NTCIP" src="../_assets/images/NTCIP.jpg" width="200px" /></p>
 </div>
 <h4 class="annex" id="blockquotes">Blockquotes<a class="headerlink" href="#blockquotes" title="Permanent link">&para;</a></h4>
-<p>Create blockquotes using the greater-than symbol (<code>&gt;</code>) or through Materials for MkDocs' admonition quote (<code>!!! quote</code>).</p>
+<p>Create blockquotes using the greater-than symbol (<code>&gt;</code>) or through Materials for
+MkDocs' admonition quote (<code>!!! quote</code>).</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="language-markdown highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">&gt; </span><span class="ge">This is a blockquote.</span>
@@ -1336,16 +1422,21 @@ body {
 </div>
 </div>
 <h4 class="annex" id="code-blocks">Code Blocks<a class="headerlink" href="#code-blocks" title="Permanent link">&para;</a></h4>
-<p>Create code blocks using triple backticks (<code>```</code>) for fenced code blocks and specify a language next to the backticks before the fenced code block to highlight the syntax.</p>
+<p>Create code blocks using triple backticks (<code>```</code>) for fenced code blocks and
+specify a language next to the backticks before the fenced code block to
+highlight the syntax.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>```
 </span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>bash git pull
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>```   
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>```
 </span></code></pre></div>
 </div>
-<h4 id="admonitions">Admonitions<a class="headerlink" href="#admonitions" title="Permanent link">&para;</a></h4>
-<p>Create callout out blocks for different purposes using the Materials for MkDocs <a href="https://squidfunk.github.io/mkdocs-material/reference/admonitions/?h=adm#supported-types">admonistions</a> feature by including three explanation points and the admonition type with the contained text indented by four spaces (<code>!!! note</code>)</p>
+<h4 class="annex" id="admonitions">Admonitions<a class="headerlink" href="#admonitions" title="Permanent link">&para;</a></h4>
+<p>Create callout out blocks for different purposes using the Materials for MkDocs
+<a href="https://squidfunk.github.io/mkdocs-material/reference/admonitions/?h=adm#supported-types">admonistions</a>
+feature by including three explanation points and the admonition type with the
+contained text indented by four spaces (<code>!!! note</code>)</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="language-markdown highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>!!! note
@@ -1378,14 +1469,18 @@ body {
 <li>tip</li>
 <li>warning</li>
 </ul>
-<h3 id="markdown-tips">Markdown Tips<a class="headerlink" href="#markdown-tips" title="Permanent link">&para;</a></h3>
+<h3 class="annex" id="markdown-tips">Markdown Tips<a class="headerlink" href="#markdown-tips" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Preview your Markdown locally to ensure proper formatting before submitting your contribution.</li>
+<li>Preview your Markdown locally to ensure proper formatting before submitting
+  your contribution.</li>
 <li>Keep your Markdown content organized, and use headings to structure your sections.</li>
 <li>There should be exactly one <code>heading 1</code> within each file.</li>
 <li>Use code blocks to highlight code snippets or configuration examples.</li>
-<li>See the official <a href="https://www.markdownguide.org/basic-syntax/">Markdown Guide</a> for more information about Markdown.</li>
-<li>See the <a href="https://squidfunk.github.io/mkdocs-material/">Materials for MkDocs Guide</a> for more information about Materials for MkDocs.</li>
+<li>See the official <a href="https://www.markdownguide.org/basic-syntax/">Markdown Guide</a>
+  for more information about Markdown.</li>
+<li>See the
+  <a href="https://squidfunk.github.io/mkdocs-material/">Materials for MkDocs Guide</a> for
+  more information about Materials for MkDocs.</li>
 </ul>
 
 
@@ -1407,7 +1502,7 @@ body {
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 13, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 14, 2024</span>
   </span>
 
     

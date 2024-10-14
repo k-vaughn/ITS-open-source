@@ -1429,7 +1429,7 @@
           
           
             <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset"><a class="md-content__button md-icon" download href="contributor-responsibilities.pdf" title="PDF Export"><svg style="height: 1.2rem; width: 1.2rem;" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm76.45 211.36l-96.42 95.7c-6.65 6.61-17.39 6.61-24.04 0l-96.42-95.7C73.42 337.29 80.54 320 94.82 320H160v-80c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v80h65.18c14.28 0 21.4 17.29 11.27 27.36zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"></path></svg></a>
+              <article class="md-content__inner md-typeset">
                 
                   
 
@@ -1437,89 +1437,146 @@
   
 
 
+<!-- markdownlint-enable require-heading-body -->
 <style>
-body {
-  counter-set: section 4
-}
+  body { counter-set: section 4 }
 </style>
 
 <h1 class="body" id="contributor-responsibilities">Contributor Responsibilities<a class="headerlink" href="#contributor-responsibilities" title="Permanent link">&para;</a></h1>
 <h2 class="body" id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>Contributions on projects using the ITS Open Source Process are always welcome, no matter how large or small. However, before contributing, it's important to familiarize yourself with the following resources of the project:</p>
-<p>Some of this information is standardized in this document, but specific projects can extend or make exceptions to the process and will always have their own project-specific goals. Contributors are responsible for being familiar with the information contained in the following project files, as stored in the project's root directory:</p>
+<p>Contributions on projects using the ITS Open Source Process are always welcome,
+no matter how large or small. However, before contributing, it's important to
+familiarize yourself with the following resources of the project:</p>
+<p>Some of this information is standardized in this document, but specific projects
+can extend or make exceptions to the process and will always have their own
+project-specific goals. Contributors are responsible for being familiar with the
+information contained in the following project files, as stored in the project's
+root directory:</p>
 <ul>
-<li><strong>README.md</strong>: Provides an overview of the specific project, </li>
+<li><strong>README.md</strong>: Provides an overview of the specific project,</li>
 <li><strong>CODE_OF_CONDUCT.md</strong>: Identifies the code of conduct for the project, and</li>
 <li><strong>CONTRIBUTING.md</strong>: Identifies project-specific rules for contributing.  </li>
 </ul>
-<p>For projects following the ITS Open-Source Process, the last two files will typically only identify exceptions or extensions to the rules defined by this document.</p>
-<p>The overall process for contributing to an ITS open-source project is shown in Figure 4-1 and described in the remainder of this section. </p>
+<p>For projects following the ITS Open-Source Process, the last two files will
+typically only identify exceptions or extensions to the rules defined by this
+document.</p>
+<p>The overall process for contributing to an ITS open-source project is shown in
+Figure 4-1 and described in the remainder of this section.</p>
 <p><img alt="ITS Open-Source Process Overview" src="../_assets/images/process-overview.png" /></p>
 <h2 class="body" id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <h3 class="body" id="join-the-relevant-working-group">Join the relevant working group<a class="headerlink" href="#join-the-relevant-working-group" title="Permanent link">&para;</a></h3>
 <p>Those wishing to contribute <strong>should</strong> join the relevant working group.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Most projects using the ITS Open-Source Process are led by working groups (WGs) within standards development organizations (SDOs). The lead WG and SDO is typically identified within the README file in the root directory of the project repository. Contributors are strongly encouraged to join the corresponding working group to promote better communication among community members and to develop a common vision for the project.</p>
+<p>Most projects using the ITS Open-Source Process are led by working
+groups (WGs) within standards development organizations (SDOs). The lead WG
+and SDO is typically identified within the README file in the root directory
+of the project repository. Contributors are strongly encouraged to join the
+corresponding working group to promote better communication among community
+members and to develop a common vision for the project.</p>
 </div>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<p>The ITS Open-Source Process project is led by the Base Standards and Profiles 2 (BSP2) WG of the National Transportation Communications Interface Protocols (NTCIP) Joint Committee (JC).</p>
+<p>The ITS Open-Source Process project is led by the Base Standards and
+Profiles 2 (BSP2) WG of the National Transportation Communications Interface
+Protocols (NTCIP) Joint Committee (JC).</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">NTCIP Guidance</p>
-<p>Within the NTCIP, any interested party can send an email to ntcip@nema.org. The email should indicate (1) the working group of interest, (2) the stakeholder sector (e.g., infrastructure owner operator, other government, consultant, device manufacturer, management station developer, etc.), (3) contact information, and (4) a short biography.</p>
+<p>Within the NTCIP, any interested party can send an
+email to <a href="mailto:ntcip@nema.org">ntcip@nema.org</a>. The email should indicate
+(1) the working group of interest, (2) the stakeholder sector (e.g., infrastructure
+owner operator, other government, consultant, device manufacturer,
+management station developer, etc.), (3) contact information, and (4) a
+short biography.</p>
 </div>
-<h3 id="install-software">Install Software<a class="headerlink" href="#install-software" title="Permanent link">&para;</a></h3>
-<h4 id="git">Git<a class="headerlink" href="#git" title="Permanent link">&para;</a></h4>
+<h3 class="body" id="install-software">Install Software<a class="headerlink" href="#install-software" title="Permanent link">&para;</a></h3>
+<h4 class="body" id="git">Git<a class="headerlink" href="#git" title="Permanent link">&para;</a></h4>
 <p>Those wishing to contribute <strong>shall</strong> install Git on their local computer.</p>
-<h4 id="graphical-user-interface">Graphical User Interface<a class="headerlink" href="#graphical-user-interface" title="Permanent link">&para;</a></h4>
-<p>Those wishing to contribute <strong>may</strong> install a graphical user interface (GUI) for Git on their local computer.</p>
-<h4 id="development-environment">Development Environment<a class="headerlink" href="#development-environment" title="Permanent link">&para;</a></h4>
-<p>Those wishing to contribute <strong>shall</strong> install the development environment on their local computer.</p>
+<h4 class="body" id="graphical-user-interface">Graphical User Interface<a class="headerlink" href="#graphical-user-interface" title="Permanent link">&para;</a></h4>
+<p>Those wishing to contribute <strong>may</strong> install a graphical user interface (GUI) for
+Git on their local computer.</p>
+<h4 class="body" id="development-environment">Development Environment<a class="headerlink" href="#development-environment" title="Permanent link">&para;</a></h4>
+<p>Those wishing to contribute <strong>shall</strong> install the development environment on
+their local computer.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Git is available for all major development platforms, including Windows, Mac OS, and Linux. Git allows proper version control among multiple contributors. Git can be downloaded from <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>.</p>
-<p>Git natively uses a command line interface (CLI), which can be difficult for beginners. There are a variety of graphical user interfaces (GUIs) that are available to assist with interfacing with Git.</p>
+<p>Git is available for all major development platforms, including
+Windows, Mac OS, and Linux. Git allows proper version control among multiple
+contributors. Git can be downloaded from
+<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>.</p>
+<p>Git natively uses a command line interface (CLI), which can be difficult for
+beginners. There are a variety of graphical user interfaces (GUIs) that are
+available to assist with interfacing with Git.</p>
 </div>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <p>Example GUIs for beginners include:</p>
 <ul>
-<li><a href="https://desktop.github.com/download/">GitHub Desktop</a>: Very beginner level with minimal user interface</li>
-<li><a href="https://www.sourcetreeapp.com">SourceTree</a>: Beginner-friendly with support for advanced Git functionality</li>
-<li><a href="https://www.gitkraken.com/git-client">GitKraken</a>: Beginner-friendly with advanced options and modern UI with useful video clips to explain how to perform tasks.</li>
+<li><a href="https://desktop.github.com/download/">GitHub Desktop</a>: Very beginner
+level with minimal user interface</li>
+<li><a href="https://www.sourcetreeapp.com">SourceTree</a>: Beginner-friendly with
+support for advanced Git functionality</li>
+<li><a href="https://www.gitkraken.com/git-client">GitKraken</a>: Beginner-friendly
+with advanced options and modern UI with useful video clips to explain how
+to perform tasks.</li>
 </ul>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">NTCIP Guidance</p>
-<p>While contributors are allowed to use the CLI or any GUI of their preference, this document references GitKraken videos due to (1) the user-friendly design of GitKraken, (2) the high-quality help (including videos) available for GitKraken. </p>
+<p>While contributors are allowed to use the CLI or any GUI of their
+preference, this document references GitKraken videos due to(1) the
+user-friendly design of GitKraken, (2) the high-quality help (including
+videos) available for GitKraken.</p>
 </div>
-<h3 id="establish-an-account-on-the-repository-hosting-platform">Establish an Account on the Repository Hosting Platform<a class="headerlink" href="#establish-an-account-on-the-repository-hosting-platform" title="Permanent link">&para;</a></h3>
+<h3 class="body" id="establish-an-account-on-the-repository-hosting-platform">Establish an Account on the Repository Hosting Platform<a class="headerlink" href="#establish-an-account-on-the-repository-hosting-platform" title="Permanent link">&para;</a></h3>
 <p>Those wishing to contribute <strong>shall</strong> fork the repository to their own account.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>All edits are originate within the contributor's account and all contributions can be traced back to the contributor. </p>
+<p>All edits are originate within the contributor's account and all
+contributions can be traced back to the contributor.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">NTCIP Guidance</p>
-<p>Create an account on <a href="https://github.com">GitHub</a>. This requires a valid email address but is free for open-source work.</p>
+<p>Create an account on <a href="https://github.com">GitHub</a>. This requires a valid
+email address but is free for open-source work.</p>
 </div>
 <h3 class="body" id="fork-the-repository">Fork the repository<a class="headerlink" href="#fork-the-repository" title="Permanent link">&para;</a></h3>
 <p>Those wishing to contribute <strong>shall</strong> fork the repository to their own account.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The main repository is shared by the entire open-source community on GitHub. Individual contributors are not allowed to directly edit this file as that would create a chaotic environment. <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository">Forking a repository</a> creates a copy of the repository on the repository hosting platform within the contributor's account. The contributor can then edit the copied repository (as described below). The contributor's repository will inherit the visibility of the project being forked (i.e., for open-source projects, it will be public). This allows the open-source community to review the proposed changes prior to accepting their incorporation into the community repository.</p>
+<p>The main repository is shared by the entire open-source community on
+GitHub. Individual contributors are not allowed to directly edit this file
+as that would create a chaotic environment. <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository">Forking a
+repository</a>
+creates a copy of the repository on the repository hosting platform within
+the contributor's account. The contributor can then edit the copied
+repository (as described below). The contributor's repository will inherit
+the visibility of the project being forked (i.e., for open-source projects,
+it will be public). This allows the open-source community to review the
+proposed changes prior to accepting their incorporation into the community
+repository.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Github Guidance</p>
+<p>Press the "Fork" button in the upper-right portion of
+the shared repository's home page (e.g.,
+<a href="https://github.com/&lt;account&gt;/&lt;project&gt;">https://github.com/&lt;account&gt;/&lt;project&gt;</a>).
+For complate details, see the <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo">Fork a
+Repository</a>
+article on GitHub help.</p>
 </div>
-<p>Press the "Fork" button in the upper-right portion of the shared repository's home page (e.g., https://github.com/<account>/<project>). For complate details, see the <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo">Fork a Repository</a> article on GitHub help.</p>
 <h3 class="body" id="clone-the-repository">Clone the repository<a class="headerlink" href="#clone-the-repository" title="Permanent link">&para;</a></h3>
-<p>The contributor <strong>shall</strong> clone (i.e., copy an instance of) the forked repository to the local machine where edits are to be made.</p>
+<p>The contributor <strong>shall</strong> clone (i.e., copy an instance of) the forked
+repository to the local machine where edits are to be made.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>While a fork creates a copy on the host platform (which can be viewed by others), <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository">cloning your forked repository</a> creates a copy of your forked repository on a local machine. This allows the contributor to edit files on a local machine rather than directly in the online environment. </p>
+<p>While a fork creates a copy on the host platform (which can be viewed
+by others), <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository">cloning your forked
+repository</a>
+creates a copy of your forked repository on a local machine. This allows the
+contributor to edit files on a local machine rather than directly in the
+online environment.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">GitKraken Guidance</p>
@@ -1528,57 +1585,108 @@ body {
 </ul>
 </div>
 <h3 class="body" id="claim-an-issue">Claim an Issue<a class="headerlink" href="#claim-an-issue" title="Permanent link">&para;</a></h3>
-<p>Before starting on any changes to the project, a contributor <strong>shall</strong> claim an associated issue.</p>
+<p>Before starting on any changes to the project, a contributor <strong>shall</strong> claim an
+associated issue.</p>
 <p>A contributor <strong>shall</strong> not claim an issue that has the label "triage".</p>
-<p>A new contributor to a project <strong>may</strong> claim an issue tagged as <a href="https://github.com/open-sauced/intro/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22">good first issue</a>, or <a href="https://github.com/open-sauced/intro/issues?q=is%3Aissue+is%3Aopen+label%3A%22beginners+only%22">beginners only</a>. </p>
-<p>Experienced contributors <strong>shall not</strong> claim issues tagged with the label "beginners only".</p>
-<p>Experienced contributors <strong>should</strong> avoid issues tagged with the label "good first issue".</p>
+<p>A new contributor to a project <strong>may</strong> claim an issue tagged as <a href="https://github.com/open-sauced/intro/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22">good first
+issue</a>,
+or <a href="https://github.com/open-sauced/intro/issues?q=is%3Aissue+is%3Aopen+label%3A%22beginners+only%22">beginners
+only</a>.</p>
+<p>Experienced contributors <strong>shall not</strong> claim issues tagged with the label
+"beginners only".</p>
+<p>Experienced contributors <strong>should</strong> avoid issues tagged with the label "good
+first issue".</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Taking ownership of an issue:</p>
 <ul>
 <li>Notifies maintainers that work is starting to address the issue,</li>
-<li>Allows efficient communication by allowing the maintainers and contributor to discuss the issue and proposed changes early in the update cycle,</li>
+<li>Allows efficient communication by allowing the maintainers and 
+contributor to discuss the issue and proposed changes early in the update cycle,</li>
 <li>Provides a historical record of the steps taken to address the issue,</li>
-<li>Helps to block inappropriate pull requests as any pull request without an associated issue can be easily rejected. </li>
+<li>Helps to block inappropriate pull requests as any pull request without an 
+associated issue can be easily rejected. </li>
 </ul>
-<p>When you're new to a project, it's a good idea to start with small, manageable tasks, fixing bugs, adding tests, or updating documentation. These will often be tagged with the text "good first issue" or "beginners-only". This will help you become familiar with the material and development workflow without getting overwhelmed.  The goal is to reserve at least some of these issues for new contributors or until the end of the project; if everyone solves these problems first, it makes it more challenging for contributors to gain experience.</p>
+<p>When you're new to a project, it's a good idea to start with small, 
+manageable tasks, fixing bugs, adding tests, or updating documentation. 
+These will often be tagged with the text "good first issue" or 
+"beginners-only". This will help you become familiar with the material and 
+development workflow without getting overwhelmed.  The goal is to reserve 
+at least some of these issues for new contributors or until the end of the 
+project; if everyone solves these problems first, it makes it more 
+challenging for contributors to gain experience.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">GitHub Guidance</p>
-<p>If an issue is not assigned and it is not labeled with "triage", it is generally assumed to be available for anyone to work on. Take control of the issue by submitting a comment of <code>.take</code> on the selected issue). When an issue is assigned, it will be indicated under the "Assignees" section of the issue.</p>
+<p>If an issue is not assigned and it is not labeled with
+"triage", it is generally assumed to be available for anyone to work on.
+Take control of the issue by submitting a comment of <code>.take</code> on the selected
+issue). When an issue is assigned, it will be indicated under the
+"Assignees" section of the issue.</p>
 <p><img alt="Issue assignees section on GitHub" src="../_assets/images/issue-assign.png" /></p>
-<blockquote>
-<p><strong>NOTE:</strong> Projects can implement additional rules regarding the assignment of issues. Always review the project's contributing guidelines to ensure you are aware of any variations from this standard process.</p>
-</blockquote>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Projects can implement additional rules regarding the assignment of
+issues. Always review the project's contributing guidelines to ensure you are
+aware of any variations from this standard process.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>If you get stuck while working on your changes or need other clarification, you can always ask for help using the discussions tab of the project. For example, you can get help for the ITS Open-Source Process project at the <a href="https://github.com/ite-org/intro/discussions">Discussion Tab</a>.</p>
+<p>If you get stuck while working on your changes or need other
+clarification, you can always ask for help using the discussions tab of the
+project. For example, you can get help for the ITS Open-Source Process
+project at the <a href="https://github.com/ite-org/intro/discussions">Discussion
+Tab</a>.</p>
 </div>
 <h3 class="body" id="create-a-branch">Create a Branch<a class="headerlink" href="#create-a-branch" title="Permanent link">&para;</a></h3>
-<p>Prior to starting work on a claimed issue, the contributor <strong>shall</strong> create a separate branch for all edits related to that singlular issue.</p>
+<p>Prior to starting work on a claimed issue, the contributor <strong>shall</strong> create a
+separate branch for all edits related to that singlular issue.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Creating a separate branch facilitates tracking of changes and allows easier roll-backs of the project to known states.  </p>
+<p>Creating a separate branch facilitates tracking of changes and allows
+easier roll-backs of the project to known states.  </p>
 </div>
 <h3 class="body" id="make-edits">Make Edits<a class="headerlink" href="#make-edits" title="Permanent link">&para;</a></h3>
-<p>Once the contributor has claimed an issue and has a branch devoted to the development of that issue, the contributor <strong>shall</strong> make changes in the local branch according to project guidelines.</p>
+<p>Once the contributor has claimed an issue and has a branch devoted to the
+development of that issue, the contributor <strong>shall</strong> make changes in the local
+branch according to project guidelines.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Annex B, C, and D provide preferred guidelines that can be referenced for different types of contributions.</p>
-<p>If you have questions or concerns during the process (especially between meetings of the corresponding WG), you can use the Discussions tab associated with the project. These forums can be very useful in knowledge sharing and forming consensus, however, users should be aware that the discussions tab does not represent official decisions of the WG.</p>
+<p>Annex B, C, and D provide preferred guidelines that can be referenced
+for different types of contributions.</p>
+<p>If you have questions or concerns during the process (especially between
+meetings of the corresponding WG), you can use the Discussions tab
+associated with the project. These forums can be very useful in knowledge
+sharing and forming consensus, however, users should be aware that the
+discussions tab does not represent official decisions of the WG.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Avoid addressing any other issues as this (1) makes the change larger and delays completion of your primary task, (2) can overlap with changes being made by others, and (3) complicates version control by not clearly documenting when specific changes were made.
-However, in some cases, it may be appropriate to address multiple small and similar issues at once. For example, multiple grammar issues in documentation can be grouped into a single pull request.</p>
+<p>Avoid addressing any other issues as this (1) makes the change larger and
+delays completion of your primary task, (2) can overlap with changes being
+made by others, and (3) complicates version control by not clearly
+documenting when specific changes were made.
+However, in some cases, it may be appropriate to address multiple small and
+similar issues at once. For example, multiple grammar issues in
+documentation can be grouped into a single pull request.</p>
 </div>
 <h3 class="body" id="pull-and-merge-updates">Pull and Merge Updates<a class="headerlink" href="#pull-and-merge-updates" title="Permanent link">&para;</a></h3>
-<p>Prior to submitting a PR, the contributor <strong>shall</strong> pull the latest updates incorporated into the shared project and merge these updates into the contributor's working branch.</p>
+<p>Prior to submitting a PR, the contributor <strong>shall</strong> pull the latest updates
+incorporated into the shared project and merge these updates into the
+contributor's working branch.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Because multiple contributors can be working on the same project simultaneously, care must be taken to ensure that each contributor has the latest version of files prior to proposing their changes to be incorporated into the shared repository. This is done by first pulling any changes from the shared repository into the contributor's forked version and then pulling those changes down into the contributor's local branch. During this process, the Git environment will highlight any conflicts (e.g., if the contributor and someone else changed the same line of the same file). When this occurs, the contributor will need to resolve each conflict prior to finalizing the merge.</p>
+<p>Because multiple contributors can be working on the same project
+simultaneously, care must be taken to ensure that each contributor has the
+latest version of files prior to proposing their changes to be incorporated
+into the shared repository. This is done by first pulling any changes from
+the shared repository into the contributor's forked version and then pulling
+those changes down into the contributor's local branch. During this process,
+the Git environment will highlight any conflicts (e.g., if the contributor
+and someone else changed the same line of the same file). When this occurs,
+the contributor will need to resolve each conflict prior to finalizing the
+merge.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">GitHub Help</p>
@@ -1586,16 +1694,22 @@ However, in some cases, it may be appropriate to address multiple small and simi
 <p>Go to your forked repository on GitHub.
 Click the "Sync fork" button.
 Click the green "Update branch" button.</p>
-<p>Next, pull the latest changes in the main branch in the origin repository to update your local working branch by following these steps in your terminal:</p>
+<p>Next, pull the latest changes in the main branch in the origin repository to
+update your local working branch by following these steps in your terminal:</p>
 <p><code>git checkout YOUR-BRANCH-NAME</code></p>
 <p><code>git pull origin main</code></p>
 </div>
 <h3 class="body" id="test-the-updates">Test the Updates<a class="headerlink" href="#test-the-updates" title="Permanent link">&para;</a></h3>
-<p>After pulling and merging the latest updates but prior to submitting the PR, the contributor <strong>shall</strong> install any necessary dependencies and test the changes to ensure that the changes provide the intended operation without any new bugs.</p>
+<p>After pulling and merging the latest updates but prior to submitting the PR, the
+contributor <strong>shall</strong> install any necessary dependencies and test the changes to
+ensure that the changes provide the intended operation without any new bugs.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>It is critical that updates are tested prior to being incorporated into the final code (this includes ensuring that documentation files render correctly). Specific projects can define their own testing process and procedures.
-You can find the instructions on how to run a project locally in the README file or in the contributing guidelines.</p>
+<p>It is critical that updates are tested prior to being incorporated into the
+final code (this includes ensuring that documentation files render correctly).
+Specific projects can define their own testing process and procedures.
+You can find the instructions on how to run a project locally in the README
+file or in the contributing guidelines.</p>
 </div>
 <h3 class="body" id="commit-the-update">Commit the Update<a class="headerlink" href="#commit-the-update" title="Permanent link">&para;</a></h3>
 <p>Prior to pushing the proposed changes to online repository, the contributor
@@ -1605,31 +1719,54 @@ proposed changes.</p>
 <p>The contributor <strong>shall</strong> use the <a href="https://www.conventionalcommits.org/en/v1.0.0/">Conventional Commits</a>
 specification for structuring commit messages.</p>
 <p>Here are some examples of Conventional Commit messages:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>feat: add password reset functionality
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>docs: update installation instructions
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>chore(build): update dependencies
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>fix(login): resolve issue with incorrect password validation
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>refactor(api): streamline error handling in user service
-</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code>feat: add password reset functionality
+docs: update installation instructions
+chore(build): update dependencies
+fix(login): resolve issue with incorrect password validation
+refactor(api): streamline error handling in user service
+</code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Committing changes ensures that the changes are logged in the contributor's local git account and is required prior to pushing the material to the contributor's online copy.</p>
+<p>Committing changes ensures that the changes are logged in the contributor's
+local git account and is required prior to pushing the material to the
+contributor's online copy.</p>
 </div>
 <h3 class="body" id="push-the-update-to-contributors-online-repository">Push the Update to Contributor's Online Repository<a class="headerlink" href="#push-the-update-to-contributors-online-repository" title="Permanent link">&para;</a></h3>
-<p>Once the contributor has completed the proposed revisions and has created a local commit, the contributor <strong>shall</strong> push the proposed changes to the contriutor's online repository.</p>
+<p>Once the contributor has completed the proposed revisions and has created a
+local commit, the contributor <strong>shall</strong> push the proposed changes to the
+contriutor's online repository.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The changes need to be posted to the online repository so that other users can review the changes prior to their incorporation into the shared repository.</p>
+<p>The changes need to be posted to the online repository so that other
+users can review the changes prior to their incorporation into the shared
+repository.</p>
 </div>
 <h3 class="body" id="make-pull-request">Make Pull Request<a class="headerlink" href="#make-pull-request" title="Permanent link">&para;</a></h3>
-<p>Once the contributor has completed the above steps, the contributor <strong>shall</strong> complete a pull request.</p>
-<p>The contributor's pull request <strong>shall</strong> comply with the selected pull request template for the project, completing each field.</p>
-<p>The contributor <strong>shall</strong> verify that GitHub does not report any action bot or other failures upon submitting the PR. </p>
+<p>Once the contributor has completed the above steps, the contributor <strong>shall</strong>
+complete a pull request.</p>
+<p>The contributor's pull request <strong>shall</strong> comply with the selected pull request
+template for the project, completing each field.</p>
+<p>The contributor <strong>shall</strong> verify that GitHub does not report any action bot or
+other failures upon submitting the PR.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>In order to ensure that changes made to the shared repository fit with the project plan, follow subittal guidelines, and are free of bugs, it is important that they are reviewed before being incorporated. As such, rather than allowing each contributor to push changes to the shared repository without any review, they <strong>request</strong> the maintainer to <strong>pull</strong> the proposed changes. The request initiates the review process, and if successful, the changes will be pulled. The request for the maintainers to pull the updates is called a "<a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork">pull request</a>" (PR). In order to ensure that these requests are valid and useful, they must comply with the pull request template (e.g., identify the issue that the change claims to address).</p>
-<p>It is especially important that the PR identifies the issue that the PR claims to address and must prefix the issue number with "Fixes #" to ensure that the issue is closed once the change is accepted.</p>
-<p>The contributor will need to correct any errors that occur during the submittal process to ensure that the PR is received by the maintainers.</p>
+<p>In order to ensure that changes made to the shared repository fit with
+the project plan, follow subittal guidelines, and are free of bugs, it is
+important that they are reviewed before being incorporated. As such, rather
+than allowing each contributor to push changes to the shared repository
+without any review, they <strong>request</strong> the maintainer to <strong>pull</strong> the proposed
+changes. The request initiates the review process, and if successful, the
+changes will be pulled. The request for the maintainers to pull the updates
+is called a "<a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork">pull
+request</a>"
+(PR). In order to ensure that these requests are valid and useful, they must
+comply with the pull request template (e.g., identify the issue that the
+change claims to address).</p>
+<p>It is especially important that the PR identifies the issue that the PR
+claims to address and must prefix the issue number with "Fixes #" to ensure
+that the issue is closed once the change is accepted.</p>
+<p>The contributor will need to correct any errors that occur during the
+submittal process to ensure that the PR is received by the maintainers.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -1642,50 +1779,102 @@ specification for structuring commit messages.</p>
 </ul>
 </div>
 <h3 class="body" id="cooperate-with-reviewers">Cooperate with Reviewers<a class="headerlink" href="#cooperate-with-reviewers" title="Permanent link">&para;</a></h3>
-<p>The contributor <strong>shall</strong> work with the review team to address any questions, concerns, or problems that arise.</p>
-<p>The contributor <strong>may</strong> appeal any direction received from the reviewers to the parent WG. </p>
-<p>The contributor <strong>shall</strong> accept the direction of the review process, including any appeals.</p>
+<p>The contributor <strong>shall</strong> work with the review team to address any questions,
+concerns, or problems that arise.</p>
+<p>The contributor <strong>may</strong> appeal any direction received from the reviewers to the
+parent WG.</p>
+<p>The contributor <strong>shall</strong> accept the direction of the review process, including
+any appeals.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>After a pull request has been submitted, reviewers can have questions or concerns (e.g., failure to comply with style guidelines). In addition, if multiple proposals are received in a short period, last minute changes can cause merge errors that need to be resolved. The contributor is typically the person most qualified to make revisions to the proposed changes without introducing errors. Although expected to be rare, there can be instances where the contributor and reviewers have different opinions about how a change should be implemented. The shared project is managed by the entire team and the contributor needs to respect the decisions made by the full team.</p>
+<p>After a pull request has been submitted, reviewers can have questions
+or concerns (e.g., failure to comply with style guidelines). In addition, if
+multiple proposals are received in a short period, last minute changes can
+cause merge errors that need to be resolved. The contributor is typically
+the person most qualified to make revisions to the proposed changes without
+introducing errors. Although expected to be rare, there can be instances
+where the contributor and reviewers have different opinions about how a
+change should be implemented. The shared project is managed by the entire
+team and the contributor needs to respect the decisions made by the full
+team.</p>
 </div>
 <h2 class="body" id="what-happens-next">What Happens Next?<a class="headerlink" href="#what-happens-next" title="Permanent link">&para;</a></h2>
-<p>After your contribution has been submitted and reviewed, one of the following outcomes may occur:</p>
+<p>After your contribution has been submitted and reviewed, one of the following
+outcomes may occur:</p>
 <ol>
 <li>
-<p><strong>Your contribution is accepted</strong>: If your contribution is approved by the project maintainers, it will be merged into the main branch of the codebase. <br/>
-   Congratulations! Your work is now part of the project, and you've made a valuable contribution to the open source community.</p>
+<p><strong>Your contribution is accepted</strong>: If your contribution is approved by the
+   project maintainers, it will be merged into the main branch of the codebase.</p>
 </li>
 <li>
-<p><strong>Your contribution requires changes</strong>: Sometimes, the project maintainers may request changes to your contribution before it can be accepted. This could be due to coding issues, conflicts with other changes, or a need for additional documentation. In this case, make the requested changes and resubmit your pull request.</p>
+<p><strong>Your contribution requires changes</strong>: Sometimes, the project maintainers
+   may request changes to your contribution before it can be accepted. This
+   could be due to coding issues, conflicts with other changes, or a need for
+   additional documentation. In this case, make the requested changes and
+   resubmit your pull request.</p>
 </li>
 <li>
-<p><strong>Your contribution is rejected</strong>: In some cases, your contribution may not align with the project's goals or requirements, or it may not be the best solution to a problem. If your contribution is rejected, don't be discouraged. Take the feedback you received as an opportunity to learn and improve. You can always try contributing to another project or submitting a different contribution to the same project.</p>
+<p><strong>Your contribution is rejected</strong>: In some cases, your contribution may not
+   align with the project's goals or requirements, or it may not be the best
+   solution to a problem. If your contribution is rejected, don't be
+   discouraged. Take the feedback you received as an opportunity to learn and
+   improve. You can always try contributing to another project or submitting a
+   different contribution to the same project.</p>
 </li>
 </ol>
 <h2 class="body" id="keeping-branches-up-to-date">Keeping Branches Up to Date<a class="headerlink" href="#keeping-branches-up-to-date" title="Permanent link">&para;</a></h2>
-<p>It is highly recommended that you update your remote and local branches habitually. That way, your branch will have the latest update when merged into the <code>main</code> branch of the original (<code>upstream</code>) repository.</p>
-<p>The best times to update your branches are before you push your changes to the remote repository and while you're waiting for your pull request to be reviewed.</p>
-<p>In general, it is preferrable to make small incremental changes to the project and to provide the updated materials as soon as possible after taking control of an issue. The longer the duration between checking out the project and submitting a pull request the higher the chance that another contributor will make competing changes in one of your files, which may need to be manually inspected to properly merge the changes.</p>
+<p>It is highly recommended that you update your remote and local branches
+habitually. That way, your branch will have the latest update when merged into
+the <code>main</code> branch of the original (<code>upstream</code>) repository.</p>
+<p>The best times to update your branches are before you push your changes to the
+remote repository and while you're waiting for your pull request to be reviewed.</p>
+<p>In general, it is preferrable to make small incremental changes to the project
+and to provide the updated materials as soon as possible after taking control of
+an issue. The longer the duration between checking out the project and
+submitting a pull request the higher the chance that another contributor will
+make competing changes in one of your files, which may need to be manually
+inspected to properly merge the changes.</p>
 <h2 class="body" id="merge-conflicts">Merge Conflicts<a class="headerlink" href="#merge-conflicts" title="Permanent link">&para;</a></h2>
-<p>Merge conflicts are something you'll commonly encounter when contributing to an open source project. When two branches have made different changes to the same line(s) in the same file(s), Git cannot automatically determine which change to keep, resulting in a conflict.</p>
-<p>When a merge conflict occurs, Git adds conflict markers (<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, and <code>&gt;&gt;&gt;&gt;&gt;&gt;</code>) to indicate the conflicting lines from different branches. Everything between the <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> and <code>=======</code> is the changes that you worked on (current changes). And everything between the <code>=======</code> to <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code> is the incoming changes from the remote <code>main</code> branch.</p>
-<p>You need to pay attention to the conflicts and decide how you want to resolve them. You can keep only your change, incoming change, or both changes.</p>
+<p>Merge conflicts are something you'll commonly encounter when contributing to an
+open source project. When two branches have made different changes to the same
+line(s) in the same file(s), Git cannot automatically determine which change to
+keep, resulting in a conflict.</p>
+<p>When a merge conflict occurs, Git adds conflict markers (<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>,
+and <code>&gt;&gt;&gt;&gt;&gt;&gt;</code>) to indicate the conflicting lines from different branches.
+Everything between the <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> and <code>=======</code> is the changes that you worked on
+(current changes). And everything between the <code>=======</code> to <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code> is the
+incoming changes from the remote <code>main</code> branch.</p>
+<p>You need to pay attention to the conflicts and decide how you want to resolve
+them. You can keep only your change, incoming change, or both changes.</p>
 <h3 class="body" id="tips-to-prevent-resolving-merge-conflicts-repeatedly">Tips to Prevent Resolving Merge Conflicts Repeatedly<a class="headerlink" href="#tips-to-prevent-resolving-merge-conflicts-repeatedly" title="Permanent link">&para;</a></h3>
-<p>Some open source repositories, such as OpenSauced's <a href="https://github.com/open-sauced/guestbook">guestbook</a> and <a href="https://github.com/open-sauced/pizza-verse">pizza-verse</a> repositories, have high contribution activities in the same files that can cause merge conflicts.</p>
-<p>Below are some tips to prevent you from resolving merge conflicts repeatedly when contributing to open source projects:</p>
+<p>Some open source repositories, such as OpenSauced's
+<a href="https://github.com/open-sauced/guestbook">guestbook</a> and
+<a href="https://github.com/open-sauced/pizza-verse">pizza-verse</a> repositories, have
+high contribution activities in the same files that can cause merge conflicts.</p>
+<p>Below are some tips to prevent you from resolving merge conflicts repeatedly
+when contributing to open source projects:</p>
 <h4 class="body" id="1-following-instructions">1. Following Instructions<a class="headerlink" href="#1-following-instructions" title="Permanent link">&para;</a></h4>
-<p>Ensure you follow the instructions in the project's README or Contributing Guide, and don't miss any step.</p>
+<p>Ensure you follow the instructions in the project's README or Contributing
+Guide, and don't miss any step.</p>
 <h4 class="body" id="2-pull-request-form">2. Pull Request Form<a class="headerlink" href="#2-pull-request-form" title="Permanent link">&para;</a></h4>
 <p>Complete the template form and fill in all areas when creating a pull request.</p>
 <h4 class="body" id="3-resolving-merge-conflicts-immediately">3. Resolving Merge Conflicts Immediately<a class="headerlink" href="#3-resolving-merge-conflicts-immediately" title="Permanent link">&para;</a></h4>
-<p>If a branch has merge conflicts that must be resolved, the merge button is automatically disabled. So, maintainers are not able to merge the pull request.</p>
-<p>When you notice merge conflicts in your pull request or if a maintainer asks you to resolve merge conflicts, fix them immediately. The sooner you resolve the conflicts, the sooner maintainers can review and merge your pull request.</p>
+<p>If a branch has merge conflicts that must be resolved, the merge button is
+automatically disabled. So, maintainers are not able to merge the pull request.</p>
+<p>When you notice merge conflicts in your pull request or if a maintainer asks you
+to resolve merge conflicts, fix them immediately. The sooner you resolve the
+conflicts, the sooner maintainers can review and merge your pull request.</p>
 <h3 class="body" id="merge-conflicts-in-the-guestbook-repository">Merge Conflicts in the Guestbook Repository<a class="headerlink" href="#merge-conflicts-in-the-guestbook-repository" title="Permanent link">&para;</a></h3>
-<p>Since the primary purpose of the OpenSauced guestbook is to add your name to <code>.all-contributorsrc</code> and the <code>README.md</code> files, there is a high chance that you will encounter merge conflicts.</p>
-<p>The conflicts happen when maintainers have merged pull requests before yours while you're working on your changes or waiting for your pull request to be reviewed. And you need to resolve them before your pull request can be merged.</p>
+<p>Since the primary purpose of the OpenSauced guestbook is to add your name to
+<code>.all-contributorsrc</code> and the <code>README.md</code> files, there is a high chance that you
+will encounter merge conflicts.</p>
+<p>The conflicts happen when maintainers have merged pull requests before yours
+while you're working on your changes or waiting for your pull request to be
+reviewed. And you need to resolve them before your pull request can be merged.</p>
 <h4 class="body" id="resolving-merge-conflicts">Resolving Merge Conflicts<a class="headerlink" href="#resolving-merge-conflicts" title="Permanent link">&para;</a></h4>
-<p>Before resolving merge conflicts, you must first <a href="#pull-and-merge-updates">update your branches</a>. Then, follow these steps:</p>
+<p>Before resolving merge conflicts, you must first</p>
+<!-- markdownlint-disable-next-line MD051 -->
+<p><a href="#pull-and-merge-updates">update your branches</a>. Then, follow these steps:</p>
 <ol>
 <li>
 <p>In the <code>.all-contributorsrc</code> file:</p>
@@ -1694,43 +1883,46 @@ specification for structuring commit messages.</p>
 <p>Click the "Accept Both Change" option on the top of your workspace in VS Code.</p>
 </li>
 <li>
-<p>Move your profile details to the end of the contributors' array and fix anything necessary.</p>
+<p>Move your profile details to the end of the contributors' array and fix
+     anything necessary.</p>
 </li>
 <li>
 <p>In the <code>README.md</code> file:</p>
 </li>
 <li>
-<p>Click the "Accept Incoming Change" option on the top of your workspace in VS Code for each conflict in this file.</p>
+<p>Click the "Accept Incoming Change" option on the top of your workspace in
+     VS Code for each conflict in this file.</p>
 </li>
 <li>
 <p>Run <code>npm run contributors:generate</code>.</p>
 </li>
 </ol>
-<p>You will now see that the all contributors badge has been incremented, and your profile is generated at the end of the contributors' list in the <code>README.md</code> file.</p>
+<p>You will now see that the all contributors badge has been incremented, and
+   your profile is generated at the end of the contributors' list in the
+   <code>README.md</code> file.</p>
 <ol>
-<li>Add and commit your changes.</li>
+<li>
+<p>Add and commit your changes.</p>
+<p>git commit -am "Resolve merge conflicts"</p>
+</li>
+<li>
+<p>Push your commits to your remote branch.</p>
+<p>git push</p>
+</li>
 </ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>commit<span class="w"> </span>-am<span class="w"> </span><span class="s2">&quot;Resolve merge conflicts&quot;</span>
-</span></code></pre></div>
-<ol>
-<li>Push your commits to your remote branch.</li>
-</ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git<span class="w"> </span>push
-</span></code></pre></div>
-<hr/>
-
-<p>As you continue to contribute to open source projects, you'll gain valuable experience, develop new skills, and build a strong portfolio of work. </p>
-<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
-<h3 id="install-git">Install Git<a class="headerlink" href="#install-git" title="Permanent link">&para;</a></h3>
-<p>Go to https://git-scm.com</p>
-<p>Download and install the git program appropriate for your platform. Using default options should be fine unless you have a particular preference (e.g., for text editor)</p>
-<h3 id="create-a-github-account">Create a GitHub account<a class="headerlink" href="#create-a-github-account" title="Permanent link">&para;</a></h3>
+<h2 class="body" id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
+<h3 class="body" id="install-git">Install Git<a class="headerlink" href="#install-git" title="Permanent link">&para;</a></h3>
+<p>Download and install the <a href="https://git-scm.com">git program</a> appropriate for your
+platform. Using default options should be fine unless you have a particular
+preference (e.g., for text editor).</p>
+<h3 class="body" id="create-a-github-account">Create a GitHub account<a class="headerlink" href="#create-a-github-account" title="Permanent link">&para;</a></h3>
 <p>Go to github.com, create an account and sign in</p>
-<h3 id="fork-the-desired-repository">Fork the Desired Repository<a class="headerlink" href="#fork-the-desired-repository" title="Permanent link">&para;</a></h3>
-<h3 id="install-gitkraken">Install GitKraken<a class="headerlink" href="#install-gitkraken" title="Permanent link">&para;</a></h3>
+<h3 class="body" id="fork-the-desired-repository">Fork the Desired Repository<a class="headerlink" href="#fork-the-desired-repository" title="Permanent link">&para;</a></h3>
+<h3 class="body" id="install-gitkraken">Install GitKraken<a class="headerlink" href="#install-gitkraken" title="Permanent link">&para;</a></h3>
 <p>Recommended: Download and install GitKraken. Link GitKraken to your GitHub Account</p>
-<h3 id="clone-repository">Clone Repository<a class="headerlink" href="#clone-repository" title="Permanent link">&para;</a></h3>
-<p>Make sure to select a directory where you want to store the local copy of the repository. This directory needs to be empty</p>
+<h3 class="body" id="clone-repository">Clone Repository<a class="headerlink" href="#clone-repository" title="Permanent link">&para;</a></h3>
+<p>Make sure to select a directory where you want to store the local copy of the
+repository. This directory needs to be empty</p>
 
 
 
@@ -1751,7 +1943,7 @@ specification for structuring commit messages.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 11, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 14, 2024</span>
   </span>
 
     
