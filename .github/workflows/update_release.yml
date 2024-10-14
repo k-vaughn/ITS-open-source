@@ -13,27 +13,23 @@ jobs:
       # Step 1: Check out the code
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Fetch full history for git-revision-date-localized-plugin
 
-      # Step 2: Set up Node.js 20 to avoid Node.js deprecation warning
-      # - name: Set up Node.js 20
-      #  uses: actions/setup-node@v3
-      #  with:
-      #    node-version: '20'
-
-      # Step 3: Set up Python
+      # Step 2: Set up Python
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      # Step 4: Install dependencies
+      # Step 3: Install dependencies
       - name: Install dependencies
         run: |
           pip install mkdocs-material pymdown-extensions
           pip install mkdocs-git-revision-date-localized-plugin
           pip install mkdocs-pdf-export-plugin
 
-      # Step 5: Get release tag, fall back to current date and time if no tag exists
+      # Step 4: Get release tag, fall back to current date and time if no tag exists
       - name: Get release tag or use date
         id: get_version
         run: |
@@ -44,11 +40,9 @@ jobs:
             echo "RELEASE_TAG=${{ github.event.release.tag_name }}" >> $GITHUB_ENV
           fi
 
-      # Step 6: Replace placeholders in mkdocs.yml, docs, and css
+      # Step 5: Replace placeholders in mkdocs.yml, docs, and css
       - name: Replace placeholders in files
         run: |
-          DOC_IDENTIFIER=$(yq e '.extra.document_identifier' mkdocs.yml)
-          COPYRIGHT=$(yq e '.copyright' mkdocs.yml)
           RELEASE_TAG=${{ env.RELEASE_TAG }}
 
           # Replace in mkdocs.yml
@@ -58,22 +52,19 @@ jobs:
           sed -i "s/{{ release_number }}/$RELEASE_TAG/g" docs/index.md
 
           # Replace in CSS for PDF
-          sed -i "s/{{ document_identifier }}/$DOC_IDENTIFIER/g" docs/stylesheets/pdf.css
           sed -i "s/{{ release_number }}/$RELEASE_TAG/g" docs/stylesheets/pdf.css
-          sed -i "s/{{ copyright }}/$COPYRIGHT/g" docs/stylesheets/pdf.css
 
-      # Step 7: Run the glossary processing script
+      # Step 6: Run the glossary processing script
       - name: Generate glossary annex
         run: |
           python process_glossary.py
 
-      # Step 8: Build the site and generate the PDF
+      # Step 7: Build the site and generate the PDF
       - name: Build the site and generate PDF
         run: |
           mkdocs build
-          mkdocs pdf-export
     
-      # Step 9: Deploy the site to GitHub Pages (gh-pages branch)
+      # Step 8: Deploy the site to GitHub Pages (gh-pages branch)
       - name: Deploy to GitHub Pages
         run: |
           mkdocs gh-deploy --force --verbose
