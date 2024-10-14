@@ -63,7 +63,6 @@ jobs:
       - name: Build the site and generate PDF
         run: |
           mkdocs build
-          mkdocs pdf-export
     
       # Step 8: Deploy the site to GitHub Pages (gh-pages branch)
       - name: Deploy to GitHub Pages
