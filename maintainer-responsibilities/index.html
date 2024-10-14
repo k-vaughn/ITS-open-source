@@ -6,6 +6,8 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="ITS Open Source Process {{ release-number }}">
+      
       
       
         <link rel="canonical" href="https://github.com/k-vaughn/ITS-open-source/maintainer-responsibilities/">
@@ -46,6 +48,8 @@
     
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../stylesheets/pdf.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -1995,7 +1999,7 @@
           
           
             <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
+              <article class="md-content__inner md-typeset"><a class="md-content__button md-icon" download href="maintainer-responsibilities.pdf" title="PDF Export"><svg style="height: 1.2rem; width: 1.2rem;" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm76.45 211.36l-96.42 95.7c-6.65 6.61-17.39 6.61-24.04 0l-96.42-95.7C73.42 337.29 80.54 320 94.82 320H160v-80c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v80h65.18c14.28 0 21.4 17.29 11.27 27.36zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"></path></svg></a>
                 
                   
 
@@ -2009,20 +2013,20 @@
 
 <h1 class="body" id="maintainer-responsibilities">Maintainer Responsibilities<a class="headerlink" href="#maintainer-responsibilities" title="Permanent link">&para;</a></h1>
 <h2 class="body" id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> for an open-source project fulfills many responsibilities,
+<p>The maintainer for an open-source project fulfills many responsibilities,
 including setting up the project, managing issues, reviewing submittals, and
-leading the development community. In addition, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> is often a
-prime <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr>.</p>
+leading the development community. In addition, the maintainer is often a
+prime contributor.</p>
 <h2 class="body" id="establish-repository">Establish Repository<a class="headerlink" href="#establish-repository" title="Permanent link">&para;</a></h2>
-<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> work with the sponsoring SDO to establish the
-open-source <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> for the project.</p>
+<p>The maintainer <strong>shall</strong> work with the sponsoring SDO to establish the
+open-source repository for the project.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <p>NTCIP repositories are hosted at<a href="https://github.com/ite-org/">https://github.com/ite-org/</a>.</p>
 </div>
 <h2 class="body" id="configure-project-settings">Configure Project Settings<a class="headerlink" href="#configure-project-settings" title="Permanent link">&para;</a></h2>
 <h3 class="body" id="issues-and-discussions">Issues and Discussions<a class="headerlink" href="#issues-and-discussions" title="Permanent link">&para;</a></h3>
-<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> ensure that the issues and discussion pages are enabled
+<p>The maintainer <strong>shall</strong> ensure that the issues and discussion pages are enabled
 for the ITS open-source project.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2031,16 +2035,16 @@ disabled. To enable, go to the settings tab and select discussions in the
 general section.</p>
 </div>
 <h3 class="body" id="pages">Pages<a class="headerlink" href="#pages" title="Permanent link">&para;</a></h3>
-<p>If the project includes documentation, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> ensure that
+<p>If the project includes documentation, the maintainer <strong>shall</strong> ensure that
 GitHub pages is enabled for the project.</p>
 <div class="admonition note">
 <p class="admonition-title">GitHub Process</p>
-<p>To activate GitHub Pages using MkDocs, create a gh-pages <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr>. The go to
+<p>To activate GitHub Pages using MkDocs, create a gh-pages branch. The go to
 the settings tab and select pages from the left-hand menu. Set Source to
-"deploy from a <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr>" and then select the "gh-pages" <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr> and the /root directory.</p>
+"deploy from a branch" and then select the "gh-pages" branch and the /root directory.</p>
 </div>
 <h3 class="body" id="dependabot">Dependabot<a class="headerlink" href="#dependabot" title="Permanent link">&para;</a></h3>
-<p>If the project includes code, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>may</strong> configure Dependabot to
+<p>If the project includes code, the maintainer <strong>may</strong> configure Dependabot to
 report issues or create pull requests to update dependencies with security vulnerabilities.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2051,8 +2055,8 @@ please read through the <a href="https://docs.github.com/en/code-security/gettin
 <h2 class="body" id="set-up-project-files">Set Up Project Files<a class="headerlink" href="#set-up-project-files" title="Permanent link">&para;</a></h2>
 <!-- markdownlint-disable-next-line MD024 -->
 <h3 class="body" id="overview_1">Overview<a class="headerlink" href="#overview_1" title="Permanent link">&para;</a></h3>
-<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> ensure the following files are provided in the
-<abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> when starting the project and maintained throughout the project:</p>
+<p>The maintainer <strong>shall</strong> ensure the following files are provided in the
+repository when starting the project and maintained throughout the project:</p>
 <ul>
 <li>README.md</li>
 <li>CODE_OF_CONDUCT.md</li>
@@ -2060,19 +2064,19 @@ please read through the <a href="https://docs.github.com/en/code-security/gettin
 <li>LICENSE.md</li>
 <li>SECURITY.md</li>
 <li>.github/CODEOWNERS</li>
-<li>appropriate <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> templates in .github/ISSUE_TEMPLATE/</li>
+<li>appropriate issue templates in .github/ISSUE_TEMPLATE/</li>
 <li>appropriate PR temapltes in .github/PULL_REQUEST_TEMPLATE/</li>
 <li>appropriate saved replies</li>
 </ul>
-<p>Additionally, if the site includes documentation, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong>
-ensure the following files are provided in the <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> when starting the
+<p>Additionally, if the site includes documentation, the maintainer <strong>shall</strong>
+ensure the following files are provided in the repository when starting the
 project and maintained throughout the project:</p>
 <ul>
 <li>.gitignore</li>
 <li>mkdocs.yml</li>
 <li>.github/workflows/deploy.yml (generates the documentation)</li>
-<li><abbr title="Docs is an abbreviation for &quot;documentation&quot;. It primarily explains how to implement and use a product or an open source project. It also provides information on how to contribute to the project and expectations for contributors. Documentation is often written using [Markdown](https://www.markdownguide.org/), a lightweight markup language.">docs</abbr>/index.md</li>
-<li><abbr title="Docs is an abbreviation for &quot;documentation&quot;. It primarily explains how to implement and use a product or an open source project. It also provides information on how to contribute to the project and expectations for contributors. Documentation is often written using [Markdown](https://www.markdownguide.org/), a lightweight markup language.">docs</abbr>/stylesheets/extra.css</li>
+<li>docs/index.md</li>
+<li>docs/stylesheets/extra.css</li>
 <li>overrides/main.html (adds a status badge to the page)</li>
 <li>overrides/partials/nav.html (changes the naviation heading to be "Contents")</li>
 <li>overrides/partials/toc.html (changes TOC heading to be the document name)</li>
@@ -2082,14 +2086,14 @@ contained in the README.md file, a separate INSTALLATION.md file, or in project
 documentation.</p>
 <div class="admonition note">
 <p class="admonition-title">GitHub Help</p>
-<p>A template <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> containing all of these files, which can be used to
+<p>A template repository containing all of these files, which can be used to
 initialize new projects, is stored on the <a href="https://github.com/ite-org/open-source-template">ITE GitHub Site</a>.</p>
 </div>
 <h3 class="body" id="readmemd-file">Readme.md File<a class="headerlink" href="#readmemd-file" title="Permanent link">&para;</a></h3>
 <p>The README.md file <strong>shall</strong> contain an introduction to the open-source project.
 A good readme file should be clear, concise, up-to-date, and detailed. This file
 is located in your root directory and is displayed as the homepage of the
-<abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> within GitHub.</p>
+repository within GitHub.</p>
 <p>The README.md file <strong>shall</strong> contain the following information:</p>
 <ul>
 <li>project title</li>
@@ -2128,8 +2132,8 @@ if it is simple), be a separate file, or reference a section within the project 
 <p>This guide identifies the tools and technology used by the project and includes
 instructions for the following:</p>
 <ul>
-<li>forking the <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr></li>
-<li>cloning the <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr></li>
+<li>forking the repository</li>
+<li>cloning the repository</li>
 <li>installing the dependencies</li>
 <li>setting up the environment variables</li>
 <li>setting up the database, if applicable</li>
@@ -2173,7 +2177,7 @@ code, ASN.1 or MIBs.</p>
 project-specific information),</li>
 <li>coding conventions (e.g., for languages not discussed in the ITE Open Source
 Process documentation, special naming conventions),</li>
-<li>testing and <abbr title="Linting is the process of running a program that will analyze code for potential errors. A popular linting tool used frequently is ESLint. You can setup an action to run ESlint against each pull request that comes in to check for potential errors before it makes it into production.">linting</abbr> requirements</li>
+<li>testing and linting requirements</li>
 <li>the process to claim ownership pf issues (e.g., WG approvals),</li>
 <li>guidelines for commit conventions</li>
 <li>requirements for creating pull requests (e.g., fields that need to be included),
@@ -2186,7 +2190,7 @@ Process documentation, special naming conventions),</li>
 <p class="admonition-title">Per <a href="https://opensource.guide/legal/">The Legal Side of Open Source</a></p>
 <p>Making your GitHub project public is not the same as licensing your project.
 Public projects are covered by <a href="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#3-ownership-of-content-right-to-post-and-license-grants">GitHub’s Terms of Service</a>,
-which allows others to view and <abbr title="A fork is a copy of a repository. When you fork a repository, you create a new copy of the codebase that you can modify and experiment with without affecting the original codebase.">fork</abbr> your project, but your work otherwise
+which allows others to view and fork your project, but your work otherwise
 comes with no permissions.</p>
 <p>If you want others to use, distribute, modify, or contribute back to your project,
 you need to include an open source license. For example, someone cannot legally
@@ -2227,26 +2231,26 @@ their fix.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <p>By opting-in to "require approval" and "require review from code owners", a
-WG can require a majority of voting members of the WG to approve any <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr>
-before it can be merged into the protected <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr>. This can reduce the chance
+WG can require a majority of voting members of the WG to approve any pull request
+before it can be merged into the protected branch. This can reduce the chance
 of merging pull requests that can break production.</p>
 </div>
 <h3 class="body" id="issue-templates">Issue Templates<a class="headerlink" href="#issue-templates" title="Permanent link">&para;</a></h3>
-<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> define appropriate <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> forms.</p>
-<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> develop the forms using YAML per the
+<p>The maintainer <strong>shall</strong> define appropriate issue forms.</p>
+<p>The maintainer <strong>shall</strong> develop the forms using YAML per the
 <a href="https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms">GitHub instructions</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Issue forms allow the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> to ensure commenters provide key information
+<p>Issue forms allow the maintainer to ensure commenters provide key information
 (or at least provide text for specific fields) when they report issues making
 the triage process, and the review of pull requests easier to perform. Additionally,
 future contributors can benefit from these templates by understanding the history
 of changes made, which can help them debug or understand the code involved.</p>
-<p>You can create various <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> forms, such as <abbr title="A bug refers to an error, flaw, or defect in code that adversely affects the proper functioning of the software. Open source projects often depend on contributions from the community to identify and rectify these bugs.">bug</abbr> reports, feature requests,
+<p>You can create various issue forms, such as bug reports, feature requests,
 documentation updates, etc. Each form can specify which fields are required,
-such as the steps for reproducing the <abbr title="A bug refers to an error, flaw, or defect in code that adversely affects the proper functioning of the software. Open source projects often depend on contributions from the community to identify and rectify these bugs.">bug</abbr> or a details section for a feature
+such as the steps for reproducing the bug or a details section for a feature
 request. The form can also be designed to automatically attach specific labels
-like<code>feature</code>, <code>needs triage</code>, or <code>bug</code> to quickly identify the type of <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>.</p>
+like<code>feature</code>, <code>needs triage</code>, or <code>bug</code> to quickly identify the type of issue.</p>
 </div>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
@@ -2254,10 +2258,10 @@ like<code>feature</code>, <code>needs triage</code>, or <code>bug</code> to quic
 or <a href="https://github.com/k-vaughn/ITS-open-source/tree/main/.github/ISSUE_TEMPLATE/documentation_enhancement.yml"><code>.github/ISSUE_TEMPLATE/documentation_enhancement.yml</code></a></p>
 </div>
 <h3 class="body" id="pull-request-templates">Pull Request Templates<a class="headerlink" href="#pull-request-templates" title="Permanent link">&para;</a></h3>
-<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> define appropriate <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> templates.</p>
+<p>The maintainer <strong>shall</strong> define appropriate pull request templates.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>GitHub currently only supports <abbr title="Markdown is a lightweight markup language commonly used for creating formatted text documents. It is widely used for creating documentation and README files in software development due to its simplicity and readability.">markdown</abbr> templates for pull requests rather
+<p>GitHub currently only supports markdown templates for pull requests rather
 than YAML forms. Nonetheless, the templates serve a similar purpose in that
 they guide contributors in providing specific and structured information when
 opening pull requests in your project.</p>
@@ -2268,7 +2272,7 @@ opening pull requests in your project.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>You can learn more about <a href="https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository">creating a <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> template</a>
+<p>You can learn more about <a href="https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository">creating a pull request template</a>
 on the official GitHub documentation.</p>
 </div>
 <p><img alt="PR template example" src="../_assets/images/pr-template.png" /></p>
@@ -2288,7 +2292,7 @@ if necessary.</p>
 <p><img alt="Saved replies gif" src="../_assets/gifs/saved-replies.gif" /></p>
 <h3 class="body" id="gitignore-file">Gitignore File<a class="headerlink" href="#gitignore-file" title="Permanent link">&para;</a></h3>
 <p>If there are any files that are likely to exist within the project directory
-that should not become a part of the <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr>, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong>
+that should not become a part of the repository, the maintainer <strong>shall</strong>
 include a <code>.gitignore</code> file.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
@@ -2300,7 +2304,7 @@ the project is to include a <code>.gitignore</code> file that contains the line 
 as for this <a href="https://github.com/k-vaughn/ITS-open-source/blob/main/.gitignore">project</a>.</p>
 </div>
 <h3 class="body" id="mkdocsyml-file">Mkdocs.yml File<a class="headerlink" href="#mkdocsyml-file" title="Permanent link">&para;</a></h3>
-<p>If the project includes documentation using MkDocs, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong>
+<p>If the project includes documentation using MkDocs, the maintainer <strong>shall</strong>
 define a <code>mkdocs.yml</code> file.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2320,7 +2324,7 @@ the static website. For example, it defines</p>
 <p><a href="https://github.com/k-vaughn/ITS-open-source/blob/main/mkdocs.yml">Mkdocs file for ITS Open-Source Process</a></p>
 </div>
 <h3 class="body" id="deployyml-file">Deploy.yml File<a class="headerlink" href="#deployyml-file" title="Permanent link">&para;</a></h3>
-<p>If the project includes documentation using MkDocs, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong>
+<p>If the project includes documentation using MkDocs, the maintainer <strong>shall</strong>
 define a <code>.github/workflows/deploy.yml</code> file that deploys the MkDocs site to
 GitHub Pages.</p>
 <div class="admonition note">
@@ -2328,27 +2332,27 @@ GitHub Pages.</p>
 <p>The deploy.yml file can be used to automate actions when pull requests are
 merged with the project. For example, for projects that use MkDocs, the
 deploy file can ensure that the GitHub Pages site is updated with the new
-material when a <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> is merged.</p>
+material when a pull request is merged.</p>
 </div>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <p><a href="https://github.com/k-vaughn/ITS-open-source/blob/main/.github/workflows/deploy.yml">Deploy file for ITS Open-Source Process</a></p>
 </div>
 <h3 class="body" id="index-file">Index File<a class="headerlink" href="#index-file" title="Permanent link">&para;</a></h3>
-<p>If the project includes documentation using MkDocs, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong>
+<p>If the project includes documentation using MkDocs, the maintainer <strong>shall</strong>
 define a <code>docs/index.md</code> file that provides a cover page for the document.</p>
 <h3 class="body" id="extracss-file">Extra.css File<a class="headerlink" href="#extracss-file" title="Permanent link">&para;</a></h3>
-<p>If the project includes documentation using MkDocs, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong>
+<p>If the project includes documentation using MkDocs, the maintainer <strong>shall</strong>
 define a <code>docs/stylesheets/extra.css</code> file that defines the heading styles to
 be used for the body and the annexes (i.e., adding setion numbers in front of
 headings).</p>
-<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> ensure that this badge only changes per the approval
+<p>The maintainer <strong>shall</strong> ensure that this badge only changes per the approval
 process defined for the project.</p>
 <h3 class="body" id="mainhtml-file">Main.html File<a class="headerlink" href="#mainhtml-file" title="Permanent link">&para;</a></h3>
-<p>If the project includes documentation using MkDocs, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong>
+<p>If the project includes documentation using MkDocs, the maintainer <strong>shall</strong>
 define a <code>overrides/main.html</code> file that provides a badge that identifies the
 status of the project files.</p>
-<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> ensure that this badge only changes per the approval
+<p>The maintainer <strong>shall</strong> ensure that this badge only changes per the approval
 process defined for the project.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2361,7 +2365,7 @@ page.</p>
 <p><a href="https://github.com/k-vaughn/ITS-open-source/blob/main/overrides/main.html">Main.html file for ITS Open-Source Process</a></p>
 </div>
 <h3 class="body" id="navhtml-file">Nav.html File<a class="headerlink" href="#navhtml-file" title="Permanent link">&para;</a></h3>
-<p>If the project includes documentation using MkDocs, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong>
+<p>If the project includes documentation using MkDocs, the maintainer <strong>shall</strong>
 define a <code>overrides/partials/nav.html</code> file that overrides the title assigned
 to the left-hand navigation menu to be "Contents".</p>
 <div class="admonition note">
@@ -2375,7 +2379,7 @@ nav.html file is provided to change this to "Contents".</p>
 <p><a href="https://github.com/k-vaughn/ITS-open-source/blob/main/overrides/partials/nav.html">Nav.html file for ITS Open-Source Process</a></p>
 </div>
 <h3 class="body" id="tochtml-file">Toc.html File<a class="headerlink" href="#tochtml-file" title="Permanent link">&para;</a></h3>
-<p>If the project includes documentation using MkDocs, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong>
+<p>If the project includes documentation using MkDocs, the maintainer <strong>shall</strong>
 define a <code>overrides/partials/toc.html</code> file that overrides the title assigned
 to the navigation menu on the right side of the screen.</p>
 <div class="admonition note">
@@ -2390,7 +2394,7 @@ standard toc.html file changes this to the title of the current page.</p>
 </div>
 <h2 class="body" id="define-project-structure">Define Project Structure<a class="headerlink" href="#define-project-structure" title="Permanent link">&para;</a></h2>
 <p>Once the project is established, configured, and the loaded with the initial
-project files, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> establish the plan for the project by
+project files, the maintainer <strong>shall</strong> establish the plan for the project by
 defining issues along with any appropriate stub files that can provide further
 guidance.</p>
 <div class="admonition note">
@@ -2401,12 +2405,12 @@ documentation and code).</p>
 <h2 class="body" id="issue-triage">Issue Triage<a class="headerlink" href="#issue-triage" title="Permanent link">&para;</a></h2>
 <!-- markdownlint-disable-next-line MD024 -->
 <h3 class="body" id="overview_2">Overview<a class="headerlink" href="#overview_2" title="Permanent link">&para;</a></h3>
-<p>Once issues are being created for the project, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> will need to
+<p>Once issues are being created for the project, the maintainer will need to
 triage these issues to ensure that they contribute to the project plan and so
 that they can be claimed by contributors.</p>
-<p>Learning to triage issues is essential for any open-source <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr>. This
+<p>Learning to triage issues is essential for any open-source maintainer. This
 involves going through the existing list of open issues and prioritizing them
-in order of importance. Some open issues will be critical <abbr title="A bug refers to an error, flaw, or defect in code that adversely affects the proper functioning of the software. Open source projects often depend on contributions from the community to identify and rectify these bugs.">bug</abbr> fixes, while others
+in order of importance. Some open issues will be critical bug fixes, while others
 might be nice to have feature requests. Sometimes, you might have issues opened
 for things that are not a right fit for the project.</p>
 <h3 class="body" id="triage-pre-assessment">Triage Pre-Assessment<a class="headerlink" href="#triage-pre-assessment" title="Permanent link">&para;</a></h3>
@@ -2415,41 +2419,41 @@ for things that are not a right fit for the project.</p>
 <p>Prior to performing any detailed triage, it is important to screen reported issues
 that are not appropriate for further investigation.</p>
 <h4 class="body" id="dealing-with-spam">Dealing with Spam<a class="headerlink" href="#dealing-with-spam" title="Permanent link">&para;</a></h4>
-<p>When a comment is spam, clearly combative, or unhelpful, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>should</strong>
-avoid direct engagement, label the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> as <code>spam</code>, close the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>, and move on.</p>
+<p>When a comment is spam, clearly combative, or unhelpful, the maintainer <strong>should</strong>
+avoid direct engagement, label the issue as <code>spam</code>, close the issue, and move on.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <p>This project is terrible! Nothing works, and your code is garbage. I can't
 believe anyone would use this. Fix it ASAP!!!</p>
 </div>
 <h4 class="body" id="insufficient-information-issues">Insufficient Information Issues<a class="headerlink" href="#insufficient-information-issues" title="Permanent link">&para;</a></h4>
-<p>When a comment does not provide concrete details about the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr>
+<p>When a comment does not provide concrete details about the issue, the maintainer
 <strong>should</strong> respond by requesting more information.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<p>If it is a <abbr title="A bug refers to an error, flaw, or defect in code that adversely affects the proper functioning of the software. Open source projects often depend on contributions from the community to identify and rectify these bugs.">bug</abbr> report, ask for more details on reproducing it. If it is a
+<p>If it is a bug report, ask for more details on reproducing it. If it is a
 feature request, ask for clarification on style or functionality changes.</p>
 </div>
-<p>If the commenter does not respond within a week, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>should</strong> message
+<p>If the commenter does not respond within a week, the maintainer <strong>should</strong> message
 them again for more details.</p>
-<p>If a few weeks pass and the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> is not considered critical, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr>
-<strong>may</strong> close the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>.</p>
+<p>If a few weeks pass and the issue is not considered critical, the maintainer
+<strong>may</strong> close the issue.</p>
 <h4 class="body" id="stale-issues">Stale Issues<a class="headerlink" href="#stale-issues" title="Permanent link">&para;</a></h4>
-<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>may</strong> may label issues that have not been worked on for months
+<p>The maintainer <strong>may</strong> may label issues that have not been worked on for months
 as <code>stale</code>.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<p>An <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> reported on a portion of a project that has been significantly
+<p>An issue reported on a portion of a project that has been significantly
 edited by other contributions.</p>
 </div>
-<p>If the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> wishes to resurrect a <code>stale</code> <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong>
+<p>If the maintainer wishes to resurrect a <code>stale</code> issue, the maintainer <strong>shall</strong>
 go through the normal triage process, including adding and removing labels as appropriate.</p>
-<p>If the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> believes a <code>stale</code> <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> no longer applies, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr>
-<strong>should</strong> close the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>. This process <strong>may</strong> be automated (e.g., using an
+<p>If the maintainer believes a <code>stale</code> issue no longer applies, the maintainer
+<strong>should</strong> close the issue. This process <strong>may</strong> be automated (e.g., using an
 action like <a href="https://github.com/actions/stale">Close Stale Issues and PRs</a>.</p>
 <h4 class="body" id="ensuring-proper-categorization">Ensuring Proper categorization<a class="headerlink" href="#ensuring-proper-categorization" title="Permanent link">&para;</a></h4>
 <p>For issues that have sufficient information and are not <code>spam</code> or <code>stale</code>, the
-<abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> add and/or remove labels as appropriate for proper management.</p>
+maintainer <strong>shall</strong> add and/or remove labels as appropriate for proper management.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Most ITS standardization projects are expected to have a small number of
@@ -2462,17 +2466,17 @@ of labels as adopted by the open-source community.</p>
 <li>
 <p>General Type Labels</p>
 <ul>
-<li><strong>github automation:</strong> an <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> related to the automated github scripts in
+<li><strong>github automation:</strong> an issue related to the automated github scripts in
    testing or generating the documentation.</li>
 <li><strong>question:</strong> Indicates a general inquiry or a request for clarification about
    how something works. Questions should be moved to the discussion tab, but the
-   <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> can be labeled with <code>question</code> and closed.</li>
+   issue can be labeled with <code>question</code> and closed.</li>
 </ul>
 </li>
 <li>
 <p>Type Labels for Documentation</p>
 <ul>
-<li><strong>documentation <abbr title="A bug refers to an error, flaw, or defect in code that adversely affects the proper functioning of the software. Open source projects often depend on contributions from the community to identify and rectify these bugs.">bug</abbr>:</strong> Identifies a reported problem or flaw in the documentation.</li>
+<li><strong>documentation bug:</strong> Identifies a reported problem or flaw in the documentation.</li>
 <li><strong>documentation enhancement:</strong> Refers to a suggestion or request to improve
    or add informative text in the documentation.</li>
 <li><strong>new user need:</strong> Suggests a new user need to be added in the document.</li>
@@ -2487,7 +2491,7 @@ of labels as adopted by the open-source community.</p>
 <li>
 <p>Type Labels for Code</p>
 <ul>
-<li><strong><abbr title="A bug refers to an error, flaw, or defect in code that adversely affects the proper functioning of the software. Open source projects often depend on contributions from the community to identify and rectify these bugs.">bug</abbr>:</strong> Identifies a reported problem, flaw, or unexpected behavior in the
+<li><strong>bug:</strong> Identifies a reported problem, flaw, or unexpected behavior in the
 code.</li>
 <li><strong>enhancement:</strong> Refers to a suggestion or request to improve or add
 features to the project.</li>
@@ -2499,49 +2503,49 @@ testing improvements.</li>
 </ul>
 </li>
 <li>Priority Labels (Help prioritize issues based on urgency or importance)<ul>
-<li><strong>critical:</strong> Indicates urgent <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> related to an existing release that
+<li><strong>critical:</strong> Indicates urgent issue related to an existing release that
 needs to be addressed immediately (e.g., perhaps requiring its own release
 to formalize in a timely manner).</li>
-<li><strong>high priority:</strong> Indicates urgent <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> that needs to be addressed as
+<li><strong>high priority:</strong> Indicates urgent issue that needs to be addressed as
 soon as possible to allow for other tasks to proceed  for the current
 update but not critical.</li>
-<li><strong>medium priority:</strong> Important <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> to address prior to next release that
+<li><strong>medium priority:</strong> Important issue to address prior to next release that
 relates to functionality but not high priority.</li>
 <li><strong>low priority:</strong> Non-urgent issues that may be tackled if there’s extra
 time or resources available.</li>
 </ul>
 </li>
-<li>Status Labels (Track the progress of an <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> or <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr>)<ul>
-<li><strong>in progress:</strong> The <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> is currently being worked on.</li>
-<li><strong>blocked:</strong> Work on this <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> is delayed or cannot proceed due to a
+<li>Status Labels (Track the progress of an issue or pull request)<ul>
+<li><strong>in progress:</strong> The issue is currently being worked on.</li>
+<li><strong>blocked:</strong> Work on this issue is delayed or cannot proceed due to a
 dependency or external factor.</li>
-<li><strong>needs discussion:</strong> Indicates that the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> or <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> requires
+<li><strong>needs discussion:</strong> Indicates that the issue or pull request requires
 further conversation or clarification before proceeding.</li>
 <li><strong>triage:</strong> Newly created issues that need to be reviewed, categorized,
 and prioritized.</li>
-<li><strong>ready for review:</strong> The <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> is awaiting review by project maintainers.</li>
-<li><strong>duplicate:</strong> Marks an <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> as being identical or closely related to an
-already existing <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>.</li>
+<li><strong>ready for review:</strong> The pull request is awaiting review by project maintainers.</li>
+<li><strong>duplicate:</strong> Marks an issue as being identical or closely related to an
+already existing issue.</li>
 <li><strong>wontfix:</strong> Indicates that the maintainers have decided not to address
-the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>, either due to scope, relevance, or priority.</li>
+the issue, either due to scope, relevance, or priority.</li>
 </ul>
 </li>
 <li>Difficulty or Effort Labels (Classify the expected effort required to
-address the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>)<ul>
-<li><strong>good first <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>:</strong> Meant for new contributors; these are usually
+address the issue)<ul>
+<li><strong>good first issue:</strong> Meant for new contributors; these are usually
 easy-to-solve problems with clear instructions.</li>
-<li><strong>beginner-friendly:</strong> Similar to “good first <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>,” these are relatively
+<li><strong>beginner-friendly:</strong> Similar to “good first issue,” these are relatively
 simple problems that beginners can address.</li>
-<li><strong>help wanted:</strong> Indicates that maintainers need assistance with the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>,
+<li><strong>help wanted:</strong> Indicates that maintainers need assistance with the issue,
 open to contributions.</li>
 <li><strong>complex:</strong> Issues that are challenging, requiring significant experience
 or effort to resolve.</li>
 </ul>
 </li>
 <li>Version or Milestone Labels (Track issues by release or milestone)<ul>
-<li><strong>compatibility:</strong> Associates an <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> or <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> with a specific
+<li><strong>compatibility:</strong> Associates an issue or pull request with a specific
 version or release milestone.</li>
-<li><strong>next release:</strong> Indicates that the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> is planned for inclusion in the
+<li><strong>next release:</strong> Indicates that the issue is planned for inclusion in the
 upcoming release.</li>
 <li><strong>future:</strong> Refers to issues or features planned for future releases
 beyond the current roadmap.</li>
@@ -2549,45 +2553,45 @@ beyond the current roadmap.</li>
 </li>
 </ol>
 <h3 class="body" id="triaging-bugs">Triaging Bugs<a class="headerlink" href="#triaging-bugs" title="Permanent link">&para;</a></h3>
-<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>should</strong> verify the existance of any reported <abbr title="A bug refers to an error, flaw, or defect in code that adversely affects the proper functioning of the software. Open source projects often depend on contributions from the community to identify and rectify these bugs.">bug</abbr>.</p>
+<p>The maintainer <strong>should</strong> verify the existance of any reported bug.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> expects to assign the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> to himself, the verification
-step can be postponed until the action is undertaken to correct the <abbr title="A bug refers to an error, flaw, or defect in code that adversely affects the proper functioning of the software. Open source projects often depend on contributions from the community to identify and rectify these bugs.">bug</abbr>. If
-the <abbr title="A bug refers to an error, flaw, or defect in code that adversely affects the proper functioning of the software. Open source projects often depend on contributions from the community to identify and rectify these bugs.">bug</abbr> cannot be verified, reply to the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>'s original poster to gain
+<p>If the maintainer expects to assign the issue to himself, the verification
+step can be postponed until the action is undertaken to correct the bug. If
+the bug cannot be verified, reply to the issue's original poster to gain
 more information and context.</p>
 </div>
 <h3 class="body" id="triaging-feature-requests">Triaging Feature Requests<a class="headerlink" href="#triaging-feature-requests" title="Permanent link">&para;</a></h3>
-<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> ensure that any new feature request fits into the
+<p>The maintainer <strong>shall</strong> ensure that any new feature request fits into the
 vision for the project.</p>
-<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> communicate with the original poster of the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> to
-determine how to best deal with the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>, including:</p>
+<p>The maintainer <strong>shall</strong> communicate with the original poster of the issue to
+determine how to best deal with the issue, including:</p>
 <ul>
 <li>assigning to the originator, if they express a willingness to contribute a solution,</li>
-<li>assigning to the originator and someone else (e.g., a <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr>), if the
+<li>assigning to the originator and someone else (e.g., a maintainer), if the
 originator is willing to contribute to a solution but is unwilling to develop
 and propose it,</li>
-<li>adding a <code>help wanted</code>, if the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> wishes to look for another
-<abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr>, or</li>
-<li>assigning it to himself or another core team member, if the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr>
-expects the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> to be addressed by them in a timely manner.</li>
+<li>adding a <code>help wanted</code>, if the maintainer wishes to look for another
+contributor, or</li>
+<li>assigning it to himself or another core team member, if the maintainer
+expects the issue to be addressed by them in a timely manner.</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Complex issues are best assigned to core team members.</p>
 </div>
 <h3 class="body" id="triaging-duplicate-issues">Triaging Duplicate Issues<a class="headerlink" href="#triaging-duplicate-issues" title="Permanent link">&para;</a></h3>
-<p>When assigning a <code>duplicate</code> label, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>should</strong> respond  to the
-originator of the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>.</p>
+<p>When assigning a <code>duplicate</code> label, the maintainer <strong>should</strong> respond  to the
+originator of the issue.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<p>Thank you for taking the time to open this <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>. Another team member is
+<p>Thank you for taking the time to open this issue. Another team member is
 working on this feature, which will be added soon. As a result, we are
-going to close this <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>.</p>
+going to close this issue.</p>
 </div>
 <h3 class="body" id="triaging-rejected-issues">Triaging Rejected Issues<a class="headerlink" href="#triaging-rejected-issues" title="Permanent link">&para;</a></h3>
-<p>When assigning a <code>wontfix</code> label, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>should</strong> respond  to the
-originator of the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>.</p>
+<p>When assigning a <code>wontfix</code> label, the maintainer <strong>should</strong> respond  to the
+originator of the issue.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <p>Thank you for being so interested in our project. The feature you have
@@ -2597,34 +2601,34 @@ direction. At this time, we will not be moving forward with this feature.</p>
 <h2 class="body" id="reviewing-pull-requests">Reviewing Pull Requests<a class="headerlink" href="#reviewing-pull-requests" title="Permanent link">&para;</a></h2>
 <!-- markdownlint-disable-next-line MD024 -->
 <h3 class="body" id="overview_4">Overview<a class="headerlink" href="#overview_4" title="Permanent link">&para;</a></h3>
-<p>It is the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr>'s responsibility to ensure that the suggested code or
+<p>It is the maintainer's responsibility to ensure that the suggested code or
 documentation update meets the standards of the project and doesn't introduce
-any new issues for the project. You will also need to work with the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr>
+any new issues for the project. You will also need to work with the contributor
 to help solve issues they encounter.</p>
 <h3 class="body" id="pull-request-pre-assessment">Pull-Request Pre-Assessment<a class="headerlink" href="#pull-request-pre-assessment" title="Permanent link">&para;</a></h3>
 <h4 class="body" id="spam-pull-requests">Spam Pull Requests<a class="headerlink" href="#spam-pull-requests" title="Permanent link">&para;</a></h4>
-<p>For any <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> deemed to be spam, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>should</strong> label the
-request as <code>spam</code>, close the <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr>, and not respond to the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr>.</p>
+<p>For any pull request deemed to be spam, the maintainer <strong>should</strong> label the
+request as <code>spam</code>, close the pull request, and not respond to the contributor.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 </div>
 <ul>
 <li>whitespace changes to the README file or other files</li>
-<li>random changes to files without an accompanying <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> or explanation</li>
+<li>random changes to files without an accompanying issue or explanation</li>
 <li>numerous links to unrelated websites or promotes products/services</li>
 <li>plagiarized content from other sources without permission or proper attribution</li>
 </ul>
 <h4 class="body" id="low-quality-pull-requests">Low-Quality Pull Requests<a class="headerlink" href="#low-quality-pull-requests" title="Permanent link">&para;</a></h4>
-<p>For a <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> deemed to be of low quality, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>should</strong> reach
+<p>For a pull request deemed to be of low quality, the maintainer <strong>should</strong> reach
 out to the author, explaining what needs to be added and what changes need to
 be made.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 </div>
 <ul>
-<li>unfinished pull requests that do not address the entire <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr></li>
-<li>code that does not fit within the established <abbr title="A style guide is a set of rules and conventions that define the preferred formatting, writing style, and visual elements used in documentation and other content. This helps maintain consistency and clarity across documents, making them easier to read and understand.">style guide</abbr> for the project</li>
-<li>incomplete <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> forms that do not provide sufficient information on
+<li>unfinished pull requests that do not address the entire issue</li>
+<li>code that does not fit within the established style guide for the project</li>
+<li>incomplete pull request forms that do not provide sufficient information on
 what changes were made</li>
 <li>address multiple issues at once and make it challenging to review</li>
 </ul>
@@ -2635,23 +2639,23 @@ being aware of the rules to follow and need extra explanation and time to
 improve their pull requests.</p>
 </div>
 <h4 class="body" id="stale-pull-requests">Stale Pull Requests<a class="headerlink" href="#stale-pull-requests" title="Permanent link">&para;</a></h4>
-<p>If the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> is unable to get a response from a <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> regarding an
-<abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> after a repeated attempts over several weeks, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>may</strong>
-reassign the associated <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>; if there is an associated pending <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr>,
-the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> either close the <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> or take it over (i.e.,
-by using the code in the <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> as the starting point for additional
+<p>If the maintainer is unable to get a response from a contributor regarding an
+issue after a repeated attempts over several weeks, the maintainer <strong>may</strong>
+reassign the associated issue; if there is an associated pending pull request,
+the maintainer <strong>shall</strong> either close the pull request or take it over (i.e.,
+by using the code in the pull request as the starting point for additional
 modifications).</p>
 <h3 class="body" id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h3>
 <!-- markdownlint-disable-next-line MD024 -->
 <h4 class="body" id="overview_5">Overview<a class="headerlink" href="#overview_5" title="Permanent link">&para;</a></h4>
-<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> review each contribution to ensure that all tests pass,
+<p>The maintainer <strong>shall</strong> review each contribution to ensure that all tests pass,
 the contribution works as expected without introducing errors.</p>
 <h4 class="body" id="automated-testing">Automated Testing<a class="headerlink" href="#automated-testing" title="Permanent link">&para;</a></h4>
-<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>should</strong> maintain automated tests to protext against errors.</p>
+<p>The maintainer <strong>should</strong> maintain automated tests to protext against errors.</p>
 <div class="admonition note">
 <p class="admonition-title">GitHub Help</p>
 <p>GitHub allows maintainers to set up an automated test suite that runs on
-every <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> and merges into the main <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr>. Good automated test
+every pull request and merges into the main branch. Good automated test
 suites can help catch bugs from going into production and breaking the
 application.</p>
 </div>
@@ -2661,16 +2665,16 @@ application.</p>
 finds publicly known security vulnerabilities in JavaScript libraries' websites</p>
 </div>
 <h4 class="body" id="failing-automated-tests">Failing Automated Tests<a class="headerlink" href="#failing-automated-tests" title="Permanent link">&para;</a></h4>
-<p>If a <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> receives a <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> that fails automated testing, the
-<abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>should</strong> wait a few days to allow the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> to resolve
-the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> independently.</p>
-<p>If the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> does not resolve the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> within a few days, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr>
-<strong>shall</strong> contact the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> to see if they need help.</p>
-<p>If the failing test is unrelated to the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr>'s changes, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr>
-<strong>shall</strong> let the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> know that the error is safe to ignore and that
-it will be fixed in another <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr>.</p>
-<p>If the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> fails to respond after repeated attempts over several weeks
-or months, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>should</strong> close the <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> and move on.</p>
+<p>If a maintainer receives a pull request that fails automated testing, the
+maintainer <strong>should</strong> wait a few days to allow the contributor to resolve
+the issue independently.</p>
+<p>If the contributor does not resolve the issue within a few days, the maintainer
+<strong>shall</strong> contact the contributor to see if they need help.</p>
+<p>If the failing test is unrelated to the contributor's changes, the maintainer
+<strong>shall</strong> let the contributor know that the error is safe to ignore and that
+it will be fixed in another pull request.</p>
+<p>If the contributor fails to respond after repeated attempts over several weeks
+or months, the maintainer <strong>should</strong> close the pull request and move on.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If multiple contributors fail the same set of tests, the tests may need
@@ -2678,9 +2682,9 @@ improvement.</p>
 </div>
 <p><img alt="Failed automated tests" src="../_assets/images/failed-automated-tests.png" /></p>
 <h4 class="body" id="code-reviews">Code Reviews<a class="headerlink" href="#code-reviews" title="Permanent link">&para;</a></h4>
-<p>Prior to accepting any <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr>, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> review all
+<p>Prior to accepting any pull request, the maintainer <strong>shall</strong> review all
 proposed changes to ensure that they are designed to address the reported
-<abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> as claimed and that they conform to the projects coding and documentation
+issue as claimed and that they conform to the projects coding and documentation
 guidelines.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2688,29 +2692,29 @@ guidelines.</p>
 insights into the types of manual tests that are most appropriate.</p>
 </div>
 <h4 class="body" id="manual-testing">Manual Testing<a class="headerlink" href="#manual-testing" title="Permanent link">&para;</a></h4>
-<p>Prior to accepting a significant <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr>, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>should</strong> manually
+<p>Prior to accepting a significant pull request, the maintainer <strong>should</strong> manually
 test the project using his local machine.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If a <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> involves a small change to documentation or code, manual
-testing is less important, but the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> is the last line of defense
-before a <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr> is merged in, which can potentially introduce new issues.</p>
+<p>If a pull request involves a small change to documentation or code, manual
+testing is less important, but the maintainer is the last line of defense
+before a pull request is merged in, which can potentially introduce new issues.</p>
 </div>
 <h3 class="body" id="effective-feedback">Effective Feedback<a class="headerlink" href="#effective-feedback" title="Permanent link">&para;</a></h3>
-<p>If the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> discovers a problem with the <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr>, the <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr>
-<strong>shall</strong> respond to the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> with a detailed account of the problem.</p>
+<p>If the maintainer discovers a problem with the pull request, the maintainer
+<strong>shall</strong> respond to the contributor with a detailed account of the problem.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Sometimes, it helps to include a screenshot or screen recording. If the
 automated tests did not catch the problem, it might be worth creating a
-separate <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> to update the test suite.</p>
+separate issue to update the test suite.</p>
 </div>
-<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> indicate the importance of each problem identified in
+<p>The maintainer <strong>shall</strong> indicate the importance of each problem identified in
 the contribution with <code>critical</code>, <code>high</code>, <code>medium</code>, or <code>low</code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Feedback provides a public log of how an <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> has been addressed and needs
-to be informative, constructive, and helpful for the reviewer, <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr>,
+<p>Feedback provides a public log of how an issue has been addressed and needs
+to be informative, constructive, and helpful for the reviewer, contributor,
 and others that might read it at a later date.</p>
 </div>
 <div class="admonition example">
@@ -2728,13 +2732,13 @@ determine how they tested their contribution and let them know what parts
 need to be tested.</p>
 </div>
 <h2 class="body" id="creating-a-release">Creating a Release<a class="headerlink" href="#creating-a-release" title="Permanent link">&para;</a></h2>
-<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> create a formal release for each version of the
+<p>The maintainer <strong>shall</strong> create a formal release for each version of the
 document approved for release by the responsible WG or committee.</p>
 <div class="admonition note">
 <p class="admonition-title">GitHub Help</p>
 <p>Within GitHub, this can be achieved through the<strong>Releases</strong> tab.</p>
 </div>
-<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> assign a tag to the release that indicates the version
+<p>The maintainer <strong>shall</strong> assign a tag to the release that indicates the version
 number per <a href="https://semver.org">Semantic Versioning 2.0.0</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2751,8 +2755,8 @@ new features, and</li>
 under development and must have a sequential alphanumeric identifier</li>
 </ul>
 </div>
-<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>shall</strong> attach a PDF and zip archive of the website in
-versioned directories in the gh-pages <abbr title="A branch is a separate version of the code that's created for development purposes. Branches allow contributors to experiment with changes without affecting the main codebase. When changes are ready to be merged into the main codebase, they're typically submitted as a pull request.">branch</abbr>.</p>
+<p>The maintainer <strong>shall</strong> attach a PDF and zip archive of the website in
+versioned directories in the gh-pages branch.</p>
 <div class="language-text highlight"><pre><span></span><code>gh-pages/  
 ├── index.html (latest version)  
 ├── v1.0.0/  
@@ -2762,7 +2766,7 @@ versioned directories in the gh-pages <abbr title="A branch is a separate versio
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">GitHub Help</p>
-<p>This can be automated with <abbr title="GitHub Actions are a way to automate tasks within your software development life cycle. GitHub Actions are event-driven, meaning that you can run a series of commands after a specified event has occurred. Examples of GitHub Actions include running tests, deploying to production, and sending notifications.">GitHub actions</abbr>.</p>
+<p>This can be automated with GitHub actions.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2839,9 +2843,9 @@ open-source projects and during teh lifetime of any one project (e.g.,
 there are often periods of moew active development and less active
 development).</p>
 </div>
-<p>The <abbr title="A maintainer is a person or a group of people responsible for maintaining a specific open source project. Maintainers are typically responsible for reviewing and accepting or rejecting contributions from other contributors. They also have the authority to make final decisions about the direction and scope of the project.">maintainer</abbr> <strong>should</strong> set up <a href="https://docs.github.com/en/actions">GitHub Actions</a>
-to automate responses that welcomes each new <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> and provides an estimated
-time by which the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> triage or PR review can be expected</p>
+<p>The maintainer <strong>should</strong> set up <a href="https://docs.github.com/en/actions">GitHub Actions</a>
+to automate responses that welcomes each new contributor and provides an estimated
+time by which the issue triage or PR review can be expected</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You can learn how to set one up in<a href="https://dev.to/opensauced/github-actions-a-maintainers-best-friend-488n">this article</a>.</p>
@@ -2851,7 +2855,7 @@ time by which the <abbr title="An issue is a problem or bug that needs to be add
 <!-- markdownlint-disable-next-line MD024 -->
 <h3 class="body" id="overview_7">Overview<a class="headerlink" href="#overview_7" title="Permanent link">&para;</a></h3>
 <p>Leveraging GitHub Actions to bring Continuous Integration / Continuous Delivery
-or Deployment (CI/CD) into your workflow directly in your <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> will let
+or Deployment (CI/CD) into your workflow directly in your repository will let
 you run code, test, build, and deliver or deploy software with simple and secure
 workflows. Automating these tasks will speed up your deployment process.</p>
 <p>Using Git, GitHub, and GitHub Actions to build a CI/CD pipeline should give you
@@ -2865,7 +2869,7 @@ confidence in your code.</p>
 on what you need. Below are some GitHub Actions that you usually find across
 repositories:</p>
 <h3 class="body" id="linter">Linter<a class="headerlink" href="#linter" title="Permanent link">&para;</a></h3>
-<p>Most open source repositories have linters that run on each <abbr title="A pull request is a request from a contributor to a maintainer for changes made to the code to be pulled into a codebase.">pull request</abbr>. Linter
+<p>Most open source repositories have linters that run on each pull request. Linter
 is a tool for detecting potential errors and maintaining a consistent code style
 in a project. <a href="https://github.com/marketplace/actions/super-linter">Super-Linter</a>
 is one of the most used actions. This action can help you maintain code quality
@@ -2882,8 +2886,8 @@ which GitHub maintains, or third-party scanning tools such as
 <ul>
 <li><a href="https://github.com/marketplace?type=actions">GitHub Marketplace</a></li>
 <li><a href="https://github.com/marketplace/actions/contributor-takes-action">Take Action</a>:
-allows contributors to assign themselves to an <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr> by typing the <code>.take</code>
-command in the <abbr title="An issue is a problem or bug that needs to be addressed in the code. Issues can be created by anyone, and they're often used to keep track of bugs, feature requests, and other tasks that need to be done.">issue</abbr>'s comment.</li>
+allows contributors to assign themselves to an issue by typing the <code>.take</code>
+command in the issue's comment.</li>
 <li><a href="https://github.com/open-sauced/app/blob/beta/.github/workflows/triage.yml">Triage Action</a>:
 blocks the Take Action whenever a <code>needs triage</code> or <code>core team work</code> label exists.</li>
 </ul>

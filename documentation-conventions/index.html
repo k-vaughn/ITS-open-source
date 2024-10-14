@@ -6,6 +6,8 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="ITS Open Source Process {{ release-number }}">
+      
       
       
         <link rel="canonical" href="https://github.com/k-vaughn/ITS-open-source/documentation-conventions/">
@@ -46,6 +48,8 @@
     
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../stylesheets/pdf.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -1065,7 +1069,7 @@
           
           
             <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
+              <article class="md-content__inner md-typeset"><a class="md-content__button md-icon" download href="documentation-conventions.pdf" title="PDF Export"><svg style="height: 1.2rem; width: 1.2rem;" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm76.45 211.36l-96.42 95.7c-6.65 6.61-17.39 6.61-24.04 0l-96.42-95.7C73.42 337.29 80.54 320 94.82 320H160v-80c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v80h65.18c14.28 0 21.4 17.29 11.27 27.36zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"></path></svg></a>
                 
                   
 
@@ -1088,8 +1092,8 @@ body {
 <ul>
 <li><strong>A text editor,</strong> which is used to create and edit markdwon and yaml files,</li>
 <li><strong>Python,</strong> which is required to run MkDocs,</li>
-<li><strong>MkDocs,</strong> which is an open-source tool for translating a set of <abbr title="Markdown is a lightweight markup language commonly used for creating formatted text documents. It is widely used for creating documentation and README files in software development due to its simplicity and readability.">markdown</abbr> files into a static website, and</li>
-<li><strong>Materials for MkDocs,</strong> which is an open-source tool that extends the <abbr title="Markdown is a lightweight markup language commonly used for creating formatted text documents. It is widely used for creating documentation and README files in software development due to its simplicity and readability.">markdown</abbr> language to support additional features that are useful for developing the look and feel of the project's documentation.</li>
+<li><strong>MkDocs,</strong> which is an open-source tool for translating a set of markdown files into a static website, and</li>
+<li><strong>Materials for MkDocs,</strong> which is an open-source tool that extends the markdown language to support additional features that are useful for developing the look and feel of the project's documentation.</li>
 </ul>
 <p>This combination of tools has been selected because it:</p>
 <ul>
@@ -1101,39 +1105,39 @@ body {
 <li>when coupled with add-ons, can produce PDFs</li>
 <li>has an active development community</li>
 </ul>
-<p>It is recommended to establish this development environment prior to making any edits. Generating the documentation website locally from a known baseline allows the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> to verify that the development environment is working correctly prior to introducing edits to the files. Contributors are required to generate the documentation locally to verify that their proposed changes do not introduce any errors to the project. The MkDocs development environemnt allows users to see their changes in real time so that any errors can be addressed quickly.</p>
+<p>It is recommended to establish this development environment prior to making any edits. Generating the documentation website locally from a known baseline allows the contributor to verify that the development environment is working correctly prior to introducing edits to the files. Contributors are required to generate the documentation locally to verify that their proposed changes do not introduce any errors to the project. The MkDocs development environemnt allows users to see their changes in real time so that any errors can be addressed quickly.</p>
 <h3 class="annex" id="text-editor">Text Editor<a class="headerlink" href="#text-editor" title="Permanent link">&para;</a></h3>
-<p>Any text editor can be used to produce <abbr title="Markdown is a lightweight markup language commonly used for creating formatted text documents. It is widely used for creating documentation and README files in software development due to its simplicity and readability.">markdown</abbr> and yaml files. These files are to have the extensions of ".md" and ".yml", respectively.</p>
+<p>Any text editor can be used to produce markdown and yaml files. These files are to have the extensions of ".md" and ".yml", respectively.</p>
 <p>Contributors are encouraged to use <a href="https://code.visualstudio.com">Visual Studio Code</a>, which is an open-source editor, with the following extensions enabled as it provides a reasonably close rendering of the final display format:</p>
 <ul>
-<li>Markdown Preview Enhanced by Yiyi Wang, this extension provides a <abbr title="Markdown is a lightweight markup language commonly used for creating formatted text documents. It is widely used for creating documentation and README files in software development due to its simplicity and readability.">markdown</abbr> previewer with support for diagrams, math (LaTeX), mermaid, charts, and more;</li>
-<li>markdownlint by David Anson, this extension assists in ensuring <abbr title="Markdown is a lightweight markup language commonly used for creating formatted text documents. It is widely used for creating documentation and README files in software development due to its simplicity and readability.">markdown</abbr> files follow consistent formatting rules; and</li>
+<li>Markdown Preview Enhanced by Yiyi Wang, this extension provides a markdown previewer with support for diagrams, math (LaTeX), mermaid, charts, and more;</li>
+<li>markdownlint by David Anson, this extension assists in ensuring markdown files follow consistent formatting rules; and</li>
 <li>YAML by Red Hat, this extension provides syntax highlighting, validation, and autocomplete for YAML files.</li>
 </ul>
-<p>While any text editor can be used, this suite of tools offers a free solution that is designed to render the <abbr title="Markdown is a lightweight markup language commonly used for creating formatted text documents. It is widely used for creating documentation and README files in software development due to its simplicity and readability.">markdown</abbr> in real-time while assisting the user in producing high quality code. However, users should be aware that the toolset still does not attempt to render some of the more advanced features of Materials for MkDocs. The final look and feel can be obtained using the MkDocs server.</p>
+<p>While any text editor can be used, this suite of tools offers a free solution that is designed to render the markdown in real-time while assisting the user in producing high quality code. However, users should be aware that the toolset still does not attempt to render some of the more advanced features of Materials for MkDocs. The final look and feel can be obtained using the MkDocs server.</p>
 <h3 class="annex" id="python">Python<a class="headerlink" href="#python" title="Permanent link">&para;</a></h3>
 <p>MkDocs requires Python 3.8 or higher. You can check to see if Python is already installed and its version with the following command:</p>
 <p><code>python --version</code></p>
 <p>The most recent version of Python can be installed from <a href="https://www.python.org/downloads/">official Python website</a>.</p>
 <p>Once installed, you should verify by running both the <code>python --version</code> and <code>pip --version</code> commands. PIP should be installed as a part of the Python package.</p>
 <h3 class="annex" id="mkdocs">MkDocs<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h3>
-<p>Running the MkDocs server locally allows the <abbr title="A contributor is anyone who makes changes, additions, or suggestions to an open source project. Contributors can be developers, designers, writers, testers, or anyone else who helps to make the project better.">contributor</abbr> to see proposed changes in real-time and test them thoroughly prior to submitting pull requests. To install MkDocs, run</p>
+<p>Running the MkDocs server locally allows the contributor to see proposed changes in real-time and test them thoroughly prior to submitting pull requests. To install MkDocs, run</p>
 <p><code>pip install mkdocs</code></p>
 <p>Once installed, verify its installation with:</p>
 <p><code>mkdocs --version</code></p>
-<p>Once you have verified the installation, start the MkDocs server by changing to the directory containing your cloned copy of the project <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr> and running</p>
+<p>Once you have verified the installation, start the MkDocs server by changing to the directory containing your cloned copy of the project repository and running</p>
 <p><code>mkdocs serve</code></p>
-<p>Once the server is running, you can direct a web browser to <strong>http://127.0.0.1:8000</strong> to see the development version of the website. This site will be updated in realtime as you update files in the <abbr title="A repository is a central location where code is stored and managed. In open source, repositories are often hosted on platforms like GitHub, GitLab, or Bitbucket. Each repository can contain one or more projects, and contributors can submit changes to the code by making pull requests.">repository</abbr>. If you want to create a static site, However, to render all elements within the project correctly, you will need to install Materials for MkDocs.</p>
+<p>Once the server is running, you can direct a web browser to <strong>http://127.0.0.1:8000</strong> to see the development version of the website. This site will be updated in realtime as you update files in the repository. If you want to create a static site, However, to render all elements within the project correctly, you will need to install Materials for MkDocs.</p>
 <h3 class="annex" id="materials-for-mkdocs">Materials for MkDocs<a class="headerlink" href="#materials-for-mkdocs" title="Permanent link">&para;</a></h3>
 <p>To install Materials for MkDocs and the commonly used extensions for ITS projects, run the following command:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip install mkdocs-material pymdown-extensions
 </span></code></pre></div>
 <h2 class="annex" id="working-with-the-content">Working with the Content<a class="headerlink" href="#working-with-the-content" title="Permanent link">&para;</a></h2>
 <p>The content of ITS open-source documentation is generally written in <a href="https://www.markdownguide.org/">Markdown</a>, a lightweight and easy-to-use markup language that allows you to format text in a readable and visually appealing way.</p>
-<p>Please read the "<a href="#using-markdown-for-this-project">Using Markdown for This Project</a>" section for details about how to use it in this project.</p>
+<p>Please read the "<a href="#frequently-used-markdown">Frequently Used Markdown</a>" section for details about how to use it in this project.</p>
 <h3 class="annex" id="default-document-structure">Default Document Structure<a class="headerlink" href="#default-document-structure" title="Permanent link">&para;</a></h3>
 <p>ITS open-source projects can cover a range of projects that have wildly different documentation needs. Each project is allowed to define its own structure, but unless otherwise specified <strong>shall</strong> use the structure defined in this document, which is intended for projects that result in a product that can be conceptualized as a single traditional document (e.g., a traditional standard).</p>
-<p>Each major portion of the document <strong>shall</strong> be defined in a separate <abbr title="Markdown is a lightweight markup language commonly used for creating formatted text documents. It is widely used for creating documentation and README files in software development due to its simplicity and readability.">markdown</abbr> file. Major portions are defined as:</p>
+<p>Each major portion of the document <strong>shall</strong> be defined in a separate markdown file. Major portions are defined as:</p>
 <ul>
 <li>the title page, which shall be <code>index.md</code>;</li>
 <li>each top-level section of the front matter (e.g., Foreword, Introduction);</li>
@@ -1153,11 +1157,9 @@ body {
 </span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    - 4 Contributor Responsibilities: contributor-responsibilities.md
 </span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>    - 5 Maintainer Responsibilities: maintainer-responsibilities.md
 </span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    - 6 WG Responsibilities: wg-responsibilities.md
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    - A Glossary: glossary.md
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    - B Code of Conduct: code-of-conduct.md
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    - C Documentation Conventions: documentation-conventions.md
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>    - D Coding Conventions: code-quality.md
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>    - E Requirements Management: requirement-management.md
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    - A Code of Conduct: code-of-conduct.md
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    - B Documentation Conventions: documentation-conventions.md
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    - C Coding Conventions: code-quality.md
 </span></code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1216,7 +1218,7 @@ body {
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Rule MD033 of markdownlint does issues a warning about the use of HTML within <abbr title="Markdown is a lightweight markup language commonly used for creating formatted text documents. It is widely used for creating documentation and README files in software development due to its simplicity and readability.">markdown</abbr>, but it is is necessary in this case to allow automated numbering to work properly.</p>
+<p>Rule MD033 of markdownlint does issues a warning about the use of HTML within markdown, but it is is necessary in this case to allow automated numbering to work properly.</p>
 <p>Rule MD041 of markdownlint indicates that the first line in a file should be a top-level heading, but our convention requires defining the section number first.</p>
 </div>
 <h3 class="annex" id="structure-of-an-annex-file">Structure of an Annex File<a class="headerlink" href="#structure-of-an-annex-file" title="Permanent link">&para;</a></h3>
@@ -1238,7 +1240,7 @@ body {
 </span></code></pre></div>
 </div>
 <h3 class="annex" id="adding-definitions-to-the-glossary">Adding Definitions to the Glossary<a class="headerlink" href="#adding-definitions-to-the-glossary" title="Permanent link">&para;</a></h3>
-<p>If you add definitions to the project's <a href="../glossary/">glossary</a>, ensure the definitions are added <strong>alphabetically</strong>.</p>
+<p>If you add definitions to the project's <a href="https://github.com/k-vaughn/ITS-open-source/resources/glossary.md">glossary</a>, ensure the definitions are added <strong>alphabetically</strong>.</p>
 <h3 class="annex" id="frequently-used-markdown">Frequently Used Markdown<a class="headerlink" href="#frequently-used-markdown" title="Permanent link">&para;</a></h3>
 <h4 class="annex" id="headings">Headings<a class="headerlink" href="#headings" title="Permanent link">&para;</a></h4>
 <p>The hash (<code>#</code>) symbol at the start of a line denotes a heading (e.g., section, clause, subclause). There are six levels of headings, and the number of hash symbols indicates the heading level. The title of the heading should appear after the hash symbols and a space.</p>
@@ -1298,7 +1300,7 @@ body {
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The numbering of numbered lists is automatic within <abbr title="Markdown is a lightweight markup language commonly used for creating formatted text documents. It is widely used for creating documentation and README files in software development due to its simplicity and readability.">markdown</abbr> (i.e., when rendered, the list items are numbered sequentially from 1 regardless of what numbers are contained within the <abbr title="Markdown is a lightweight markup language commonly used for creating formatted text documents. It is widely used for creating documentation and README files in software development due to its simplicity and readability.">markdown</abbr> file); however, it is good coding practice to maintain the correct numbering within the <abbr title="Markdown is a lightweight markup language commonly used for creating formatted text documents. It is widely used for creating documentation and README files in software development due to its simplicity and readability.">markdown</abbr> file to prevent any confusion among contributors.</p>
+<p>The numbering of numbered lists is automatic within markdown (i.e., when rendered, the list items are numbered sequentially from 1 regardless of what numbers are contained within the markdown file); however, it is good coding practice to maintain the correct numbering within the markdown file to prevent any confusion among contributors.</p>
 </div>
 <h4 class="annex" id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h4>
 <p>Create links using square brackets (<code>[]</code>) for the link text and parentheses (<code>()</code>) for the URL.</p>
@@ -1364,7 +1366,7 @@ body {
 <p>Materials for MkDocs supports the following standard admonitions:</p>
 <ul>
 <li>abstract</li>
-<li><abbr title="A bug refers to an error, flaw, or defect in code that adversely affects the proper functioning of the software. Open source projects often depend on contributions from the community to identify and rectify these bugs.">bug</abbr></li>
+<li>bug</li>
 <li>danger</li>
 <li>example</li>
 <li>failure</li>
@@ -1405,7 +1407,7 @@ body {
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 11, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 13, 2024</span>
   </span>
 
     

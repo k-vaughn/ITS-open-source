@@ -1,0 +1,45 @@
+@media print {
+  @page {
+    size: letter portrait;
+    margin: 25mm 10mm 25mm 10mm;
+    counter-increment: page;
+    font-family: "Arial,Helvetica,sans-serif";
+	font-size: 10pt;
+    color: grey;
+    @top-left {
+        content: 'NTCIP X8008 2024-10-14_00-56-03';
+    }
+    @top-right {
+        content: 'Page ' counter(page);
+    }
+    @bottom-center {
+        content: '<a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a>';
+    }
+
+  }
+  
+/* No header and footer on the first page */
+@page :first {
+    @top-left {
+        content: none;
+    }
+    @top-right {
+        content: none;
+    }
+    @bottom-center {
+        content: none;
+    }
+}
+
+  /* Styles applied only when generating the PDF */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    page-break-before: avoid;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+}
