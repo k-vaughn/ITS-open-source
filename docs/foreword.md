@@ -39,7 +39,7 @@ Committee.
 Approval information is provided within the online environment.
 
 For more information about NTCIP standards, visit the NTCIP Web Site at
-[www.ntcip.org](www.ntcip.org).
+[www.ntcip.org](https://www.ntcip.org).
 
 ## User Comment Instructions
 
