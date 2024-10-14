@@ -58,9 +58,9 @@ jobs:
           sed -i "s/{{ release_number }}/$RELEASE_TAG/g" docs/index.md
 
           # Replace in CSS for PDF
-          sed -i "s/{{ document_identifier }}/$DOC_IDENTIFIER/g" docs/stylesheets/pdf.css
-          sed -i "s/{{ release_number }}/$RELEASE_TAG/g" docs/stylesheets/pdf.css
-          sed -i "s/{{ copyright }}/$COPYRIGHT/g" docs/stylesheets/pdf.css
+          sed -i "s|{{ document_identifier }}/$DOC_IDENTIFIER/g" docs/stylesheets/pdf.css
+          sed -i "s|{{ release_number }}/$RELEASE_TAG/g" docs/stylesheets/pdf.css
+          sed -i "s|{{ copyright }}/$COPYRIGHT/g" docs/stylesheets/pdf.css
 
       # Step 7: Run the glossary processing script
       - name: Generate glossary annex
