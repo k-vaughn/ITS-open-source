@@ -61,7 +61,7 @@ jobs:
 
       # Step 7: Set EXPORT_PDF environment variable
       - name: Set EXPORT_PDF environment variable
-        run: echo "EXPORT_PDF=true" >> $GITHUB_ENV
+        run: echo "EXPORT_PDF=1" >> $GITHUB_ENV
 
       # Step 8: Build the site (this will generate the PDF if EXPORT_PDF is set)
       - name: Build the site

@@ -12,7 +12,6 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            const { context, github } = require('@actions/github');
             const issue_number = context.payload.issue.number;
             await github.rest.issues.addLabels({
               owner: context.repo.owner,
