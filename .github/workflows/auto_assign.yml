@@ -1,0 +1,46 @@
+name: Auto Assign PR on `.take` with Triage Check
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  assign:
+    if: github.event.comment.body == '.take'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get issue details
+        id: issue
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const issue_number = context.payload.issue.number;
+            const issue = await github.rest.issues.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue_number
+            });
+            return issue.data.labels;
+
+      - name: Check for "triage needed" label
+        id: triage_check
+        run: |
+          if echo "${{ steps.issue.outputs.result }}" | grep -q "triage needed"; then
+            echo "Issue is still in triage, cannot assign.";
+            exit 1;
+          fi
+
+      - name: Assign user to PR
+        if: success()
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const { context, github } = require('@actions/github');
+            const issue_number = context.payload.issue.number;
+            const commenter = context.payload.comment.user.login;
+            await github.rest.issues.addAssignees({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue_number,
+              assignees: [commenter]
+            });
