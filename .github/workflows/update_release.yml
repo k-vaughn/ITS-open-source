@@ -59,12 +59,15 @@ jobs:
         run: |
           python process_glossary.py
 
-      # Step 7: Build the site and generate the PDF
-      - name: Build the site and generate PDF
-        run: |
-          mkdocs build
+      # Step 7: Set EXPORT_PDF environment variable
+      - name: Set EXPORT_PDF environment variable
+        run: echo "EXPORT_PDF=true" >> $GITHUB_ENV
+
+      # Step 8: Build the site (this will generate the PDF if EXPORT_PDF is set)
+      - name: Build the site
+        run: mkdocs build
     
-      # Step 8: Deploy the site to GitHub Pages (gh-pages branch)
+      # Step 9: Deploy the site to GitHub Pages (gh-pages branch)
       - name: Deploy to GitHub Pages
         run: |
           mkdocs gh-deploy --force --verbose
